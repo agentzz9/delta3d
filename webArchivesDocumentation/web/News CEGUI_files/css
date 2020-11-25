@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Yanone Kaffeesatz';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Yanone Kaffeesatz Regular'), local('YanoneKaffeesatz-Regular'), url(https://web.archive.org/web/20160407052843im_/https://fonts.gstatic.com/s/yanonekaffeesatz/v7/YDAoLskQQ5MOAgvHUQCcLbvy90DtE_Pg_qiF9bHvTzw.ttf) format('truetype');
+}
+
+/*
+     FILE ARCHIVED ON 05:28:43 Apr 07, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 19:56:42 Nov 25, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  PetaboxLoader3.resolve: 345.913 (4)
+  exclusion.robots.policy: 0.125
+  exclusion.robots: 0.138
+  esindex: 0.012
+  PetaboxLoader3.datanode: 770.112 (7)
+  LoadShardBlock: 807.127 (6)
+  CDXLines.iter: 154.592 (3)
+  RedisCDXSource: 31.363
+  load_resource: 380.377
+*/

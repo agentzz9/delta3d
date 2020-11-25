@@ -1,0 +1,23 @@
+a:link,a:visited{text-decoration:underline !important;}#site-name a:link,#site-name a:visited{text-decoration:none !important;}#content a:link:after,#content a:visited:after{content:" (" attr(href) ") ";font-size:0.8em;font-weight:normal;}#content,#content .section{float:none;width:100%;margin:0 !important;padding:0 !important;}body,#page-wrapper,#page,#main-wrapper,#main,#content,#content .section{color:#000;background-color:transparent !important;background-image:none !important;}#skip-to-nav,#navigation,.region-sidebar-first,.region-sidebar-second,#footer,.breadcrumb,div.tabs,.links,.taxonomy,.book-navigation,.forum-topic-navigation,.pager,.feed-icons{visibility:hidden;display:none;}#page-wrapper{overflow-y:visible;}
+
+/*
+     FILE ARCHIVED ON 02:46:45 Apr 16, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 19:56:50 Nov 25, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  exclusion.robots.policy: 0.197
+  esindex: 0.02
+  LoadShardBlock: 132.64 (3)
+  PetaboxLoader3.resolve: 101.275
+  RedisCDXSource: 8.544
+  load_resource: 293.133
+  captures_list: 170.542
+  CDXLines.iter: 23.502 (3)
+  PetaboxLoader3.datanode: 124.43 (4)
+  exclusion.robots: 0.217
+*/

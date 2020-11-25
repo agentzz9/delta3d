@@ -1,0 +1,583 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0113)https://web.archive.org/web/20160321065710/http://delta3d.org/article.php?story=20051013142113452&topic=tutorials -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><script src="./The dtTerrain Tutorial, Part 1 Overview and Concepts_files/cb=gapi.loaded_2" async=""></script><script src="./The dtTerrain Tutorial, Part 1 Overview and Concepts_files/cb=gapi.loaded_1" async=""></script><script id="twitter-wjs" src="./The dtTerrain Tutorial, Part 1 Overview and Concepts_files/widgets.js.download"></script><script id="facebook-jssdk" src="./The dtTerrain Tutorial, Part 1 Overview and Concepts_files/all.js.download"></script><script src="./The dtTerrain Tutorial, Part 1 Overview and Concepts_files/cb=gapi.loaded_0" async=""></script><script src="./The dtTerrain Tutorial, Part 1 Overview and Concepts_files/analytics.js.download" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app57.us.archive.org';v.server_ms=514;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="./The dtTerrain Tutorial, Part 1 Overview and Concepts_files/playback.bundle.js.download" charset="utf-8"></script>
+<script type="text/javascript" src="./The dtTerrain Tutorial, Part 1 Overview and Concepts_files/wombat.js.download" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://delta3d.org/article.php?story=20051013142113452&topic=tutorials","20160321065710","https://web.archive.org/","web","/_static/",
+	      "1458543430");
+</script>
+<link rel="stylesheet" type="text/css" href="./The dtTerrain Tutorial, Part 1 Overview and Concepts_files/banner-styles.css">
+<link rel="stylesheet" type="text/css" href="./The dtTerrain Tutorial, Part 1 Overview and Concepts_files/iconochive.css">
+<!-- End Wayback Rewrite JS Include -->
+
+    <title>
+	    The dtTerrain Tutorial, Part 1 - Overview and Concepts - delta3d
+    </title>
+    
+    <meta name="revisit-after" content="2 days">
+    <meta name="robots" content="index,follow">
+    <meta name="publisher" content="delta3d">
+    <meta name="copyright" content="delta3d">
+    <meta name="author" content="delta3d">
+    <meta name="distribution" content="global">
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<!-- <meta http-equiv="Pragma" content="no-cache"> -->
+
+    <link rel="SHORTCUT ICON" href="https://web.archive.org/web/20160321065710im_/http://delta3d.org/images/favicon.ico">
+
+	
+
+	<link rel="home" href="http://delta3d.org/" title="Home">
+<link rel="search" href="https://web.archive.org/web/20160321065710/http://delta3d.org/search.php" title="Advanced Search">
+<link rel="contents" href="http://delta3d.org/directory.php" title="Directory">
+<link rel="service" type="application/atomsvc+xml" href="http://delta3d.org/webservices/atom/?introspection" title="Webservices">
+
+	<link rel="stylesheet" type="text/css" href="./The dtTerrain Tutorial, Part 1 Overview and Concepts_files/css.php" media="all">
+<link rel="stylesheet" type="text/css" href="./The dtTerrain Tutorial, Part 1 Overview and Concepts_files/style.css">
+<link rel="canonical" href="https://web.archive.org/web/20160321065710/http://delta3d.org/article.php?story=20051013142113452">
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://delta3d.org/article.php?story=20051013142113452"
+    trackback:ping="http://delta3d.org/trackback.php?id=20051013142113452"
+    dc:title="The dtTerrain Tutorial, Part 1 - Overview and Concepts"
+    dc:identifier="http://delta3d.org/article.php?story=20051013142113452" />
+</rdf:RDF>
+-->
+
+<!-- Include CSS for Forum -->
+<link rel="stylesheet" type="text/css" href="./The dtTerrain Tutorial, Part 1 Overview and Concepts_files/forum.css">
+<link rel="stylesheet" type="text/css" href="./The dtTerrain Tutorial, Part 1 Overview and Concepts_files/smilies.css.php">
+<link rel="stylesheet" type="text/css" href="./The dtTerrain Tutorial, Part 1 Overview and Concepts_files/style(1).css">
+<link rel="stylesheet" type="text/css" href="./The dtTerrain Tutorial, Part 1 Overview and Concepts_files/QapTcha.jquery.css" media="screen">
+	<script type="text/javascript" src="./The dtTerrain Tutorial, Part 1 Overview and Concepts_files/plusone.js.download" gapi_processed="true"></script>
+	
+	<link rel="stylesheet" type="text/css" href="./The dtTerrain Tutorial, Part 1 Overview and Concepts_files/css.php">
+
+    <!--[if lte IE 6]>
+        <link rel="stylesheet" type="text/css" href="http://delta3d.org/layout/purepro/css/ie6.css" title="purepro"{xthml}>
+    <![endif]-->
+    <!--[if IE 7]>
+        <link rel="stylesheet" type="text/css" href="http://delta3d.org/layout/purepro/css/ie7.css" title="purepro"{xthml}>
+    <![endif]-->
+
+<script type="text/javascript" charset="utf-8" async="" src="./The dtTerrain Tutorial, Part 1 Overview and Concepts_files/timeline.d11f7a3b3287fb94220e8ee6d03cc772.js.download"></script><script type="text/javascript" charset="utf-8" async="" src="./The dtTerrain Tutorial, Part 1 Overview and Concepts_files/button.0308b81ff1714e446f674b5b9793f2cd.js.download"></script><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://web.archive.org/web/20160321065710if_/https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(https://web.archive.org/web/20160321065710if_/https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://web.archive.org/web/20160321065710if_/https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(https://web.archive.org/web/20160321065710if_/https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(https://web.archive.org/web/20160321065710if_/https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(https://web.archive.org/web/20160321065710if_/https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f6f7f8;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://web.archive.org/web/20160321065710if_/https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://web.archive.org/web/20160321065710if_/https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://web.archive.org/web/20160321065710if_/https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://web.archive.org/web/20160321065710if_/https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #3a5795;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://web.archive.org/web/20160321065710if_/https://fbstatic-a.akamaihd.net/rsrc.php/v2/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://web.archive.org/web/20160321065710if_/https://fbstatic-a.akamaihd.net/rsrc.php/v2/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #2f477a;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://web.archive.org/web/20160321065710if_/https://fbstatic-a.akamaihd.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f8;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://web.archive.org/web/20160321065710if_/https://fbstatic-a.akamaihd.net/rsrc.php/v2/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://web.archive.org/web/20160321065710if_/https://fbstatic-a.akamaihd.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}</style></head>
+<body dir="ltr" id="purepro"><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  /*min-width:800px !important;*/
+}
+</style>
+<script>__wm.rw(0);</script>
+<div id="wm-ipp-base" lang="en" style="display: block; direction: ltr;">
+</div><div id="donato" style="position:relative;width:100%;">
+  <div id="donato-base">
+    <iframe id="donato-if" src="./The dtTerrain Tutorial, Part 1 Overview and Concepts_files/donate.html" scrolling="no" frameborder="0" style="width:100%; height:100%">
+    </iframe>
+  </div>
+</div><script type="text/javascript">
+__wm.bt(625,27,25,2,"web","http://delta3d.org/article.php?story=20051013142113452&topic=tutorials","20160321065710",1996,"/_static/",["/_static/css/banner-styles.css?v=bsmaklHF","/_static/css/iconochive.css?v=qtvMKcIJ"]);
+  __wm.rw(1);
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<div id="body_layer1"><div id="body_layer2"><div id="body_layer3">
+<div>
+    <a name="top"></a>
+    <a href="https://web.archive.org/web/20160321065710/http://delta3d.org/article.php?story=20051013142113452&amp;topic=tutorials#content-start"> <!-- for screenreaders -->
+        <img class="hidden" src="./The dtTerrain Tutorial, Part 1 Overview and Concepts_files/speck.gif" alt="{skip_navigation}">
+    </a>
+</div>
+<!-- End of htmlheader.thtml --><!-- Start of header.thtml -->
+    <div id="gl_container">
+
+        <div id="gl_header">
+		<div id="header-site-logo-graphic">
+	
+	<a href="https://web.archive.org/web/20160321065710/http://delta3d.org/" title="delta3d"><img src="./The dtTerrain Tutorial, Part 1 Overview and Concepts_files/images.php" alt="delta3d"></a>
+	
+</div>
+		
+        </div> <!-- end of gl_header -->
+		
+        
+		
+        <div id="gl_menu" style="display:block">
+            <ul>
+            <li><a href="https://web.archive.org/web/20160321065710/http://delta3d.org/search.php"><span>Advanced Search</span></a></li>
+<li><a href="https://web.archive.org/web/20160321065710/http://delta3d.org/directory.php?topic=tutorials"><span>Directory</span></a></li>
+<li><a href="https://web.archive.org/web/20160321065710/http://delta3d.org/api/"><span>API docs</span></a></li>
+<li><a href="https://web.archive.org/web/20160321065710/http://delta3d.org/article.php?story=20050720155458456&amp;topic=tutorials"><span>Tutorials</span></a></li>
+<li><a href="https://web.archive.org/web/20160321065710/http://delta3d.org/deltawiki"><span>Wiki</span></a></li>
+<li><a href="https://web.archive.org/web/20160321065710/https://sourceforge.net/projects/delta3d/files/"><span>Download</span></a></li>
+<li><a href="https://web.archive.org/web/20160321065710/http://delta3d.org/forum"><span>Forum</span></a></li>
+<li><a href="https://web.archive.org/web/20160321065710/http://delta3d.org/usersettings.php"><span>My Account</span></a></li>
+
+            </ul>
+        </div>  <!-- end of gl_menu -->
+
+		<div id="glmenu_plugin" style="display:none">
+		 
+	    </div>
+		
+		<div id="navman_plugin" style="display:none">
+		
+		
+	    </div>
+		
+		<div id="gl_content_container">
+
+        <div id="gl_wrapper">
+            <div id="gl_content-wide-left">
+
+<!-- START OF CONTENT AREA -->
+                <a name="content-start" id="content-start"></a><!--for screenreaders -->
+				<!-- Start of Breadcrumbs Navigation -->
+<p>
+</p><div itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+    <a href="https://web.archive.org/web/20160321065710/http://delta3d.org/index.php" itemprop="url">
+    <span itemprop="title">Home</span>
+</a> &gt;
+<span itemprop="child" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+    <a href="https://web.archive.org/web/20160321065710/http://delta3d.org/index.php?topic=tutorials" itemprop="url">
+    <span itemprop="title">Tutorials</span>
+</a> 
+
+
+
+</span>
+
+
+
+
+</div>
+<p></p>
+<!-- End of Breadcrumbs Navigation -->
+
+				
+<!-- End of header.thtml -->
+        <div class="story">
+	<span class="story-icons">  
+        
+        
+        
+        
+    </span>
+    <h1>The dtTerrain Tutorial, Part 1 - Overview and Concepts</h1>
+	<div class="story-information">
+    	<a class="storybyline" href="https://web.archive.org/web/20160321065710/http://delta3d.org/users.php?mode=profile&amp;uid=13" rel="author">coonan</a> Thursday, October 13 2005 @ 09:21 PM UTC Views: 27,723  
+    </div>
+    <div class="story-body">
+        You’ve just finished building a cool, static mesh airport for your flight trainer.  You add it to your Delta3D application and then you realize something is amiss. Your airplanes can fly over your hand-crafted airport in a matter of seconds, soaring off into the endless void of empty space that surrounds your airport on all sides.  You have crafted an island of training in a sea of blackness and it sure looks silly.<br><br>Well, one way to fix the problem is to create the terrain around the airport as a huge height map.  You might choose to have an artist hand-craft it as a huge static mesh in your favorite modeling program (like 3D Studio Max). Of course, to support airplanes, you’re going to need a huge area.  Plus, they’ll have to place all the detailed vegetation, buildings, and other decorations that make it realistic.  Then, they’ll have to solve some of their own paging algorithms and find a way to get it all to work in Delta3D. That’s a lot of work and is hardly a ‘rapid’ process.
+<p></p>
+<p>
+Fortunately, there is a solution; one that can scale and is designed for flexibility. If this sounds like the solution for your problem then we welcome you to the dtTerrain tutorial. This tutorial is your guide to a basic understanding of the Delta3D dtTerrain API and related technologies. 
+</p>
+<h1 name="introduction">1. Introduction</h1>
+<p>
+DtTerrain is a brand new architecture that was created to support a wide variety of terrain behaviors.  It originated from the need to merge SOARX and GENETICS, two highly specialized terrain technologies, into Delta3D.  The result is dtTerrain - a flexible and scalable architecture that is perfect for adding Terrains to Delta3D.  It supports these two advanced terrain capabilities and paves the way for the future of Delta3D terrain.  
+</p>
+<p>
+This set of 3 tutorials introduces you to the dtTerrain API and the concepts of a Terrain, a terrain Reader, a terrain Renderer, Decorators, and terrain Tiles.  In the next three chapters, you will learn what these concepts mean and how to create and use your very own Terrain in your Delta3D project.  
+</p>
+<p>
+<i>
+* Note - in order to get this technology into Delta3D as quickly as possible we chose not to add Actor Proxy behavior for the objects in dtTerrain.  For now, you won’t be able to access anything in dtTerrain in the Simulation, Training, and Game Editor (STAGE).
+</i>
+</p>
+<p>
+</p><h1>2. Basic Technology Overview</h1>
+<p></p>
+<p>
+Before you can start using dtTerrain, you’ll need to understand a few of the architectural concepts.
+</p>
+<p>
+<b><u>Terrain</u></b> –This refers to the overall concept of a large landscape.  Typically, Terrains are much larger than a static mesh.  They are huge areas of the world with lots of detail. They may be as small as a city, but often they are as large as an entire state, or even an entire country.  Basically, a Terrain is defined by a set of points in 3D space that create a huge mesh.  The points are really just a series of height markers (height posts) that together create an overall mapping of the surface of the earth (called a height map).  Terrain is also the name of the central class in dtTerrain.  For these tutorials, the word Terrain may refer to either, depending on context.
+</p>
+<p>
+<b><u>Readers</u></b> – A reader is a specific class that knows how to read a terrain database from a hard drive or other data source.  Terrains are very large and are usually generated by an organization that specializes in creating terrains.  Or, maybe you have a tool like Terrex and can generate your own terrains. In either case, you will need a way to read in this data.  That is the Reader’s job.  An individual Reader is responsible for reading in a particular terrain format whether it’s DTED, CTDB, DEM, or even a specific Terrex format. Don’t worry about the acronyms, they’re just examples of terrain formats.  The point is that the Reader interface creates a flexible architecture that will help enable future support for any type of terrain. 
+</p>
+<p>
+<b><u>Renderer</u></b> – So, we have something that can read our terrain data, but what do we do with it?  That’s where the Renderer comes in.  It is responsible for drawing the terrain in Delta3D; you see what it draws. But, Terrains come in all shapes and sizes and lots of projects will have their own particular needs.  So, one Renderer won’t be enough.  That’s why dtTerrain defines a Renderer interface.  The Renderer interface allows you to plug in your own custom drawing behavior for your terrain.  It is a generic architecture that lets you add optimizations, level of detail, texture blending, shading, lighting, or any other behavior that you can’t find in an existing Renderer.
+</p>
+<p>
+<b><u>Terrain Tiles</u></b> – Terrain tiles are individual chunks of the terrain. Think of the earth as if it was broken up into squares. A Tile (or Page) would represent one of these squares. Terrain tiles are cached after they are loaded in order to optimize performance. For this tutorial, Tile can mean the generic concept of Tile or the specific PagedTerrainTile class (see below) in dtTerrain. The following picture is an example heightmap that was generated for a terrain tile.  If you look closely, you can see what appears to be a river snaking through a mountainous region.
+</p>
+<p>
+</p><center>
+<img width="640" height="480" src="./The dtTerrain Tutorial, Part 1 Overview and Concepts_files/20051013142113452_1.jpg" alt="">
+<br>
+<h4 name="figure1">Figure 1 – Example Terrain Tile Heightmap</h4>
+</center>
+<p></p>
+<p>
+<b><u>Decorators</u></b> – A decorator is a layer that sits on top of the terrain.  It could be used to add whatever you want to each tile; anything from objects such as trees to blended textures that are applied to the terrain.  Some examples include a decorator that handles the placement of trees, a decorator for the placement of bodies of water, or a decorator for the placement of roads. The decorators get called after a terrain tile is loaded.  This creates a flexible way to plug-in visualization layers that could be turned on or off in your application.
+</p>
+<p>
+</p><center>
+<img width="640" height="480" src="./The dtTerrain Tutorial, Part 1 Overview and Concepts_files/20051013142113452_2.jpg" alt="">
+<br>
+<h4 name="figure2">Figure 2 – Texture Decorator Over Terrain</h4>
+<img width="640" height="480" src="./The dtTerrain Tutorial, Part 1 Overview and Concepts_files/20051013142113452_3.jpg" alt="">
+<br>
+<h4 name="figure3">Figure 3 – Vegetation Decorator Over Terrain</h4>
+</center>
+<p></p>
+<p>
+<b><u>SOARX</u></b> – SOARX is an example Renderer that is provided with dtTerrain.  It is based on Andras Balogh's SOARX terrain algorithm. This algorithm combines dynamic level-of-detail rendering with automatic high-frequency detail generation. Say what?  Let’s try that again.  This algorithm adjusts how much detail it uses to draw terrain polygons depending on how far away your camera is. When you are far away, it smartly eliminates vertices from the heightmap so that it can draw very quickly.  Then, as you get closer to the terrain, it adds vertices back in until you are at the full, native resolution of your terrain data. But, it doesn’t stop there. As you pass that threshold, SOARX will actually create additional terrain details on the fly. As you get closer, it continues to add vertices until you are standing right at eye level.  To do this, it uses a Perlin random noise generator.  The resulting terrain is incredibly smooth and very realistic. It’s surprisingly fast.
+</p>
+<p>
+<b><u>GENETICS</u></b> – GENETICS (Generating Enhanced Natural Environments and Terrain for Interactive Combat Simulations) is an example of how powerful Decorators can be.  It was created by the Naval Postgraduate School’s MOVES Institute as part of an effort for the National Geospatial-Intelligence Agency (NGA). GENETICS uses land cover classification (LCC) images to procedurally create vast, detailed vegetation at runtime.  Basically, LCC images are like satellite pictures of the earth that have color representations for different types of vegetation; green for one type of tree, red for housing, brown for roads, etc… The GENETICS decorator parses data out of these images, determines where it should place vegetation, and then creates trees and houses that are placed in the scene. Most of this data is pre-created and cached, but it can be an intense CPU-bound process.  
+</p>
+<p>
+<b><u>DTED</u></b> – Digital Terrain Elevation Data.  This is a specific terrain data format that is often used in government and military applications.  It is typically provided by an organization like the National Geospatial-Intelligence Agency (NGA) or National Imagery and Mapping Agency (NIMA).  It comes in various levels (0, 1, 2, …) that go from crude to more detailed.  This is the format used by our example reader. 
+</p>
+<p>
+</p><h1 name="together">3. Putting It Together</h1>
+<p></p>
+<p>
+At this point you may be wondering how all these pieces fit together. In essence, it works like this. The Terrain class uses a Reader to load in tile data.  It then sends that data to the decorators for processing. When the decorators are done processing, it sends the data to the Renderer, which handles the actual drawing each and every frame.  
+</p>
+<p>
+The following picture gives an overview of how the Terrain, Reader, Renderer and Decorators interact to create the final image.
+</p>
+<p>
+</p><center>
+<img width="421" height="580" src="./The dtTerrain Tutorial, Part 1 Overview and Concepts_files/20051013142113452_4.jpg" alt="">
+<br>
+<h4 name="figure4">Figure 4 – Overview Diagram</h4>
+</center>
+<p></p>
+<p>
+To make this happen in your code, you will do the following:
+</p>
+<p>
+</p><ol>
+<li>Create an instance of Terrain</li>
+<li>Add your Reader to the Terrain</li>
+<li>Add your Renderer to the Terrain</li>
+<li>Add your Decorators to the Terrain</li>
+</ol>
+<p></p>
+<p>
+As an example, if you have DTED source data you will need to create a DTED data reader. The reader will be used to properly convert the data from the hard drive into a format that dtTerrain understands. Next, you will need to pick or create a Renderer such as the SOARXTerrainRenderer. Then, you’ll need to add any custom Decorators, such as the GENETICS vegetation layer.  Once you’ve done all that, you will see a beautifully drawn terrain.
+</p>
+<p>
+At this point you should have a basic understanding of the different parts of the dtTerrain module and how they fit together. Now you are ready to move onto the next Chapters to see how it works in code.
+</p>
+<p>
+</p><center>
+<img width="300" height="200" src="./The dtTerrain Tutorial, Part 1 Overview and Concepts_files/20051013142113452_5.jpg" alt="">
+<br>
+</center>
+<p></p>
+<p>
+Seriously, stop here! If want to know how to use dtTerrain by looking at examples then you might consider moving on to the second part of our tutorial <a href="https://web.archive.org/web/20160321065710/http://www.delta3d.org/article.php?story=20051013150856276&amp;topic=tutorials" target="_self">Part 2</a>. The Terrain module is fairly advanced and takes advantage of a number of different classes and interfaces that you may not need to understand just to use it.  However, if you’re still interested in learning more details about what makes the dtTerrain API tick, then please continue reading.
+</p>
+<h1 name="diagram">4. dtTerrain General Diagram</h1>
+<p>
+The following is the complete dtTerrain API class diagram.  The next sections describe each of the 5 main parts of this diagram.
+</p>
+<p>
+</p><center>
+<img width="600" height="574" src="./The dtTerrain Tutorial, Part 1 Overview and Concepts_files/20051013142113452_6.jpg" alt="">
+<br>
+<h4 name="figure5">Figure 5 – Complete dtTerrain Class Diagram</h4>
+</center>
+<p></p>
+<h1 name="terrain">5. Terrain</h1>
+<p>
+</p><center>
+<img width="161" height="301" src="./The dtTerrain Tutorial, Part 1 Overview and Concepts_files/20051013142113452_7.jpg" alt="">
+<br>
+<h4 name="figure6">Figure 6 - Terrain Class Diagram</h4>
+</center>
+<p></p>
+<p>
+<b><u>Terrain</u></b><br>
+At the center of the main diagram is the Terrain class.  The Terrain class is the heart of the entire dtTerrain module.  It controls the interactions between the reader, the renderer, and all the decorators.  It maintains the resource and cache paths and is responsible for managing the loading and unloading of tiles.  The Terrain class is completely oriented toward ‘seamless’ non-terminal terrain.  Meaning, it uses Tiles, Readers, and Renderers for the sole purpose of allowing Delta3D to play with an incredibly large universe. This architecture should be scalable enough to support the highly-detailed, seamless terrains used by Massively Multiplayer (MMO) games such as World of Warcraft ™. Basically, you have complete control over the level of detail in each Tile as well as the way in which the source data is read in, cached, and rendered.  You shouldn’t usually need to subclass or modify the Terrain class.
+</p>
+<p>
+</p><h1 name="readers">4. Readers</h1>
+<p>
+</p><center>
+<img width="281" height="276" src="./The dtTerrain Tutorial, Part 1 Overview and Concepts_files/20051013142113452_8.jpg" alt="">
+<br>
+<h4 name="figure7">Figure 7 – Reader Class Diagram</h4>
+</center>
+<p></p>
+<p></p>
+<p>
+<b><u>TerrainDataReader</u></b><br>
+This is the base class for each individual Terrain reader. As described above, the Reader is responsible for loading tile data from the hard drive (or other external source) into memory.  It converts the data into the internal height field format used by the Terrain module. This class is abstract (i.e. cannot be instantiated).  
+</p>
+<p>
+<b><u>DTEDTerrainReader</u></b><br>
+This is an example implementation of a TerrainDataReader.  This specific reader knows how to read Digital Terrain Elevation Data (DTED) data at levels 0, 1, and 2.  Level 0 is a very crude approximation of the Earth with height postings about every 1 kilometer.  Level 1 has 10x the resolution of Level 0 with height postings every 100 meters.  Level 2 has height postings roughly every 30 meters.  
+</p>
+<p>
+<b><u>…</u></b><br>
+There are lots of other formats that can be supported by this architecture such as Digital Elevation Model (DEM) and Compact Terrain Database (CTDB).  The most common of these will certainly be added over time as individual projects come along.  For less common formats, you will need to write your own Reader.  Use the basic structure of the example TerrainDataReader to add support for your specific format to Delta3D.
+</p>
+<h1 name="renderer">5. Renderer</h1>
+<p>
+</p><center><img width="281" height="279" src="./The dtTerrain Tutorial, Part 1 Overview and Concepts_files/20051013142113452_9.jpg" alt="">
+<h4 name="figure8">Figure 8 – Renderer Class Diagram</h4>
+</center>
+<p></p>
+<p>
+<b><u>TerrainDataRenderer</u></b><br>
+This is the base class for each individual Terrain Renderer. As described above, the Renderer is responsible for drawing the terrain data each frame.  It uses the Paged Terrain Tiles from its owner Terrain class.  This class is abstract (i.e. cannot be instantiated).
+</p>
+<p>
+<b><u>SOARXTerrainRenderer</u></b><br>
+This is an example implementation of a TerrainDataRenderer.  This Renderer dynamically adds vertices to or removes vertices from the actual tile data.  It supports several customizations such as error threshold and detail multiplier that provide for more variation in terrain and higher polygon counts respectively.  The SOARX renderer can preprocess tiles and store the results in cache files.  This renderer can either provide basic shading of the landscape or it can drape a texture (such as satellite imagery) across the terrain mesh.  It uses the Base Texture Image from the Paged Terrain Tile for draping. The SOARX Renderer also produces normalized shading based on the height deltas between posts – this shading can be blended with a draped texture. The resulting terrain is incredibly realistic and smooth.  Despite the amount of work involved, it is also extremely fast.  Note that this renderer caches the perlin noise in an external image file; it is possible to use this image to correlate SOARX terrain across multiple systems. 
+</p>
+<p>
+<b><u>…</u></b><br>
+There are lots of ways to draw terrain.  Fortunately, the dtTerrain module can easily support new Renderers.  Simply subclass TerrainDataRenderer and build your new Renderer based on the example SOARX Renderer. 
+</p>
+<p>
+There is a world of possibilities out there (pun intended ;) for renderers.  The most obvious example would be a basic ‘normal’ Renderer that simply draws the terrain vertices as they exist in the Tile. Another example would be a Renderer that can alpha-blend layered textures over a mesh terrain – this is the eventual vision for terrain editing and texture painting in STAGE. A final example is a Renderer that is capable of supporting deformable terrain – terrain that is dynamically modified by game events (i.e. explosions).
+</p>
+<h1 name="pagedtiles">6. Paged Terrain Tiles</h1>
+<p>
+</p><center><img width="535" height="154" src="./The dtTerrain Tutorial, Part 1 Overview and Concepts_files/20051013142113452_10.jpg" alt="">
+<h4 name="figure9">Figure 9 – Terrain Tile Class Diagram</h4>
+</center>
+<p></p>
+<p>
+PagedTerrainTile
+This class holds the actual heightmap data for each Tile.  It provides the basic data that the Readers, Renderers, and Decorators use.  Currently the tiling is based on a one degree by one degree latitude and longitude. The terrain tiles play a role in the Terrain, the reader and the renderer. The renderer requires information related to normals and height. The reader will load or unload tiles that exist or, if a tile has not been created yet, will initiate the creation of a new tile for a particular latitude and longitude. 
+</p>
+<p>
+Although the base class provides most of what you need, it may not be enough for you. In that case, you can create your own subclass of PagedTerrainTile and stick in whatever custom behavior or custom data you need. Then, have your custom Reader create your Tile subclass instead of the base version.  In this way, you can continue to use the standard Decorators and Renderers. 
+</p>
+<p>
+<b><u>GeoCoordinates</u></b><br>
+Based on the fact that different terrain formats are in different coordinate spaces, the GeoCoordinate class will help convert terrain data into the correct latitude and longitude. The GeoCoordinate class is intended to represent both cartesian (x,y,z) and geographic (lat/lon) coordinates.
+</p>
+<p>
+<b><u>HeightField</u></b><br>
+Heightfield data is the meat and potatoes of what makes a terrain tile. A heightmap uses a gradient value from black to white. Black represents the lowest point in a heightmap whereas white represents the highest. The HeightField class allocates and creates an image based on the data at a location specified by the paged terrain tile. 
+</p>
+<h1 name="decorators">7. Decorators</h1>
+<p>
+</p><center><img width="322" height="193" src="./The dtTerrain Tutorial, Part 1 Overview and Concepts_files/20051013142113452_11.jpg" alt="">
+<h4 name="figure10">Figure 10 – Decorator Class Diagram</h4>
+</center>
+<p></p>
+<p>
+<b><u>TerrainDecorationLayer</u></b><br>
+This is the base class for each individual Decorator layer.  A decorator is a way of adding details to a tile outside of the base terrain information. The decorator behavior is called for each new tile that is loaded by Terrain. Technically, it would be possible to write a custom Reader class that did everything you could do in a decorator.  However, that constrains the flexibility of the terrain. By using a decorator, you can generically add or remove individual behaviors to your terrains. 
+</p>
+<p>
+The VegetationDecorator and DrapedTextureDecorator are perfect examples of generic decorators.  The decorator encapsulates each specific behavior away from the Reader.  The result is a dynamic architecture that can grow or shrink on the fly – you could even allow users to turn on/off specific behaviors.  Decorators could be used for traditional terrain decoration (small shrubs and plant life), for drape textures, and even actor creation. Decorators are called in the order that they were added to Terrain.
+</p>
+<p>
+<b><u>VegetationDecorator</u></b><br>
+This is an example implementation of a TerrainDecorationLayer based on GENETICS.  It uses a highly advanced algorithm for procedurally generating vegetation objects based on Land Cover Classification (LCC) data.  As described in the introduction, the GENETICS algorithm starts with image data in the LCC image.  It then transforms that data into a series of filters and maps that represent where vegetation should be placed. Finally, it instantiates OSG nodes for each tree, house, etc… Note that the placement of vegetation attempts to account for variations in slope and relative elevation.  
+</p>
+<p>
+The GENETICS decorator can be programmed to respond differently to the same LCC data.  Meaning, you can individually define how you want to handle every color in the LCC map.  In the following chapters, you will see examples of how models are assigned to a variety of land classification types. 
+</p>
+<p>
+<b><u>DrapedTextureDecorator</u></b><br>
+This is a much simpler example of a TerrainDecorationLayer.  This decorator simply loads texture data for each tile; specifically, it works with a geo-specific TIFF image.  The texture information is then stored in the Base Texture field of the Tile. The texture can be used by the Renderer as a drape, or by subsequent decorators for further processing.
+</p>
+<p>
+The terrain was designed to plug in different readers, renderers and decorators. This has definitely made the terrain flexible for a wide array of applications. At this point you should have a strong understanding on the way things work. Please continue over to the next part of the tutorial where we will present the pieces that comprise dtTerrain.
+</p>
+<p>
+Click here for <a href="https://web.archive.org/web/20160321065710/http://www.delta3d.org/article.php?story=20051013150856276&amp;topic=tutorials" target="_self">Part 2</a>
+</p>
+		<p></p>
+		<div style="clear:both;"></div>
+		<div style="float:left;" id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./The dtTerrain Tutorial, Part 1 Overview and Concepts_files/xd_arbiter.html" style="border: none;" allow="autoplay &#39;self&#39;; fullscreen &#39;self&#39;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./The dtTerrain Tutorial, Part 1 Overview and Concepts_files/xd_arbiter(1).html" style="border: none;" allow="autoplay &#39;self&#39;; fullscreen &#39;self&#39;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//web.archive.org/web/20160321065710/http://connect.facebook.net/en_EN/all.js#xfbml=1";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+	    <div style="float:left;margin-right:10px;"><fb:like href="http://delta3d.org/article.php?story=20051013142113452" send="false" layout="button_count" width="90" show_faces="false" class=" fb_iframe_widget" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;container_width=0&amp;href=http%3A%2F%2Fdelta3d.org%2Farticle.php%3Fstory%3D20051013142113452&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;send=false&amp;show_faces=false&amp;width=90"><span style="vertical-align: top; width: 0px; height: 0px; overflow: hidden;"><iframe name="f1a6522c3f35ba8" width="90px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="./The dtTerrain Tutorial, Part 1 Overview and Concepts_files/like.html" style="border: none; visibility: visible; width: 0px; height: 0px;" allow="autoplay &#39;self&#39;; fullscreen &#39;self&#39;"></iframe></span></fb:like></div>
+		<div style="float:left;margin-right:-20px;"><iframe id="twitter-widget-1" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" style="position: absolute; visibility: hidden; width: 0px; height: 0px;" allow="autoplay &#39;self&#39;; fullscreen &#39;self&#39;" title="Twitter Tweet Button" src="./The dtTerrain Tutorial, Part 1 Overview and Concepts_files/tweet_button.b9740740e0bcf9b0657c5b11bd4388da.en.html" data-url="http://delta3d.org/article.php?story=20051013142113452"></iframe>
+        </div><script>!function(d,s,id) { var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)) { js=d.createElement(s);js.id=id;js.src="https://web.archive.org/web/20160321065710/https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs); } }(document,"script","twitter-wjs");</script>
+		<div style="position: absolute; width: 450px; left: -10000px;" id="___plusone_0"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position:absolute;top:-10000px;width:450px;margin:0px;border-style:none" tabindex="0" vspace="0" width="100%" id="I0_1458543494272" name="I0_1458543494272" src="./The dtTerrain Tutorial, Part 1 Overview and Concepts_files/fastbutton.html" allow="autoplay &#39;self&#39;; fullscreen &#39;self&#39;"></iframe></div><div style="float:left;" class="g-plusone" data-size="medium" data-href="http://delta3d.org/article.php?story=20051013142113452" data-gapiscan="true" data-onload="true" data-gapistub="true"></div>
+		<div style="position: absolute; width: 450px; left: -10000px;" id="___plus_0"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position:absolute;top:-10000px;width:450px;margin:0px;border-style:none" tabindex="0" vspace="0" width="100%" id="I1_1458543494277" name="I1_1458543494277" src="./The dtTerrain Tutorial, Part 1 Overview and Concepts_files/sharebutton.html" allow="autoplay &#39;self&#39;; fullscreen &#39;self&#39;"></iframe></div><div class="g-plus" data-action="share" data-annotation="bubble" data-href="http://delta3d.org/article.php?story=20051013142113452" data-gapiscan="true" data-onload="true" data-gapistub="true"></div>
+		<div style="clear:both;"></div>
+		<div style="margin-top:5px;">
+                
+        </div>
+    </div>
+	<div class="clearboth"></div>
+</div>
+
+
+		<div class="clearboth"></div>
+		  <div id="story-whatsrelatedandoptions">
+            <div id="story-whatsrelated"><!-- start blockheader-related.thtml -->
+<div class="block-box-left">
+    <span class="block-helpicon">
+        
+    </span>
+    <h2>What's Related</h2>
+<ul class="list-whats-related">
+  <li><a href="https://web.archive.org/web/20160321065710/http://www.delta3d.org/article.php?story=20051013150856276&amp;topic=tutorials">Part 2</a></li>
+  <li><a href="https://web.archive.org/web/20160321065710/http://www.delta3d.org/article.php?story=20051013150856276&amp;topic=tutorials">Part 2</a></li>
+  <li><a href="https://web.archive.org/web/20160321065710/http://delta3d.org/search.php?mode=search&amp;type=stories&amp;author=13">More by coonan</a></li>
+  <li><a href="https://web.archive.org/web/20160321065710/http://delta3d.org/search.php?mode=search&amp;type=stories&amp;topic=tutorials">More from Tutorials</a></li>
+
+</ul>
+</div>
+<div style="clear:both;"></div>
+
+</div>
+            <div id="story-storyoptions"><!-- start blockheader-related.thtml -->
+<div class="block-box-left">
+    <span class="block-helpicon">
+        
+    </span>
+    <h2>Story Options</h2>
+<ul class="list-story-options">
+  <li><a href="https://web.archive.org/web/20160321065710/http://delta3d.org/profiles.php?sid=20051013142113452&amp;what=emailstory">Mail Story to a Friend</a></li>
+  <li><a href="https://web.archive.org/web/20160321065710/http://delta3d.org/article.php?story=20051013142113452&amp;mode=print" rel="nofollow">Printable Story Format</a></li>
+
+</ul>
+</div>
+<div style="clear:both;"></div>
+
+</div>
+		  </div>
+		<div class="clearboth"></div>
+		<div id="comments">
+        
+		</div>
+		<div id="story-trackbacks"><h2><a name="trackback">Trackback</a></h2>
+<p>Trackback URL for this entry: http://delta3d.org/trackback.php?id=20051013142113452</p>
+No trackback comments for this entry.
+
+</div>
+
+	<!-- END OF CONTENT AREA -->
+            </div> <!-- end of gl_content -->
+        </div> <!-- end of gl_wrapper -->
+<!-- Start of Left blocks -->
+    <div id="gl_navigation">
+        <div class="block-columnpad"><div class="block-box-left">
+    <span class="block-helpicon-left">
+        
+    </span>
+    <h2 class="block-title-left">News</h2>
+<a href="https://web.archive.org/web/20160321065710/http://caperholdings.com/contracting-services" target="_blank">Need Professional Support?</a>
+
+</div><div class="block-box-left">
+    <span class="block-helpicon-left">
+        
+    </span>
+    <h2 class="block-title-left">About delta3d</h2>
+delta3d is a game and simulation engine appropriate for a wide variety of simulation and entertainment applications.  delta3d uses best-of-breed open source technologies to create a fully integrated game engine and with content creation tools.<a href="https://web.archive.org/web/20160321065710/http://delta3d.org/index.php?topic=about">MORE</a>
+</div><div class="block-box-left">
+    <span class="block-helpicon-left">
+        <a href="https://web.archive.org/web/20160321065710/http://caperholdings.com/sponsor-delta3d" class="blocktitle"><img src="./The dtTerrain Tutorial, Part 1 Overview and Concepts_files/button_help.png" alt="?"></a>
+    </span>
+    <h2 class="block-title-left">Sponsor delta3d</h2>
+For the past few years Caper Holdings LLC has been solely driving development of delta3d. To continue to provide upgrades and releases we are allowing the community to purchase <a href="https://web.archive.org/web/20160321065710/http://caperholdings.com/sponsor-delta3d">sponsorships</a>
+</div><div class="block-box-left">
+    <span class="block-helpicon-left">
+        
+    </span>
+    <h2 class="block-title-left">Twitter</h2>
+<iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-timeline twitter-timeline-rendered" style="position: absolute; visibility: hidden; display: block; width: 0px; height: 0px; padding: 0px; border: none;" allow="autoplay &#39;self&#39;; fullscreen &#39;self&#39;" src="./The dtTerrain Tutorial, Part 1 Overview and Concepts_files/saved_resource.html"></iframe><a class="twitter-timeline twitter-timeline-error" href="https://web.archive.org/web/20160321065710/https://twitter.com/delta3d" data-widget-id="510256513730875393" data-twitter-extracted-i145854357473366464="true">Tweets by @delta3d</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id))}(document,"script","twitter-wjs");</script>
+</div><div class="block-box-left">
+    <span class="block-helpicon-left">
+        
+    </span>
+    <h2 class="block-title-left">User Functions</h2>
+<!-- loginform.thtml -->
+
+<div id="login_form">
+	<h2 id="login_button" class="login_options">
+		<a style="padding-right:20px;" href="https://web.archive.org/web/20160321065710/http://delta3d.org/article.php?story=20051013142113452&amp;topic=tutorials#" title="" onclick="return false;">Login</a>
+	</h2>
+
+	<div id="loginblock" class="loginblock">
+		<div id="loginblock-content">
+			<div id="loginform">
+				<form action="https://web.archive.org/web/20160321065710/http://delta3d.org/users.php" method="post" style="padding-bottom:5px;">
+				<label for="loginname">Username:</label><br>
+				<input type="text" size="10" name="loginname" value="" id="loginname"><br>
+				
+				<label for="passwd">Password:</label><br>
+				<input type="password" size="10" name="passwd" id="passwd"><br>
+				<input type="submit" name="submit_login" value="Login" style="margin-top:5px;">
+				</form>
+			</div>
+			<p>Don't have an account yet?  Sign up as a <a href="https://web.archive.org/web/20160321065710/http://delta3d.org/users.php?mode=new" rel="nofollow">New User</a></p>
+			<p>Lost your <a href="https://web.archive.org/web/20160321065710/http://delta3d.org/users.php?mode=getpassword" rel="nofollow">password</a>?</p>
+
+		</div>
+	</div>
+    
+	
+</div>
+<!-- /loginform.thtml -->
+</div></div>
+    </div>
+<!-- End of Left blocks -->
+
+        </div> <!-- end of gl_content_container -->
+        <div id="gl_footer">
+			<div id="footer_container">
+			</div> <!-- end of footer_container -->
+        </div> <!-- end of gl_footer-->
+
+</div> <!-- end of container -->
+
+
+
+
+    <!--[if lte IE 6]>
+        <script type="text/javascript" src="http://delta3d.org/layout/purepro/js/gl_moopngfix.js" defer="defer" ></script>
+    <![endif]-->
+
+    <!--[if lt IE 7.]>
+        <script defer type="text/javascript" src="http://delta3d.org/layout/purepro/js/pngfix.js"></script>
+    <![endif]-->
+
+</div></div></div>
+<!-- End of layers -->
+
+<script type="text/javascript">
+var geeklogEditorBaseUrl = "https://web.archive.org/web/20160321065710/http://delta3d.org";
+var geeklogEditorBasePath = "https://web.archive.org/web/20160321065710/http://delta3d.org/fckeditor/";
+</script>
+<script type="text/javascript" src="./The dtTerrain Tutorial, Part 1 Overview and Concepts_files/common.js.download"></script>
+<script type="text/javascript" src="./The dtTerrain Tutorial, Part 1 Overview and Concepts_files/jquery.min.js.download"></script>
+
+
+
+
+<!--
+playback timings (ms):
+  CDXLines.iter: 17.437 (3)
+  captures_list: 379.993
+  RedisCDXSource: 17.557
+  esindex: 0.012
+  exclusion.robots: 0.34
+  LoadShardBlock: 341.43 (3)
+  PetaboxLoader3.datanode: 356.816 (4)
+  PetaboxLoader3.resolve: 50.997
+  exclusion.robots.policy: 0.328
+  load_resource: 112.858
+--><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" allow="autoplay &#39;self&#39;; fullscreen &#39;self&#39;" src="./The dtTerrain Tutorial, Part 1 Overview and Concepts_files/saved_resource(1).html"></iframe><script src="./The dtTerrain Tutorial, Part 1 Overview and Concepts_files/510256513730875393" async=""></script></body></html>

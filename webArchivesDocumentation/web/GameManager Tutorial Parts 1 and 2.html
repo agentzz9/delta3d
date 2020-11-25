@@ -1,0 +1,992 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0113)https://web.archive.org/web/20160409054138/http://delta3d.org/article.php?story=20060620123144266&topic=tutorials -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><script src="./GameManager Tutorial Parts 1 and 2_files/cb=gapi.loaded_2" async=""></script><script src="./GameManager Tutorial Parts 1 and 2_files/cb=gapi.loaded_1" async=""></script><script id="twitter-wjs" src="./GameManager Tutorial Parts 1 and 2_files/widgets.js.download"></script><script id="facebook-jssdk" src="./GameManager Tutorial Parts 1 and 2_files/all.js.download"></script><script src="./GameManager Tutorial Parts 1 and 2_files/cb=gapi.loaded_0" async=""></script><script src="./GameManager Tutorial Parts 1 and 2_files/analytics.js.download" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app104.us.archive.org';v.server_ms=307;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="./GameManager Tutorial Parts 1 and 2_files/playback.bundle.js.download" charset="utf-8"></script>
+<script type="text/javascript" src="./GameManager Tutorial Parts 1 and 2_files/wombat.js.download" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://delta3d.org/article.php?story=20060620123144266&topic=tutorials","20160409054138","https://web.archive.org/","web","/_static/",
+	      "1460180498");
+</script>
+<link rel="stylesheet" type="text/css" href="./GameManager Tutorial Parts 1 and 2_files/banner-styles.css">
+<link rel="stylesheet" type="text/css" href="./GameManager Tutorial Parts 1 and 2_files/iconochive.css">
+<!-- End Wayback Rewrite JS Include -->
+
+    <title>
+	    GM Tutorial Parts 1 and 2 - delta3d
+    </title>
+    
+    <meta name="revisit-after" content="2 days">
+    <meta name="robots" content="index,follow">
+    <meta name="publisher" content="delta3d">
+    <meta name="copyright" content="delta3d">
+    <meta name="author" content="delta3d">
+    <meta name="distribution" content="global">
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<!-- <meta http-equiv="Pragma" content="no-cache"> -->
+
+    <link rel="SHORTCUT ICON" href="https://web.archive.org/web/20160409054138im_/http://delta3d.org/images/favicon.ico">
+
+	
+
+	<link rel="home" href="http://delta3d.org/" title="Home">
+<link rel="search" href="https://web.archive.org/web/20160409054138/http://delta3d.org/search.php" title="Advanced Search">
+<link rel="contents" href="http://delta3d.org/directory.php" title="Directory">
+<link rel="service" type="application/atomsvc+xml" href="http://delta3d.org/webservices/atom/?introspection" title="Webservices">
+
+	<link rel="stylesheet" type="text/css" href="./GameManager Tutorial Parts 1 and 2_files/css.php" media="all">
+<link rel="stylesheet" type="text/css" href="./GameManager Tutorial Parts 1 and 2_files/style.css">
+<link rel="canonical" href="https://web.archive.org/web/20160409054138/http://delta3d.org/article.php?story=20060620123144266">
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://delta3d.org/article.php?story=20060620123144266"
+    trackback:ping="http://delta3d.org/trackback.php?id=20060620123144266"
+    dc:title="GM Tutorial Parts 1 and 2"
+    dc:identifier="http://delta3d.org/article.php?story=20060620123144266" />
+</rdf:RDF>
+-->
+
+<!-- Include CSS for Forum -->
+<link rel="stylesheet" type="text/css" href="./GameManager Tutorial Parts 1 and 2_files/forum.css">
+<link rel="stylesheet" type="text/css" href="./GameManager Tutorial Parts 1 and 2_files/smilies.css.php">
+<link rel="stylesheet" type="text/css" href="./GameManager Tutorial Parts 1 and 2_files/style(1).css">
+<link rel="stylesheet" type="text/css" href="./GameManager Tutorial Parts 1 and 2_files/QapTcha.jquery.css" media="screen">
+	<script type="text/javascript" src="./GameManager Tutorial Parts 1 and 2_files/plusone.js.download" gapi_processed="true"></script>
+	
+	<link rel="stylesheet" type="text/css" href="./GameManager Tutorial Parts 1 and 2_files/css.php">
+
+    <!--[if lte IE 6]>
+        <link rel="stylesheet" type="text/css" href="http://delta3d.org/layout/purepro/css/ie6.css" title="purepro"{xthml}>
+    <![endif]-->
+    <!--[if IE 7]>
+        <link rel="stylesheet" type="text/css" href="http://delta3d.org/layout/purepro/css/ie7.css" title="purepro"{xthml}>
+    <![endif]-->
+
+<script type="text/javascript" charset="utf-8" async="" src="./GameManager Tutorial Parts 1 and 2_files/timeline.0eae788bc4fdbe9cd3e72dca3bc26358.js.download"></script><script type="text/javascript" charset="utf-8" async="" src="./GameManager Tutorial Parts 1 and 2_files/button.71000885400e222c3c0eec823f8f93f0.js.download"></script><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://web.archive.org/web/20160409054138if_/https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(https://web.archive.org/web/20160409054138if_/https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://web.archive.org/web/20160409054138if_/https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(https://web.archive.org/web/20160409054138if_/https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(https://web.archive.org/web/20160409054138if_/https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(https://web.archive.org/web/20160409054138if_/https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f6f7f8;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://web.archive.org/web/20160409054138if_/https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://web.archive.org/web/20160409054138if_/https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://web.archive.org/web/20160409054138if_/https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://web.archive.org/web/20160409054138if_/https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #3a5795;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://web.archive.org/web/20160409054138if_/https://fbstatic-a.akamaihd.net/rsrc.php/v2/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://web.archive.org/web/20160409054138if_/https://fbstatic-a.akamaihd.net/rsrc.php/v2/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #2f477a;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://web.archive.org/web/20160409054138if_/https://fbstatic-a.akamaihd.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f8;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://web.archive.org/web/20160409054138if_/https://fbstatic-a.akamaihd.net/rsrc.php/v2/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://web.archive.org/web/20160409054138if_/https://fbstatic-a.akamaihd.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}</style></head>
+<body dir="ltr" id="purepro"><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  /*min-width:800px !important;*/
+}
+</style>
+<script>__wm.rw(0);</script>
+<div id="wm-ipp-base" lang="en" style="display: block; direction: ltr;">
+</div><div id="donato" style="position:relative;width:100%;">
+  <div id="donato-base">
+    <iframe id="donato-if" src="./GameManager Tutorial Parts 1 and 2_files/donate.html" scrolling="no" frameborder="0" style="width:100%; height:100%">
+    </iframe>
+  </div>
+</div><script type="text/javascript">
+__wm.bt(625,27,25,2,"web","http://delta3d.org/article.php?story=20060620123144266&topic=tutorials","20160409054138",1996,"/_static/",["/_static/css/banner-styles.css?v=bsmaklHF","/_static/css/iconochive.css?v=qtvMKcIJ"]);
+  __wm.rw(1);
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<div id="body_layer1"><div id="body_layer2"><div id="body_layer3">
+<div>
+    <a name="top"></a>
+    <a href="https://web.archive.org/web/20160409054138/http://delta3d.org/article.php?story=20060620123144266&amp;topic=tutorials#content-start"> <!-- for screenreaders -->
+        <img class="hidden" src="./GameManager Tutorial Parts 1 and 2_files/speck.gif" alt="{skip_navigation}">
+    </a>
+</div>
+<!-- End of htmlheader.thtml --><!-- Start of header.thtml -->
+    <div id="gl_container">
+
+        <div id="gl_header">
+		<div id="header-site-logo-graphic">
+	
+	<a href="https://web.archive.org/web/20160409054138/http://delta3d.org/" title="delta3d"><img src="./GameManager Tutorial Parts 1 and 2_files/images.php" alt="delta3d"></a>
+	
+</div>
+		
+        </div> <!-- end of gl_header -->
+		
+        
+		
+        <div id="gl_menu" style="display:block">
+            <ul>
+            <li><a href="https://web.archive.org/web/20160409054138/http://delta3d.org/search.php"><span>Advanced Search</span></a></li>
+<li><a href="https://web.archive.org/web/20160409054138/http://delta3d.org/directory.php?topic=tutorials"><span>Directory</span></a></li>
+<li><a href="https://web.archive.org/web/20160409054138/http://delta3d.org/api/"><span>API docs</span></a></li>
+<li><a href="https://web.archive.org/web/20160409054138/http://delta3d.org/article.php?story=20050720155458456&amp;topic=tutorials"><span>Tutorials</span></a></li>
+<li><a href="https://web.archive.org/web/20160409054138/http://delta3d.org/deltawiki"><span>Wiki</span></a></li>
+<li><a href="https://web.archive.org/web/20160409054138/https://sourceforge.net/projects/delta3d/files/"><span>Download</span></a></li>
+<li><a href="https://web.archive.org/web/20160409054138/http://delta3d.org/forum"><span>Forum</span></a></li>
+<li><a href="https://web.archive.org/web/20160409054138/http://delta3d.org/usersettings.php"><span>My Account</span></a></li>
+
+            </ul>
+        </div>  <!-- end of gl_menu -->
+
+		<div id="glmenu_plugin" style="display:none">
+		 
+	    </div>
+		
+		<div id="navman_plugin" style="display:none">
+		
+		
+	    </div>
+		
+		<div id="gl_content_container">
+
+        <div id="gl_wrapper">
+            <div id="gl_content-wide-left">
+
+<!-- START OF CONTENT AREA -->
+                <a name="content-start" id="content-start"></a><!--for screenreaders -->
+				<!-- Start of Breadcrumbs Navigation -->
+<p>
+</p><div itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+    <a href="https://web.archive.org/web/20160409054138/http://delta3d.org/index.php" itemprop="url">
+    <span itemprop="title">Home</span>
+</a> &gt;
+<span itemprop="child" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+    <a href="https://web.archive.org/web/20160409054138/http://delta3d.org/index.php?topic=tutorials" itemprop="url">
+    <span itemprop="title">Tutorials</span>
+</a> 
+
+
+
+</span>
+
+
+
+
+</div>
+<p></p>
+<!-- End of Breadcrumbs Navigation -->
+
+				
+<!-- End of header.thtml -->
+        <div class="story">
+	<span class="story-icons">  
+        
+        
+        
+        
+    </span>
+    <h1>GM Tutorial Parts 1 and 2</h1>
+	<div class="story-information">
+    	<a class="storybyline" href="https://web.archive.org/web/20160409054138/http://delta3d.org/users.php?mode=profile&amp;uid=13" rel="author">coonan</a> Tuesday, June 20 2006 @ 07:31 PM UTC Views: 48,357  
+    </div>
+    <div class="story-body">
+        Hi, and welcome to the Delta3D Game Manager tutorial!  The goal of this tutorial is to familiarize you with the tools you’ll need to start writing games and simulations using Delta3D’s Game Manager. This tutorial is based on code in version 1.3 of Delta3D.  There’s a lot of new material in this tutorial, so let’s get started.<br><br><ul><li>Part One: Introduction to the Game Manager
+<ul>
+<li>What is the game manager?</li>
+<li>What is a game actor?</li>
+<li>What is a game manager component?</li>
+<li>What is a game message?</li>
+</ul>
+</li></ul>
+<ul><li>Part Two: Welcome to the Game Actor
+<ul>
+<li>The Hover Tank Game Actor
+</li><li>The Hover Tank Game Actor Proxy</li>
+<li>Creating our Tutorial Actors Registry</li>
+<li>Loading our Hover Tank in STAGE</li>
+</ul>
+</li></ul>
+<ul><li><a href="https://web.archive.org/web/20160409054138/http://www.delta3d.org/article.php?story=20060620134503728&amp;topic=tutorials">Part Three: Creating a Game with GameStart</a></li>
+<ul>
+<li>GameStart and the GameEntryPoint Library</li>
+<li>Creating the TutorialGameEntryPoint class</li>
+</ul>
+</ul>
+<ul><li><a href="https://web.archive.org/web/20160409054138/http://www.delta3d.org/article.php?story=20060620134503728&amp;topic=tutorials">Part Four: Messages and Invokables</a></li>
+<ul>
+<li>Game Events</li>
+<li>Invokables (ie. Message Handlers)</li>
+<li>The Input Component</li>
+<li>Tick, Tock – Ticking our Tank</li>
+</ul>
+</ul>
+<p>
+Woah! That’s going to be a lot to cover. We’ve got lots of new concepts and code to get through.  Fortunately, the complete source code for this project is provided <a href="https://web.archive.org/web/20160409054138/http://www.delta3d.org/filemgmt/visit.php?lid=50">here</a>.  Feel free to follow along in there or code it yourself.  And, if you get stuck along the way, stop by the Delta3D <a href="https://web.archive.org/web/20160409054138/http://www.delta3d.org/forum/index.php" target="_blank">Forums</a> to get help.
+</p><h1>1.	Part One – Introduction to the Game Manager</h1>
+<p>
+This section introduces the guts of the Delta3D Game Manager infrastructure.  It provides an overview of the Game Manager, Game Actors, Game Components, and Game Messages. The following diagram shows a very high level overview of these pieces.
+</p>
+<p>
+</p><center><img width="701" height="521" src="./GameManager Tutorial Parts 1 and 2_files/20060620123144266_1.jpg" alt=""></center>
+<br>
+<center><b>Figure 1. Game Manager Overview</b></center>
+<p></p>
+<p>
+<b>The Game Manager (GM)?</b>
+</p>
+<p>
+So, what is the Game Manager? Well, if you look at the above diagram, the first thing you should notice is that the Game Manager owns all the Game Actors, normal Actors, Components and Messages. Specifically, it manages the existence and interaction between all the actors and components in your world.  It is the heart of your application.
+</p>
+<p>
+So, what does that mean? Well, up to now, if you’ve been writing applications using Delta3D, you’ve been putting your applications together by hand. Sure, Delta3D gives you all the pieces you need including: scene management, physics, audio abilities, the ability to load objects, the Dynamic Actor Library, environmental effects, lighting, terrain support, cameras and character animation! 
+</p>
+<p>
+But, now that you have all the pieces, how are you going to put it all together to make a game?  Who’s going to hold onto the list of all objects in the game? And, how are you managing communication? How does your new weapon get into the world so the player can pick it up? How do you tell the player he’s been shot? And, once you shoot him, how does he tell the rest of the network that he’s wounded? There’s a lot of stuff to worry about to manage your game. Fortunately the Game Manager provides the core architecture to make it all happen!
+</p>
+<p>
+<b>Messages and Actors and Components, Oh My!</b>
+</p>
+<p>
+To manage your game, the GM does three main things. The first, and most important, is the managing of messages: more precisely, Game Messages. Game Messages are what you’re going to use to communicate between Actors, Components, and the GM. Messages can be used to communicate just about anything: updates to the player’s health; the event for rescuing hostage #12; the fact that an NPC just entered the world; and even simple tick behavior. Messages communicate all the behavior and state changes within the system, but messages don’t send themselves.  The GM does that – it receives and routes messages to and from actors and components.
+</p>
+<p>
+The second job of the GM is to hold onto ALL actors within the system. This includes both regular actors and the new GameActor (see below).  It tracks actors that you have created in code or in your map (created by <a href="https://web.archive.org/web/20160409054138/http://www.delta3d.org/article.php?story=20050708125202283&amp;topic=tutorials" target="_blank">STAGE</a>). The GM tells actors to process messages, makes sure they get in and out of the scene at the right times, and even tells them to ‘tick’ so they can do stuff.  
+</p>
+<p>
+The third job of the GM is to support GMComponents.  What’s a component, you ask? A component is basically a high-level object that works with Game Messages.  But, isn’t that what Game Actors do? Yes and No. Game Actors do process messages; however, you will often have lots of instances of a particular actor in the game. Components are typically much higher level. They do things like networking behavior, game rules enforcement, logging, dead reckoning. Whereas game actors only receive specific messages they are interested in, GM Components receive all messages.
+</p>
+<p>
+</p><h2><b>What is a Game Actor?</b></h2>
+<p></p>
+<p>
+Hopefully you’re already familiar with <a href="https://web.archive.org/web/20160409054138/http://www.delta3d.org/article.php?story=20050720133707287&amp;topic=tutorials" target="_blank">Actors and ActorProxies</a>.  But, what’s a Game Actor? Simply put, a Game Actor is an Actor that is designed to work directly with the Game Manager.  By the way, if you haven’t already, now would be a great time to learn the basic concepts of Actors and the Dynamic Actor Layer.  We’re going to work with Actors a lot, so you might want to read the <a href="https://web.archive.org/web/20160409054138/http://www.delta3d.org/article.php?story=20050720133707287&amp;topic=tutorials" target="_blank">tutorials</a> or <a href="https://web.archive.org/web/20160409054138/http://www.delta3d.org/article.php?story=20051207101455773&amp;topic=docs" target="_blank">design docs</a>.
+</p>
+<p>
+So, why do we need to distinguish between Actor and Game Actor? Regular actors or “non-game” actors are basically static objects in the game world. You might use them for level geometry, static meshes like houses, non-moving lights, trees, and maybe terrain. But, static objects are boring! Game Actors are what brings your game to life! Game Actors get ticked, can process Game Messages, and can generally interact with the world! 
+</p>
+<p>
+</p><center><img width="265" height="79" src="./GameManager Tutorial Parts 1 and 2_files/20060620123144266_2.jpg" alt="">
+<br>
+<b>Figure 2. Game Actor Proxy</b>
+</center>
+<p></p>
+<p>
+GameActor is built on top of the actor concepts introduced by the DAL. So naturally, a GameActor will need a GameActorProxy. In fact, the Game Manager only understands Proxies – which means you must use them! By focusing exclusively on Actor Proxies, the GM becomes extremely flexible.  Just like <a href="https://web.archive.org/web/20160409054138/http://www.delta3d.org/article.php?story=20050708125202283&amp;topic=tutorials" target="_blank">STAGE</a>, it’s critical that the GameManager is completely generic. It can’t know the difference between a tank and a player, between a missile and a tent. If the GM wasn’t generic, you’d never be able to implement nifty behavior like logging and playback (see the testLogger example).
+</p>
+<p>
+</p><h2><b>What is a Game Manager Component?</b></h2>
+<p></p>
+<p>
+In its simplest form, a GMComponent is an object managed by the Game Manager which can process and send messages. Unlike GameActors, GMComponents receive every message in the system. Components typically provide high-level system wide behaviors, but they can do pretty much anything you want. GM Components are the primary way to add custom behavior to the Game Manager.
+</p>
+<p>
+You may wonder why we need Components at all.  Why not just make a subclass of the Game Manager and put your special code in there? The answer is flexibility. Imagine that you write behavior for dead-reckoning objects. That’s when you estimate where an object is based on its last known position and motion information.  Now, imagine that you put your new code directly into your GM.  And, then you add some behavior to send messages across a network and stick that in your GM too.  And, then you want to log messages to a log file to support playback, so you put that code in your GM. Finally, one day your boss asks you to run your whole game with different networking code! Or, he wants you to take out the logging code depending on whether you’re on the client or the server.  But, over time, you have created an interdependent mess of code in your GM that is very difficult to pull apart! Instead, we recommend putting the behavior in components like a DeadReckoningComponent, a NetworkingComponent, and a LoggerComponent.  Those components then become aggregate behavior that you can put together however you like. You can add or remove them, dynamically, at runtime. The point is that your core GameManager would be completely untouched.
+</p>
+<p>
+Since components get all messages in the system, they have the opportunity to know about all actors and everything that happens! You can build simple components that wait for specific messages or listen for the keyboard/mouse. You can have complex components that hold onto large lists of actors and use hierarchies of helper objects. Components are the extendable architecture for adding important behaviors to your game.  If you’re still not sold on GMComponent, don’t worry.  Later on in this tutorial, you will construct your own GMComponent and that should help clear things up.
+</p>
+<p>
+<i>
+Helpful Hint – Try to avoid making a subclass of the GameManager. Delta3D completely supports this, but it is generally better to try to use components to achieve the behavior you need, rather than subclassing the GM. 
+</i>
+</p>
+<p>
+</p><h2><b>What is a Game Message?</b></h2>
+<p></p>
+<p>
+Now that you understand more about Components and Game Actors, let’s go back to the first feature of the GM: the Game Message. Game messages are simply the way actors and components communicate with each other. Messages are typically used for sending data (ex: property changes) or behavior (requests or commands). The following diagram shows a high level overview of the flow of messages to/from Game Actors, the Game Manager, and Game Manager Components.
+</p>
+<p>
+</p><center>
+<img width="624" height="244" src="./GameManager Tutorial Parts 1 and 2_files/20060620123144266_3.jpg" alt="">
+<br>
+<b>Firgure 3. Game Message Diagram</b>
+</center>
+<p></p>
+<p>
+There are a few basic methods you’ll need to be familiar with to work with messages:  
+</p><ol>
+<li>SendMessage() on GameManager</li>
+<li>SendNetworkMessage() on GameManager</li>
+<li>Invokables on GameActorProxy</li>
+<li>ProcessMessage on GMComponent</li>
+<li>DispatchNetworkMessage on GMComponent</li>
+</ol>
+<p></p>
+<p>
+The Game Manager has two primary mechanisms for handling messages: <b>SendMessage()</b> and <b>SendNetworkMessage()</b>. Hopefully, these are mostly straightforward. To send a message from anywhere in your game, you call SendMessage() on the GameManager.  To send a message that you want to go out over the network, you call SendNetworkMessage() on the GameManager.  Typically, you want to call SendMessage().  Only a few components should concern themselves with the network version.
+</p>
+<p>
+The Components also have two methods: ProcessMessage() and DispatchNetworkMessage(). Components receive all messages.  So, you override ProcessMessage() to receive normal messages. Then, if you are some sort of network component, you override DispatchNetworkMessage() to receive messages that are ready to be sent over the network. Typically the RulesComponent is responsible for taking normal messages and resending them as network messages.
+</p>
+<p>
+For actors it is a little different. Actors never receive network messages, they only get normal messages. Since there are often LOTS of actors in the system, we don’t want to send all messages to all actors. Instead, actors register to receive certain types of messages by using Invokables. We’ll explain this in more detail later.  For now, you should concentrate on the 3 default Invokables that are provided for you on GameActor: TickLocal(), TickRemote(), and ProcessMessage().
+</p>
+<p>
+</p><center>
+<img width="684" height="206" src="./GameManager Tutorial Parts 1 and 2_files/20060620123144266_4.jpg" alt="">
+<br>
+<b>
+Figure 4. ProcessMessage() Diagram
+</b>
+</center>
+<p></p>
+<p>
+In this diagram, the TankProxy (a Game Actor Proxy) has some updated data that it needs to tell the world about. It builds an ActorUpdateMessage and then tells the GameManager to deal with it by calling SendMessage().  The GM puts that message in its Message Queue.  When the GM gets to the message (later in the same tick), it will first call ProcessMessage() on all components. Then, it will call the Invoke() callback on any game actors that registered to receive ActorUpdateMessages. We will dive much deeper into this topic when we create some Invokables for ticking and game event handling.  For now, it’s time to move from theory to code!
+</p>
+<p>
+<i>
+Helpful Hint – Typically, you want to call SendMessage(), not SendNetworkMessage() when you want to push a message around the system. And, unless you are some type of networking component, you probably want to override ProcessMessage(), not DispatchNetworkMessage (). If you are writing an Actor, overriding ProcessMessage() and using one of the versions of RegisterForMessages() is the easiest way to receive messages.
+</i>
+</p>
+<h1>Part Two:  Welcome to the Game Actor</h1>
+<p>
+The introduction above should have given you a good understanding of the Game Actor.  In this section we are going to create our very own GameActor.  Our Game Actor will represent a hover tank - yeah, it’s simple, but this is a TUTORIAL after all!  We will code the Actor, put it in an Actor Library, load it into STAGE, and create a little map with our game actor inside.  Let’s get started!
+</p>
+<p>
+</p><h2>
+Library Export (for Windows) 
+</h2>
+<p></p>
+<p>
+Our first bit of code is administrative.  We need to create a simple header file that defines our import/export tag.  We use this tag in front of our classes so that the library will export symbols correctly when building on Windows. This header will compile properly on other platforms, but doesn’t do anything.
+</p>
+<p>
+In “export.h”:
+</p>
+<p>
+</p><pre><code>
+#if defined(_MSC_VER) || defined(__CYGWIN__) || defined(__MINGW32__) || defined( __BCPLUSPLUS__)  || defined( __MWERKS__)
+#  ifdef TUTORIAL_HOVER_LIBRARY
+#    define TUTORIAL_HOVER_EXPORT __declspec(dllexport)
+#  else
+#    define TUTORIAL_HOVER_EXPORT __declspec(dllimport)
+#  endif
+#else
+#  define TUTORIAL_HOVER_EXPORT
+#endif
+</code></pre>
+<p></p>
+<p>
+It’s not important for now that you understand why libraries need this.  Just add a header file, ‘export.h’ to your project and include it in all of your headers.  Then, in your project, add “TUTORIAL_HOVER_LIBRARY” to your project defines as follows:
+</p>
+<p>
+</p><center>
+<img width="528" height="361" src="./GameManager Tutorial Parts 1 and 2_files/20060620123144266_5.jpg" alt="">
+<br>
+<b>Figure 5. Library Preprocessor Definition in Visual Studio</b>
+</center>
+<p></p>
+<b>Note:</b> If your project currently contains no .cpp files, you will not have the C/C++ property option.  Adjust this setting after you have added a .cpp file to the project, as required below.
+<p>
+</p><h2>The Hover Tank Game Actor </h2>
+<p></p>
+<p>
+Now, let’s move on to our HoverTankActor.  For that, you’ll need to make a header and cpp file.  To that, add includes for the base code in dtGame and the export.h.  See the following code snippet.
+</p>
+<p>
+In “HoverTankActor.h”:
+</p>
+<p>
+</p><pre><code>
+#include "export.h"
+#include &lt;dtCore/refptr.h&gt;
+#include &lt;dtActors/gamemeshactor.h&gt;
+#include &lt;dtCore/particlesystem.h&gt;
+
+/**
+ * This class is the actor that represents a hover tank of sorts.  It knows how to 
+ * respond to keyboard presses (I, J, K, L to steer). It also listens for 
+ * "ToggleEngine" &amp; "SpeedBoost" GameEvents.  This actor correctly handles 
+ * TickLocal versus TickRemote.
+ */
+class TUTORIAL_HOVER_EXPORT HoverTankActor : public dtActors::GameMeshActor
+{
+   public:
+      // Constructs the tank actor.
+      HoverTankActor(dtGame::GameActorProxy &amp;proxy);
+</code></pre>
+<p></p>
+<p>
+All right, we have some code!  It’s not much, but it’s a start.  So in the code we have so far, we note that our HoverTankActor class extends the base GameMeshActor class.  If you are wondering where the actor proxy is, just hold your horses, we’ll get to that soon enough.  For now, we’ll focus on the actor.  As you can see in the code, the constructor takes a reference to a GameActorProxy.  This is important, as all GameActors must have this constructor.
+</p>
+<p>
+Now, let’s add some properties to this actor.  For this tutorial we want three properties on our tank actor: the tank mesh, the velocity, and the turn rate. We’ll use these properties to control the look and movement of the tank when we get to the application portion of the tutorial.  The mesh is provided already by our superclass GameMeshActor, so all we need now are getters and setters for the other two properties.  Additionally, we are going to need methods to handle ticks. Here’s the code:
+</p>
+<p>
+In “HoverTankActor.h”:
+</p>
+<p>
+</p><pre><code>
+/**
+       * Sets the velocity of our tank actor.  
+       * @param velocity The new velocity.
+       * @note This may cause an actor update message
+       */
+      void SetVelocity(float velocity);
+      
+      // @return The actor's current velocity.
+      float GetVelocity() const { return mVelocity; }
+
+      /**
+       * Sets the turn rate of our tank actor.  
+       * @param rate The new turn rate in degrees per second.
+       * @note This may cause an actor update message
+       */
+      void SetTurnRate(float rate);
+
+      // @return The actor's current turn rate.
+      float GetTurnRate() const { return mTurnRate; }
+
+      /**
+       * This invokable is called when an object is local and receives a tick.
+       * @param tickMessage A message containing tick related information.
+       */
+      virtual void TickLocal(const dtGame::Message &amp;tickMessage);
+
+      /**
+       * This invokable is called when an object is remote and receives a tick.
+       * @param tickMessage A message containing tick related information.
+       */
+      virtual void TickRemote(const dtGame::Message &amp;tickMessage);
+
+      /**
+       * Generic handler for messages. Overridden from base class.
+       * This is the default invokable on GameActorProxy.
+       */
+      virtual void ProcessMessage(const dtGame::Message &amp;message);
+</code></pre>
+<p></p>
+<p>
+Now we have some properties and placeholders to support our tick behavior (explained later).  To finish up, we need our member variables and some behaviors for moving the tank. 
+</p>
+<p>
+</p><pre><code>
+   protected:
+      virtual ~HoverTankActor();
+
+   private:
+      // do our internal velocity/turn calculations based on keyboard status
+      // only relevant for Local mode (ie, not when remote)
+      void ComputeVelocityAndTurn(float deltaSimTime);
+
+      // calculate new position based on turn rate and velocity
+      // relevant in both local and remote
+      void MoveTheTank(float deltaSimTime);
+
+      // private vars
+      dtCore::RefPtr&lt;dtCore::ParticleSystem&gt; mDust;
+      float mVelocity;
+	   float mAddOnVelocity;
+      float mTurnRate;
+      bool mIsEngineRunning;
+      float mLastReportedVelocity;
+};
+</code></pre>
+<p>
+That’s basically it for our actor interface.  Let’s actually implement this sucker!
+</p>
+<p>
+In “HoverTankActor.h”:
+</p>
+<p>
+Here’s our “HoverTankActor.cpp” code:
+</p>
+<p>
+</p><pre><code>
+#include "HoverTankActor.h"
+#include &lt;dtDAL/enginepropertytypes.h&gt;
+#include &lt;dtDAL/actorproxyicon.h&gt;
+#include &lt;dtCore/loadable.h&gt;
+#include &lt;dtCore/isector.h&gt;
+#include &lt;dtGame/gamemanager.h&gt;
+#include &lt;dtGame/actorupdatemessage.h&gt;
+#include &lt;dtGame/basemessages.h&gt;
+#include &lt;dtABC/application.h&gt;
+#include &lt;dtCore/camera.h&gt;
+#include &lt;dtCore/keyboard.h&gt;
+
+#include &lt;dtCore/particlesystem.h&gt;
+
+///////////////////////////////////////////////////////////////////////////////
+const std::string HoverTankActor::EVENT_HANDLER_NAME("HandleGameEvent");
+const float MAXTANKVELOCITY = 15.0f;
+
+///////////////////////////////////////////////////////////////////////////////
+HoverTankActor::HoverTankActor(dtGame::GameActorProxy &amp;proxy) : 
+   dtActors::GameMeshActor(proxy), 
+   mDust(NULL), 
+   mVelocity(0.0f), 
+   mAddOnVelocity(0),
+   mTurnRate(0.0f),
+   mIsEngineRunning(false),
+   mLastReportedVelocity(0.0f)
+{
+   SetName("HoverTank");
+}
+
+///////////////////////////////////////////////////////////////////////////////
+HoverTankActor::~HoverTankActor()
+{
+}
+
+///////////////////////////////////////////////////////////////////////////////
+void HoverTankActor::SetTurnRate(float rate)
+{
+   // Described in more detail later in the tutorial
+   mTurnRate = rate;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+void HoverTankActor::SetVelocity(float velocity)
+{
+   // Described in more detail later in the tutorial
+   mVelocity = velocity;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+void HoverTankActor::OnEnteredWorld()
+{
+   // add our dust particle when we are born
+   mDust = new dtCore::ParticleSystem();
+   mDust-&gt;LoadFile("Particles/dust.osg",true);
+   mDust-&gt;SetEnabled(false); // turn it off at first
+   AddChild(mDust.get()); 
+
+   dtActors::GameMeshActor::OnEnteredWorld();
+}
+
+///////////////////////////////////////////////////////////////////////////////
+void HoverTankActor::ProcessMessage(const dtGame::Message &amp;msg)
+{
+   // Described later in the tutorial
+}
+
+///////////////////////////////////////////////////////////////////////////////
+void HoverTankActor::TickLocal(const dtGame::Message &amp;tickMessage)
+{
+   // Described later in the tutorial
+}
+
+///////////////////////////////////////////////////////////////////////////////
+void HoverTankActor::TickRemote(const dtGame::Message &amp;tickMessage)
+{
+   // Described later in the tutorial
+}
+
+///////////////////////////////////////////////////////////////////////////////
+void HoverTankActor::ComputeVelocityAndTurn(float deltaSimTime)
+{
+   // code removed to simplify the tutorial – please see the provided project
+}
+
+///////////////////////////////////////////////////////////////////////////////
+void HoverTankActor::MoveTheTank(float deltaSimTime)
+{
+   // code removed to simplify tutorial – please see the provided project
+}
+</code></pre>
+<p></p>
+<p>
+Most of these methods are just stubbed out for now.  We’re going to add the details as we move through this tutorial.
+</p>
+<h2>
+The Hover Tank Game Actor Proxy 
+</h2>
+<p>
+We have a game actor, now we need a proxy.  GameActorProxies are VERY important within the GameManager framework.  Although a bulk of your actor code is located in the actor itself, the GameManager only understands Actor Proxies.  The proxy exposes our properties generically and can handle messages from the GM via Invokables. Here’s our Proxy header file:
+</p>
+<p>
+</p><pre><code>
+/**
+ * Our proxy class for the hover tank actor.  The proxy contains properties,
+ * invokables, and the hover tank actor. 
+ */
+class TUTORIAL_HOVER_EXPORT HoverTankActorProxy : public dtActors::GameMeshActorProxy
+{
+   public:
+
+      // Constructs the proxy.
+      HoverTankActorProxy();
+      
+      // Creates the properties that are custom to the hover tank proxy.
+      virtual void BuildPropertyMap();
+      
+      // Builds invokables to hook the proxy into the game manager.
+      // We don’t need this in our tutorial, because we use the default Invokables
+      // virtual void BuildInvokables();
+      
+   protected:
+      virtual ~HoverTankActorProxy();
+
+      // Creates an instance of our hover tank actor 
+      virtual void CreateActor();
+
+      // Called when this proxy is added to the game manager (ie, the "world")
+      // You can respond to OnEnteredWorld on either the proxy or actor or both.
+      virtual void OnEnteredWorld();
+};
+</code></pre>
+<p></p>
+<p>
+The interface to the HoverTankActorProxy should be basically familiar if you have gone through the <a href="https://web.archive.org/web/20160409054138/http://www.delta3d.org/article.php?story=20050720133707287&amp;topic=tutorials" target="_blank">DAL tutorial</a>.  However, there are a few new methods that we should talk about.
+</p>
+<p>
+First, let’s discuss BuildInvokables().  We don’t use this method in the tutorial, but it’s where you would create your own custom Invokables. Overload this in order to create message handlers (Invokables) to various messages that occur throughout the game.  It is called when the actor is first created (from CreateActor() in the GM). The GameActorProxy version of BuildInvokables() automatically creates 3 Invokables for you: TickLocal(), TickRemote(), and ProcessMessage().  
+</p>
+<p>
+Second, let’s discuss OnEnteredWorld().  This is a virtual method that we are overloading so we can perform various actions when the actor enters the world.  It is called inside AddActor() from the GM. It is called after the actor’s properties and Invokables have been created. Specific implementations of this method could play a sound, cause a game event to fire, or do any other sort of “Hey I’m a new actor in the world, look at me!” sort of thing.  For this tutorial, we will be registering to receive tick and game event messages. This is also where you would register any Invokables that you built in BuildInvokables(). 
+</p>
+<p>
+Now let’s take a look at the simple implementation, in “HoverTankActor.cpp”:
+</p>
+<p>
+</p><pre><code>
+///////////////////////////////////////////////////////////////////////////////
+HoverTankActorProxy::HoverTankActorProxy()
+{
+   SetClassName("HoverTank");
+}
+
+///////////////////////////////////////////////////////////////////////////////
+void HoverTankActorProxy::BuildPropertyMap()
+{
+   const std::string GROUP = "HoverTank";
+
+   dtActors::GameMeshActorProxy::BuildPropertyMap();
+   HoverTankActor &amp;actor = static_cast&lt;HoverTankActor&amp;&gt;(GetGameActor());
+
+   // Add the "Velocity" property
+   AddProperty(new dtDAL::FloatActorProperty("Velocity","Velocity",
+      dtDAL::MakeFunctor(actor,&amp;HoverTankActor::SetVelocity),
+      dtDAL::MakeFunctorRet(actor,&amp;HoverTankActor::GetVelocity),
+      "Sets/gets the hover tank's velocity.",GROUP));
+
+   // Add the "Turnrate" property
+   AddProperty(new dtDAL::FloatActorProperty("Turnrate","Turn Rate",
+      dtDAL::MakeFunctor(actor,&amp;HoverTankActor::SetTurnRate),
+      dtDAL::MakeFunctorRet(actor,&amp;HoverTankActor::GetTurnRate),
+      "Sets/gets the hover tank's turn rate in degrees per second.",GROUP));
+}
+
+///////////////////////////////////////////////////////////////////////////////
+HoverTankActorProxy::~HoverTankActorProxy()
+{
+}
+
+///////////////////////////////////////////////////////////////////////////////
+void HoverTankActorProxy::CreateActor()
+{
+   SetActor(*new HoverTankActor(*this));
+}
+
+///////////////////////////////////////////////////////////////////////////////
+void HoverTankActorProxy::OnEnteredWorld()
+{
+   //Register an invokable for Game Events...
+   RegisterForMessages(dtGame::MessageType::INFO_GAME_EVENT);
+
+   // Register an invokable for tick messages. Local or Remote only, not both!
+   if (IsRemote())
+      RegisterForMessages(dtGame::MessageType::TICK_REMOTE, dtGame::GameActorProxy::TICK_REMOTE_INVOKABLE);
+   else
+      RegisterForMessages(dtGame::MessageType::TICK_LOCAL, dtGame::GameActorProxy::TICK_LOCAL_INVOKABLE);
+
+   dtActors::GameMeshActorProxy::OnEnteredWorld();
+}
+</code></pre>
+<p></p>
+<p>
+That’s it!  That will give us an Actor that can be placed in the world as well as stubs for everything we will need through the end of the tutorial. Notice how we register for messages in the  OnEnteredWorld method. We register for INFO_GAME_EVENT messages, which will go to the default ProcessMessage() invokable.  And, when we’re in local mode, we register for ticks by using TICK_LOCAL and the default TickLocal() Invokable.
+</p>
+<p>
+</p><h2>Expose Our Actor via the Actor Registry</h2>
+<p></p>
+<p>
+Now that we have our TankActor and TankProxy, we need to put it in our Actor Registry. We do this so that STAGE and the GM can find our cool new actor type.  Creating a registry is pretty simple, as you can see from the code below.  If you’re not clear on this part, refer to the <a href="https://web.archive.org/web/20160409054138/http://www.delta3d.org/article.php?story=20050720135643860&amp;topic=tutorials" target="_blank">DAL tutorial</a>.
+</p>
+<p>
+“TutorialGameActorsRegistry.h”:
+</p>
+<p>
+</p><pre><code>
+#include "export.h"
+#include &lt;dtDAL/actorpluginregistry.h&gt;
+
+class TUTORIAL_HOVER_EXPORT TutorialGameActorsRegistry : public dtDAL::ActorPluginRegistry
+{
+   public:
+
+      // Constructs our registry.  Creates the actor types easy access when needed.
+      TutorialGameActorsRegistry();
+
+      // Registers actor types with the actor factory in the super class.
+      virtual void RegisterActorTypes();
+
+   private:
+      dtCore::RefPtr&lt;dtDAL::ActorType&gt; mHoverTankActorType;
+};
+</code></pre>
+<p></p>
+<p>
+TutorialGameActorsRegistry.cpp”:
+</p>
+<p>
+</p><pre><code>
+///////////////////////////////////////////////////////////////////////////////
+extern "C" TUTORIAL_HOVER_EXPORT dtDAL::ActorPluginRegistry* CreatePluginRegistry()
+{
+   return new TutorialGameActorsRegistry();
+}
+
+///////////////////////////////////////////////////////////////////////////////
+extern "C" TUTORIAL_HOVER_EXPORT void DestroyPluginRegistry(dtDAL::ActorPluginRegistry *registry)
+{
+   delete registry;
+}
+
+//////////////////////////////////////////////////////////////////////////
+TutorialGameActorsRegistry::TutorialGameActorsRegistry() :
+   dtDAL::ActorPluginRegistry("TutorialGameActors")
+{
+   SetDescription("This is a library of a couple of game actors used by the "
+      "Game Manager Tutorial series.");
+}
+
+//////////////////////////////////////////////////////////////////////////
+void TutorialGameActorsRegistry::RegisterActorTypes()
+{
+   mHoverTankActorType = new dtDAL::ActorType("HoverTank","TutorialActors",
+      "Simple tank that moves and acts like a basic hover craft.");
+
+   mActorFactory-&gt;RegisterType&lt;HoverTankActorProxy&gt;(mHoverTankActorType.get());
+}
+</code></pre>
+<p></p>
+<p>
+That’s the entire registry file. It exposes a single actor type that can be loaded by the Game Manager or STAGE.  
+</p>
+<p>
+<i>
+Helpful Hint – You might find it helpful to create public static references to your ActorTypes.  That makes it easier to reference commonly used ActorTypes directly.  See “engineactorregistry.h” in dtActors for an example of this. 
+</i>
+</p>
+<p>
+<i>
+Helpful Hint – Sometimes, people will register their shader files in the Actor Registry. This is especially useful if you use special shaders for any of the actors in your library.  To load a shader definition file here, you would add something like this to CreatePluginRegistry():
+</i>
+</p>
+<p>
+</p><pre><code>
+ShaderManager::GetInstance().LoadShaderDefinitions("Shaders/TutorialShaderDefs.xml", false);
+</code></pre>
+<p></p>
+<h2>Load Our Actor In STAGE</h2>
+<p>
+Well, that’s all for the actor and proxy (at least the easy parts).  Now we’re ready to build a little playground map in STAGE to house our tank actor. Here’s what you should do: 
+</p>
+<p>
+</p><ol>
+<li>Run STAGE</li>
+<li>Create a new map (“HoverMap”)</li>
+<li>Import your new actor library</li>
+<li>Create your actors – including one HoverTank</li> 
+</ol>
+<p>
+We’re going to load this map in the next section of the tutorial where we’ll get a handle to our tank and control the movement and other behaviors.  Here’s a screenshot of STAGE with our HoverTankActor.  The map contains a static mesh terrain, an Environment game actor, and of course our HoverTank game actor. For a STAGE refresher, check out the <a href="https://web.archive.org/web/20160409054138/http://www.delta3d.org/article.php?story=20050708125202283&amp;topic=tutorials" target="_blank">Getting to Know STAGE Tutorial</a>.
+</p>
+<p>
+</p><center>
+<img width="696" height="509" src="./GameManager Tutorial Parts 1 and 2_files/20060620123144266_6.jpg" alt="">
+<br>
+<b>
+Figure 6. HoverTankActor In STAGE
+</b>
+</center>
+<p></p>
+<p>
+Remember, if you are stuck, you can get the entire code base <a href="https://web.archive.org/web/20160409054138/http://www.delta3d.org/filemgmt/visit.php?lid=50">here</a>.
+</p>
+<p>
+Well that concludes Part 1 and 2! Click <a href="https://web.archive.org/web/20160409054138/http://www.delta3d.org/article.php?story=20060620134503728&amp;topic=tutorials">here</a> to continue to Parts 3 and 4.
+</p>
+		<p></p>
+		<div style="clear:both;"></div>
+		<div style="float:left;" id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./GameManager Tutorial Parts 1 and 2_files/xd_arbiter.html" style="border: none;" allow="autoplay &#39;self&#39;; fullscreen &#39;self&#39;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./GameManager Tutorial Parts 1 and 2_files/xd_arbiter(1).html" style="border: none;" allow="autoplay &#39;self&#39;; fullscreen &#39;self&#39;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//web.archive.org/web/20160409054138/http://connect.facebook.net/en_EN/all.js#xfbml=1";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+	    <div style="float:left;margin-right:10px;"><fb:like href="http://delta3d.org/article.php?story=20060620123144266" send="false" layout="button_count" width="90" show_faces="false" class=" fb_iframe_widget" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;container_width=0&amp;href=http%3A%2F%2Fdelta3d.org%2Farticle.php%3Fstory%3D20060620123144266&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;send=false&amp;show_faces=false&amp;width=90"><span style="vertical-align: top; width: 0px; height: 0px; overflow: hidden;"><iframe name="f13e25c913e0413" width="90px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="./GameManager Tutorial Parts 1 and 2_files/like.html" style="border: none; visibility: visible; width: 0px; height: 0px;" allow="autoplay &#39;self&#39;; fullscreen &#39;self&#39;"></iframe></span></fb:like></div>
+		<div style="float:left;margin-right:-20px;"><iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" style="position: absolute; visibility: hidden; width: 0px; height: 0px;" allow="autoplay &#39;self&#39;; fullscreen &#39;self&#39;" title="Twitter Tweet Button" src="./GameManager Tutorial Parts 1 and 2_files/tweet_button.fd774b599f565016d763dd860cb31c79.en.html" data-url="http://delta3d.org/article.php?story=20060620123144266"></iframe>
+        </div><script>!function(d,s,id) { var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)) { js=d.createElement(s);js.id=id;js.src="https://web.archive.org/web/20160409054138/https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs); } }(document,"script","twitter-wjs");</script>
+		<div style="position: absolute; width: 450px; left: -10000px;" id="___plusone_0"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position:absolute;top:-10000px;width:450px;margin:0px;border-style:none" tabindex="0" vspace="0" width="100%" id="I0_1460180500762" name="I0_1460180500762" src="./GameManager Tutorial Parts 1 and 2_files/fastbutton.html" allow="autoplay &#39;self&#39;; fullscreen &#39;self&#39;"></iframe></div><div style="float:left;" class="g-plusone" data-size="medium" data-href="http://delta3d.org/article.php?story=20060620123144266" data-gapiscan="true" data-onload="true" data-gapistub="true"></div>
+		<div style="position: absolute; width: 450px; left: -10000px;" id="___plus_0"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position:absolute;top:-10000px;width:450px;margin:0px;border-style:none" tabindex="0" vspace="0" width="100%" id="I1_1460180500770" name="I1_1460180500770" src="./GameManager Tutorial Parts 1 and 2_files/sharebutton.html" allow="autoplay &#39;self&#39;; fullscreen &#39;self&#39;"></iframe></div><div class="g-plus" data-action="share" data-annotation="bubble" data-href="http://delta3d.org/article.php?story=20060620123144266" data-gapiscan="true" data-onload="true" data-gapistub="true"></div>
+		<div style="clear:both;"></div>
+		<div style="margin-top:5px;">
+                
+        </div>
+    </div>
+	<div class="clearboth"></div>
+</div>
+
+
+		<div class="clearboth"></div>
+		  <div id="story-whatsrelatedandoptions">
+            <div id="story-whatsrelated"><!-- start blockheader-related.thtml -->
+<div class="block-box-left">
+    <span class="block-helpicon">
+        
+    </span>
+    <h2>What's Related</h2>
+<ul class="list-whats-related">
+  <li><a href="https://web.archive.org/web/20160409054138/http://www.delta3d.org/article.php?story=20060620134503728&amp;topic=tutorials">Part Three: Creating a ...</a></li>
+  <li><a href="https://web.archive.org/web/20160409054138/http://www.delta3d.org/article.php?story=20060620134503728&amp;topic=tutorials">Part Four: Messages and...</a></li>
+  <li><a href="https://web.archive.org/web/20160409054138/http://www.delta3d.org/filemgmt/visit.php?lid=50">here</a></li>
+  <li><a href="https://web.archive.org/web/20160409054138/http://www.delta3d.org/forum/index.php">Forums</a></li>
+  <li><a href="https://web.archive.org/web/20160409054138/http://www.delta3d.org/article.php?story=20050708125202283&amp;topic=tutorials">STAGE</a></li>
+  <li><a href="https://web.archive.org/web/20160409054138/http://www.delta3d.org/article.php?story=20050720133707287&amp;topic=tutorials">Actors and ActorProxies</a></li>
+  <li><a href="https://web.archive.org/web/20160409054138/http://www.delta3d.org/article.php?story=20050720133707287&amp;topic=tutorials">tutorials</a></li>
+  <li><a href="https://web.archive.org/web/20160409054138/http://www.delta3d.org/article.php?story=20051207101455773&amp;topic=docs">design docs</a></li>
+  <li><a href="https://web.archive.org/web/20160409054138/http://www.delta3d.org/article.php?story=20050708125202283&amp;topic=tutorials">STAGE</a></li>
+  <li><a href="https://web.archive.org/web/20160409054138/http://www.delta3d.org/article.php?story=20050720133707287&amp;topic=tutorials">DAL tutorial</a></li>
+  <li><a href="https://web.archive.org/web/20160409054138/http://www.delta3d.org/article.php?story=20050720135643860&amp;topic=tutorials">DAL tutorial</a></li>
+  <li><a href="https://web.archive.org/web/20160409054138/http://www.delta3d.org/article.php?story=20050708125202283&amp;topic=tutorials">Getting to Know STAGE T...</a></li>
+  <li><a href="https://web.archive.org/web/20160409054138/http://www.delta3d.org/filemgmt/visit.php?lid=50">here</a></li>
+  <li><a href="https://web.archive.org/web/20160409054138/http://www.delta3d.org/article.php?story=20060620134503728&amp;topic=tutorials">here</a></li>
+  <li><a href="https://web.archive.org/web/20160409054138/http://delta3d.org/search.php?mode=search&amp;type=stories&amp;author=13">More by coonan</a></li>
+  <li><a href="https://web.archive.org/web/20160409054138/http://delta3d.org/search.php?mode=search&amp;type=stories&amp;topic=tutorials">More from Tutorials</a></li>
+
+</ul>
+</div>
+<div style="clear:both;"></div>
+
+</div>
+            <div id="story-storyoptions"><!-- start blockheader-related.thtml -->
+<div class="block-box-left">
+    <span class="block-helpicon">
+        
+    </span>
+    <h2>Story Options</h2>
+<ul class="list-story-options">
+  <li><a href="https://web.archive.org/web/20160409054138/http://delta3d.org/profiles.php?sid=20060620123144266&amp;what=emailstory">Mail Story to a Friend</a></li>
+  <li><a href="https://web.archive.org/web/20160409054138/http://delta3d.org/article.php?story=20060620123144266&amp;mode=print" rel="nofollow">Printable Story Format</a></li>
+
+</ul>
+</div>
+<div style="clear:both;"></div>
+
+</div>
+		  </div>
+		<div class="clearboth"></div>
+		<div id="comments">
+        
+		</div>
+		<div id="story-trackbacks"><h2><a name="trackback">Trackback</a></h2>
+<p>Trackback URL for this entry: http://delta3d.org/trackback.php?id=20060620123144266</p>
+No trackback comments for this entry.
+
+</div>
+
+	<!-- END OF CONTENT AREA -->
+            </div> <!-- end of gl_content -->
+        </div> <!-- end of gl_wrapper -->
+<!-- Start of Left blocks -->
+    <div id="gl_navigation">
+        <div class="block-columnpad"><div class="block-box-left">
+    <span class="block-helpicon-left">
+        
+    </span>
+    <h2 class="block-title-left">News</h2>
+<a href="https://web.archive.org/web/20160409054138/http://caperholdings.com/contracting-services" target="_blank">Need Professional Support?</a>
+
+</div><div class="block-box-left">
+    <span class="block-helpicon-left">
+        
+    </span>
+    <h2 class="block-title-left">About delta3d</h2>
+delta3d is a game and simulation engine appropriate for a wide variety of simulation and entertainment applications.  delta3d uses best-of-breed open source technologies to create a fully integrated game engine and with content creation tools.<a href="https://web.archive.org/web/20160409054138/http://delta3d.org/index.php?topic=about">MORE</a>
+</div><div class="block-box-left">
+    <span class="block-helpicon-left">
+        <a href="https://web.archive.org/web/20160409054138/http://caperholdings.com/sponsor-delta3d" class="blocktitle"><img src="./GameManager Tutorial Parts 1 and 2_files/button_help.png" alt="?"></a>
+    </span>
+    <h2 class="block-title-left">Sponsor delta3d</h2>
+For the past few years Caper Holdings LLC has been solely driving development of delta3d. To continue to provide upgrades and releases we are allowing the community to purchase <a href="https://web.archive.org/web/20160409054138/http://caperholdings.com/sponsor-delta3d">sponsorships</a>
+</div><div class="block-box-left">
+    <span class="block-helpicon-left">
+        
+    </span>
+    <h2 class="block-title-left">Twitter</h2>
+<iframe id="twitter-widget-1" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-timeline twitter-timeline-rendered" style="position: absolute; visibility: hidden; display: block; width: 0px; height: 0px; padding: 0px; border: none;" allow="autoplay &#39;self&#39;; fullscreen &#39;self&#39;" src="./GameManager Tutorial Parts 1 and 2_files/saved_resource.html"></iframe><a class="twitter-timeline twitter-timeline-error" href="https://web.archive.org/web/20160409054138/https://twitter.com/delta3d" data-widget-id="510256513730875393" data-twitter-extracted-i146018051273850124="true">Tweets by @delta3d</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id))}(document,"script","twitter-wjs");</script>
+</div><div class="block-box-left">
+    <span class="block-helpicon-left">
+        
+    </span>
+    <h2 class="block-title-left">User Functions</h2>
+<!-- loginform.thtml -->
+
+<div id="login_form">
+	<h2 id="login_button" class="login_options">
+		<a style="padding-right:20px;" href="https://web.archive.org/web/20160409054138/http://delta3d.org/article.php?story=20060620123144266&amp;topic=tutorials#" title="" onclick="return false;">Login</a>
+	</h2>
+
+	<div id="loginblock" class="loginblock">
+		<div id="loginblock-content">
+			<div id="loginform">
+				<form action="https://web.archive.org/web/20160409054138/http://delta3d.org/users.php" method="post" style="padding-bottom:5px;">
+				<label for="loginname">Username:</label><br>
+				<input type="text" size="10" name="loginname" value="" id="loginname"><br>
+				
+				<label for="passwd">Password:</label><br>
+				<input type="password" size="10" name="passwd" id="passwd"><br>
+				<input type="submit" name="submit_login" value="Login" style="margin-top:5px;">
+				</form>
+			</div>
+			<p>Don't have an account yet?  Sign up as a <a href="https://web.archive.org/web/20160409054138/http://delta3d.org/users.php?mode=new" rel="nofollow">New User</a></p>
+			<p>Lost your <a href="https://web.archive.org/web/20160409054138/http://delta3d.org/users.php?mode=getpassword" rel="nofollow">password</a>?</p>
+
+		</div>
+	</div>
+    
+	
+</div>
+<!-- /loginform.thtml -->
+</div></div>
+    </div>
+<!-- End of Left blocks -->
+
+        </div> <!-- end of gl_content_container -->
+        <div id="gl_footer">
+			<div id="footer_container">
+			</div> <!-- end of footer_container -->
+        </div> <!-- end of gl_footer-->
+
+</div> <!-- end of container -->
+
+
+
+
+    <!--[if lte IE 6]>
+        <script type="text/javascript" src="http://delta3d.org/layout/purepro/js/gl_moopngfix.js" defer="defer" ></script>
+    <![endif]-->
+
+    <!--[if lt IE 7.]>
+        <script defer type="text/javascript" src="http://delta3d.org/layout/purepro/js/pngfix.js"></script>
+    <![endif]-->
+
+</div></div></div>
+<!-- End of layers -->
+
+<script type="text/javascript">
+var geeklogEditorBaseUrl = "https://web.archive.org/web/20160409054138/http://delta3d.org";
+var geeklogEditorBasePath = "https://web.archive.org/web/20160409054138/http://delta3d.org/fckeditor/";
+</script>
+<script type="text/javascript" src="./GameManager Tutorial Parts 1 and 2_files/common.js.download"></script>
+<script type="text/javascript" src="./GameManager Tutorial Parts 1 and 2_files/jquery.min.js.download"></script>
+
+
+
+
+<!--
+playback timings (ms):
+  RedisCDXSource: 47.414
+  PetaboxLoader3.datanode: 180.358 (4)
+  LoadShardBlock: 72.422 (3)
+  captures_list: 139.856
+  esindex: 0.011
+  load_resource: 152.734
+  exclusion.robots.policy: 0.252
+  PetaboxLoader3.resolve: 39.743
+  CDXLines.iter: 17.149 (3)
+  exclusion.robots: 0.262
+--><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" allow="autoplay &#39;self&#39;; fullscreen &#39;self&#39;" src="./GameManager Tutorial Parts 1 and 2_files/saved_resource(1).html"></iframe><script src="./GameManager Tutorial Parts 1 and 2_files/510256513730875393" async=""></script></body></html>

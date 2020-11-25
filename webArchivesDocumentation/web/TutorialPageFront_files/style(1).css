@@ -1,0 +1,40 @@
+/* CAPTCHA Plugin */
+
+#captcha-form {
+  padding:10px 0px 10px 0px;
+}
+#captcha-image{
+  margin-right:25px;
+}
+.captcha_logview {
+  font-family:"Courier New", Courier, monospace;
+  margin:5px 15px;
+}
+.captcha_admin {
+  padding:0px 10px;
+}
+.captcha_admin_body {
+  background: #EEE;
+  padding:5px 15px;
+}
+/*
+     FILE ARCHIVED ON 22:08:58 Jun 16, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:03:02 Nov 25, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  RedisCDXSource: 21.01
+  PetaboxLoader3.datanode: 238.373 (4)
+  LoadShardBlock: 225.308 (3)
+  captures_list: 268.776
+  esindex: 0.016
+  load_resource: 310.769
+  exclusion.robots.policy: 0.205
+  PetaboxLoader3.resolve: 255.834
+  CDXLines.iter: 18.477 (3)
+  exclusion.robots: 0.222
+*/

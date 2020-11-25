@@ -1,0 +1,615 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0113)https://web.archive.org/web/20160408233427/http://delta3d.org/article.php?story=20060220202806917&topic=tutorials -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><script src="./Building the Dependencies Windows &amp; Microsoft Visual Studio_files/cb=gapi.loaded_2" async=""></script><script src="./Building the Dependencies Windows &amp; Microsoft Visual Studio_files/cb=gapi.loaded_1" async=""></script><script id="twitter-wjs" src="./Building the Dependencies Windows &amp; Microsoft Visual Studio_files/widgets.js.download"></script><script id="facebook-jssdk" src="./Building the Dependencies Windows &amp; Microsoft Visual Studio_files/all.js.download"></script><script src="./Building the Dependencies Windows &amp; Microsoft Visual Studio_files/cb=gapi.loaded_0" async=""></script><script src="./Building the Dependencies Windows &amp; Microsoft Visual Studio_files/analytics.js.download" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app201.us.archive.org';v.server_ms=1273;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="./Building the Dependencies Windows &amp; Microsoft Visual Studio_files/playback.bundle.js.download" charset="utf-8"></script>
+<script type="text/javascript" src="./Building the Dependencies Windows &amp; Microsoft Visual Studio_files/wombat.js.download" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://delta3d.org/article.php?story=20060220202806917&topic=tutorials","20160408233427","https://web.archive.org/","web","/_static/",
+	      "1460158467");
+</script>
+<link rel="stylesheet" type="text/css" href="./Building the Dependencies Windows &amp; Microsoft Visual Studio_files/banner-styles.css">
+<link rel="stylesheet" type="text/css" href="./Building the Dependencies Windows &amp; Microsoft Visual Studio_files/iconochive.css">
+<!-- End Wayback Rewrite JS Include -->
+
+    <title>
+	    Building the Dependencies - Windows &amp; Microsoft Visual Studio - delta3d
+    </title>
+    
+    <meta name="revisit-after" content="2 days">
+    <meta name="robots" content="index,follow">
+    <meta name="publisher" content="delta3d">
+    <meta name="copyright" content="delta3d">
+    <meta name="author" content="delta3d">
+    <meta name="distribution" content="global">
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<!-- <meta http-equiv="Pragma" content="no-cache"> -->
+
+    <link rel="SHORTCUT ICON" href="https://web.archive.org/web/20160408233427im_/http://delta3d.org/images/favicon.ico">
+
+	
+
+	<link rel="home" href="http://delta3d.org/" title="Home">
+<link rel="search" href="https://web.archive.org/web/20160408233427/http://delta3d.org/search.php" title="Advanced Search">
+<link rel="contents" href="http://delta3d.org/directory.php" title="Directory">
+<link rel="service" type="application/atomsvc+xml" href="http://delta3d.org/webservices/atom/?introspection" title="Webservices">
+
+	<link rel="stylesheet" type="text/css" href="./Building the Dependencies Windows &amp; Microsoft Visual Studio_files/css.php" media="all">
+<link rel="stylesheet" type="text/css" href="./Building the Dependencies Windows &amp; Microsoft Visual Studio_files/style.css">
+<link rel="canonical" href="https://web.archive.org/web/20160408233427/http://delta3d.org/article.php?story=20060220202806917">
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://delta3d.org/article.php?story=20060220202806917"
+    trackback:ping="http://delta3d.org/trackback.php?id=20060220202806917"
+    dc:title="Building the Dependencies - Windows &amp; Microsoft Visual Studio"
+    dc:identifier="http://delta3d.org/article.php?story=20060220202806917" />
+</rdf:RDF>
+-->
+
+<!-- Include CSS for Forum -->
+<link rel="stylesheet" type="text/css" href="./Building the Dependencies Windows &amp; Microsoft Visual Studio_files/forum.css">
+<link rel="stylesheet" type="text/css" href="./Building the Dependencies Windows &amp; Microsoft Visual Studio_files/smilies.css.php">
+<link rel="stylesheet" type="text/css" href="./Building the Dependencies Windows &amp; Microsoft Visual Studio_files/style(1).css">
+<link rel="stylesheet" type="text/css" href="./Building the Dependencies Windows &amp; Microsoft Visual Studio_files/QapTcha.jquery.css" media="screen">
+	<script type="text/javascript" src="./Building the Dependencies Windows &amp; Microsoft Visual Studio_files/plusone.js.download" gapi_processed="true"></script>
+	
+	<link rel="stylesheet" type="text/css" href="./Building the Dependencies Windows &amp; Microsoft Visual Studio_files/css.php">
+
+    <!--[if lte IE 6]>
+        <link rel="stylesheet" type="text/css" href="http://delta3d.org/layout/purepro/css/ie6.css" title="purepro"{xthml}>
+    <![endif]-->
+    <!--[if IE 7]>
+        <link rel="stylesheet" type="text/css" href="http://delta3d.org/layout/purepro/css/ie7.css" title="purepro"{xthml}>
+    <![endif]-->
+
+<script type="text/javascript" charset="utf-8" async="" src="./Building the Dependencies Windows &amp; Microsoft Visual Studio_files/timeline.0eae788bc4fdbe9cd3e72dca3bc26358.js.download"></script><script type="text/javascript" charset="utf-8" async="" src="./Building the Dependencies Windows &amp; Microsoft Visual Studio_files/button.71000885400e222c3c0eec823f8f93f0.js.download"></script></head>
+<body dir="ltr" id="purepro"><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  /*min-width:800px !important;*/
+}
+</style>
+<script>__wm.rw(0);</script>
+<div id="wm-ipp-base" lang="en" style="display: block; direction: ltr;">
+</div><div id="donato" style="position:relative;width:100%;">
+  <div id="donato-base">
+    <iframe id="donato-if" src="./Building the Dependencies Windows &amp; Microsoft Visual Studio_files/donate.html" scrolling="no" frameborder="0" style="width:100%; height:100%">
+    </iframe>
+  </div>
+</div><script type="text/javascript">
+__wm.bt(625,27,25,2,"web","http://delta3d.org/article.php?story=20060220202806917&topic=tutorials","20160408233427",1996,"/_static/",["/_static/css/banner-styles.css?v=bsmaklHF","/_static/css/iconochive.css?v=qtvMKcIJ"]);
+  __wm.rw(1);
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<div id="body_layer1"><div id="body_layer2"><div id="body_layer3">
+<div>
+    <a name="top"></a>
+    <a href="https://web.archive.org/web/20160408233427/http://delta3d.org/article.php?story=20060220202806917&amp;topic=tutorials#content-start"> <!-- for screenreaders -->
+        <img class="hidden" src="./Building the Dependencies Windows &amp; Microsoft Visual Studio_files/speck.gif" alt="{skip_navigation}">
+    </a>
+</div>
+<!-- End of htmlheader.thtml --><!-- Start of header.thtml -->
+    <div id="gl_container">
+
+        <div id="gl_header">
+		<div id="header-site-logo-graphic">
+	
+	<a href="https://web.archive.org/web/20160408233427/http://delta3d.org/" title="delta3d"><img src="./Building the Dependencies Windows &amp; Microsoft Visual Studio_files/images.php" alt="delta3d"></a>
+	
+</div>
+		
+        </div> <!-- end of gl_header -->
+		
+        
+		
+        <div id="gl_menu" style="display:block">
+            <ul>
+            <li><a href="https://web.archive.org/web/20160408233427/http://delta3d.org/search.php"><span>Advanced Search</span></a></li>
+<li><a href="https://web.archive.org/web/20160408233427/http://delta3d.org/directory.php?topic=tutorials"><span>Directory</span></a></li>
+<li><a href="https://web.archive.org/web/20160408233427/http://delta3d.org/api/"><span>API docs</span></a></li>
+<li><a href="https://web.archive.org/web/20160408233427/http://delta3d.org/article.php?story=20050720155458456&amp;topic=tutorials"><span>Tutorials</span></a></li>
+<li><a href="https://web.archive.org/web/20160408233427/http://delta3d.org/deltawiki"><span>Wiki</span></a></li>
+<li><a href="https://web.archive.org/web/20160408233427/https://sourceforge.net/projects/delta3d/files/"><span>Download</span></a></li>
+<li><a href="https://web.archive.org/web/20160408233427/http://delta3d.org/forum"><span>Forum</span></a></li>
+<li><a href="https://web.archive.org/web/20160408233427/http://delta3d.org/usersettings.php"><span>My Account</span></a></li>
+
+            </ul>
+        </div>  <!-- end of gl_menu -->
+
+		<div id="glmenu_plugin" style="display:none">
+		 
+	    </div>
+		
+		<div id="navman_plugin" style="display:none">
+		
+		
+	    </div>
+		
+		<div id="gl_content_container">
+
+        <div id="gl_wrapper">
+            <div id="gl_content-wide-left">
+
+<!-- START OF CONTENT AREA -->
+                <a name="content-start" id="content-start"></a><!--for screenreaders -->
+				<!-- Start of Breadcrumbs Navigation -->
+<p>
+</p><div itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+    <a href="https://web.archive.org/web/20160408233427/http://delta3d.org/index.php" itemprop="url">
+    <span itemprop="title">Home</span>
+</a> &gt;
+<span itemprop="child" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+    <a href="https://web.archive.org/web/20160408233427/http://delta3d.org/index.php?topic=tutorials" itemprop="url">
+    <span itemprop="title">Tutorials</span>
+</a> 
+
+
+
+</span>
+
+
+
+
+</div>
+<p></p>
+<!-- End of Breadcrumbs Navigation -->
+
+				
+<!-- End of header.thtml -->
+        <div class="story">
+	<span class="story-icons">  
+        
+        
+        
+        
+    </span>
+    <h1>Building the Dependencies - Windows &amp; Microsoft Visual Studio</h1>
+	<div class="story-information">
+    	<a class="storybyline" href="https://web.archive.org/web/20160408233427/http://delta3d.org/users.php?mode=profile&amp;uid=12" rel="author">osb</a> Tuesday, February 21 2006 @ 04:28 AM UTC Views: 30,999  
+    </div>
+    <div class="story-body">
+        This tutorial is aimed for users wishing to compile Delta3D's depdencies using Microsoft Visual Studio. It was written with MVSC++ 7.1, but it should be edited to included special remarks for 8.0 as well.
+<h2>*** Note: the following external dependency information hasn't been updated for awhile.  Its left here for historical purposes. <a href="https://web.archive.org/web/20160408233427/http://delta3d.wiki.sourceforge.net/Dependencies">Click here</a> for updated information.***</h2><br><br><h2>The Dependencies' Dependencies</h2>
+
+    <p>Some of these libaries have a few dependencies of their own. I will address these as we get to them. That being said, you at least need a toolset to compile source code.</p>
+
+    <p>On Windows this usually means the <a href="https://web.archive.org/web/20160408233427/http://msdn.microsoft.com/vstudio/">Microsoft Visual Studio</a> IDE (or even their <a href="https://web.archive.org/web/20160408233427/http://msdn.microsoft.com/visualc/vctoolkit2003/">Microsoft Visual C++ Toolkit</a>). Ocassionally <a href="https://web.archive.org/web/20160408233427/http://www.mingw.org/">MinGW</a>/<a href="https://web.archive.org/web/20160408233427/http://www.mingw.org/msys.shtml">MSYS</a> or <a href="https://web.archive.org/web/20160408233427/http://www.cygwin.com/">Cygwin</a> will be supported as well, but those paths will not be convered in this tutorial (however, feel free to submit directions and they will be posted! ;).</p>
+        <h2>Notes</h2>
+        <p>It is assumed you have basic proficiency in Visual Studio and know where to find common options.</p>
+        <p>It is assumed you have downloaded the pacakges already and unzipped them somewhere. You can find download site and version numbers over <a>here</a>. All directories for each depedency will simply be referenced as their folder name. It is assumed that you unzipped them to your favorite directory and can navigate there easily.</p>
+        <p>At several points you may need to add directories to Visual Studio's search paths for include files and library files. These can be set per-project in the project settings dialogs or globally:
+      </p><ol>
+         <li>Choose the <b>Tools</b> menu</li>
+         <li>Select <b>Options</b></li>
+         <li>Click the <b>Projects</b> folder</li>
+         <li>Choose <b>VC++ Directories</b></li>
+         <li>In the combo box labeled <b>Show directories for:</b> select either <b>Include files</b> or <b>Library files</b></li>
+         <li>Click on the new folder icon</li>
+         <li>Add your directory</li>
+      </ol>
+     <p></p>
+       <p>The packages are listed alphabetically, but be careful, there are some inter-dependencies. Under the header for each package will be a note about its depedenices including links to other sections of this page.</p>
+		<p>Oh and note that I will use the following terms interchangeably:
+	</p><ul>
+      <li>MSVC++ 7.0: MSVC++ 2002</li>
+      <li>MSVC++ 7.1: MSVC++ 2003</li>
+      <li>MSVC++ 8.0: MSVC++ 2005</li>
+    </ul>
+	<p></p>
+        <p>OK, let's go!</p>
+
+
+
+    <h2>Python</h2>
+    <p><b>Latest Recommended Version</b>: 2.4.2</p>
+        <p>This package is very easy to install. Just head over to <a href="https://web.archive.org/web/20160408233427/http://www.python.org/download/">their download page</a> and grab an installer.</p>
+        <p>There is one catch: the Python installer neglects to setup the correct environment variables. Boost.Python and Delta3D keys off these so it's best to set them now.
+      </p><ul>
+        <li><tt>PYTHON_ROOT</tt>, which points to the root of your Python installation (usually <tt>C:\Python24</tt>).</li>
+        <li><tt>PYTHON_VERSION</tt>, which contains the major and minor numbers of the Python version (e.g. <tt>2.4</tt>)</li>
+        <li><tt>PYTHON_INCLUDES</tt>, the path to Python headers (usually <tt>%PYTHON_ROOT%\include</tt>).</li>
+        <li><tt>PYTHON_LIB_PATH</tt>, the path to Python libraries (usually <tt>%PYTHON_ROOT%\libs</tt>). Eventually <tt>%DELTA_ROOT%\bin</tt> should be added to this variable as well.</li>
+      </ul>
+    <p></p>
+
+    <h2>Boost</h2>
+    <p><b>Latest Recommended Version</b>: 1.33.1<br>
+    <b>Dependencies</b>: <a href="https://web.archive.org/web/20160408233427/http://sourceforge.net/project/showfiles.php?group_name=7586&amp;package_name=72941">bjam</a>, <a href="https://web.archive.org/web/20160408233427/http://www.python.org/">Python</a></p>
+        <p>Boost is a set of stable, rigorously tested, and highly confusing libraries. Most are written to exploit the bastard offspring of C++ called <a href="https://web.archive.org/web/20160408233427/http://en.wikipedia.org/wiki/Template_metaprogramming">template metaprogramming</a>. Delta3D currently has two uses for Boost. First, the GameNetworkingEngine (GNE) library uses Boost's <a href="https://web.archive.org/web/20160408233427/http://www.boost.org/libs/smart_ptr/shared_ptr.htm">shared_ptr</a> and <a href="https://web.archive.org/web/20160408233427/http://www.boost.org/libs/smart_ptr/weak_ptr.htm">weak_ptr</a> templates for <a href="https://web.archive.org/web/20160408233427/http://en.wikipedia.org/wiki/Reference_counting">reference counting</a>. These templates are not specialized until GNE uses the headers, so there is no need to actually compile Boost just for GNE. The second reason for using Boost with Delta3D is <a href="https://web.archive.org/web/20160408233427/http://www.boost.org/libs/python/doc/">Boost.Python</a>. This library allows our C++ API to be reflected into Python. Boost.Python needs to be compiled against the <a href="https://web.archive.org/web/20160408233427/http://docs.python.org/api/api.html">Python/C API</a></p>
+        <p>There are a couple of gotchas concerning building Boost correctly on Windows. Let me highly recommend to use <tt>bjam</tt> from the command line instead of VisualStudio directly. Boost 1.33 and onward introduced a <a href="https://web.archive.org/web/20160408233427/http://www.boost.org/more/getting_started.html#Results">new naming convention</a> for their libraries. That's all well and good, but the VisualStudio project for Boost.Python fail to conform to this convention. Even more confusing, a selective compile of Boost.Python by <tt>bjam</tt> also screws up the output filenames. Only a full build as outlined below produced the correct filenames.</p>
+    <ol>
+      <li>Make sure <tt>bjam</tt> can be accessed from <tt>boost_1_33_1</tt></li>
+      <li>Open a <tt>cmd</tt> terminal (click Start, Run..., type <tt>cmd</tt>).</li>
+      <li>Navigate to <tt>boost_1_33_1</tt>.</li>
+      <li>Type <tt>bjam stage</tt>. This will build all the libraries to the directory <tt>boost_1_33_1\stage</tt>. Without any options it will likely guess your correct platform, but if it does not you can use a compile option. For example, use <tt>bjam -sTOOLS=vc-8_0</tt> for VS2005. For more information see Boost's <a href="https://web.archive.org/web/20160408233427/http://www.boost.org/more/getting_started.html">Getting Started</a> guide.</li>
+      <li>Finally <a href="https://web.archive.org/web/20160408233427/http://delta3d.org/article.php?story=20060220202806917&amp;topic=tutorials#SettingPaths">add the proper search paths to Visual Studio</a>. Use <tt>boost_1_33_1</tt> for include files and <tt>boost_1_33_1\stage\lib</tt> for library files.</li>
+    </ol>
+        <h2>CAL3D</h2>
+    <p><b>Latest Recommended Version</b>: 0.10.0</p>
+
+    <p>The only special note about CAL3D is that <a href="https://web.archive.org/web/20160408233427/http://en.wikipedia.org/wiki/RTTI">run-time type information</a> (RTTI) is turned off by default. While this would normally be a good thing, Delta3D needs to use <tt>dynamic_cast</tt> a fair amount, so make sure to enable RTTI.</p>
+        <ol>
+      <li>Open <tt>cal3d-0.10.0\cal3d.dsw</tt></li>
+      <li>Change <b>Enable Run-Time Type Info</b> to <b>Yes</b> for both Debug and Release configuations of the project <b>Cal3D</b></li>
+      <li>Build the Debug and Release configurations of the project <b>Cal3D</b></li>
+    </ol>
+
+    <h2>CppUnit</h2>
+    <p><b>Latest Recommended Version</b>: 1.10.2</p>
+        Just open <tt>cppunit-1.10.2\src\CppUnitLibraries.sln</tt> and build.
+    
+    <h2>FLTK</h2>
+    <p><b>Latest Recommended Version</b>: 1.1.7</p>
+        <p>Open one of their many solutions...</p><p>
+    </p><ul>
+      <li>MSVC++ 6.0: <tt>fltk-1.1.7\visualc\fltk.sln</tt></li>
+      <li>MSVC++ 7.1: <tt>fltk-1.1.7\vcnet\fltk.sln</tt></li>
+      <li>MSVC++ 8.0: <tt>fltk-1.1.7\vc2005\fltk.sln</tt></li>
+      <li>...</li>
+    </ul>
+
+    <p>FLTK will build as a static library by default. If you would like a <a href="https://web.archive.org/web/20160408233427/http://en.wikipedia.org/wiki/Shared_libraries">shared library</a> instead make sure to change the settings for the <tt>fltk</tt> project. Otherwise, build and enjoy.</p>
+        <h2>GDAL</h2>
+    <p><b>Latest Recommended Version</b>: 1.3.1</p>
+
+    <p>This library has a <b>ton</b> of optional dependencies. None of them are necessary for Delta3D. Rather than duplicating a tutorial, I will refer you to GDAL's <a href="https://web.archive.org/web/20160408233427/http://www.remotesensing.org/gdal/gdal_building.html#gdal_building_win">official tutorial</a> on how to build from source. However, you may want to change the default configuration from Debug to Optimized. Open up the file <tt>gdal-1.3.1\nmake.opt</tt> and around line 22 you'll find:
+    </p><pre>    #OPTFLAGS=	/nologo /MD /GX /Ox
+    OPTFLAGS=	/nologo /MD /GX /Zi /Fd$(GDAL_ROOT)\gdal.pdb</pre>
+        Change them to:
+    <pre>    OPTFLAGS=	/nologo /MD /GX /Ox
+    #OPTFLAGS=	/nologo /MD /GX /Zi /Fd$(GDAL_ROOT)\gdal.pdb</pre>
+        Delta3D links both Debug and Release configuration to the optimizied output library <tt>gdal_i.lib</tt>.<p></p>
+        <h2>InterSense Interface Libraries SDK</h2>
+    <p><b>Latest Recommended Version</b>: 3.83</p>
+
+    <p>This depedency supports the <a href="https://web.archive.org/web/20160408233427/http://www.delta3d.org/api/classdt_core_1_1_tracker.html">dtCore::Tracker</a> class, which is design to interface with <a href="https://web.archive.org/web/20160408233427/http://www.intersense.com/">InterSense</a> tracking devices. The InterSense SDK has two pruposes: it provides runtime driver support as well as the actual development SDK. The Windows binary shipped with the SDK does not provide the library <tt>isense.lib</tt> that Delta3D needs to build against.</p>
+    <p>To build the InterSense SDK library:</p>
+<ol>
+   <li>Create a new VC++ project for a DLL</li>
+   <li>Add the files <tt>isense.h</tt> and <tt>isense.c</tt></li>
+   <li>Build!</li>
+</ol>
+
+    <h2>ODE</h2>
+    <p><b>Latest Recommended Version</b>: 0.5</p>
+
+    <p>ODE's build system (as of 0.5) on Windows is not exactly clean. There are has been much development on the UNSTABLE branch of <a href="https://web.archive.org/web/20160408233427/http://www.ode.org/cvs.html">ODE's CVS repository</a> since the last release, so if you run into problems, I suggest you start by grabbing a newer snapshot off CVS.</p>
+        <p>That being said, <b>do not</b> use the MSVC++ 7.0 solution in <tt>ode-0.5\contrib\msvc7\ode.sln</tt>. Personally I cannot get that thing to work. Instead follow these steps to convert the MSVC++ 6.0 .dsw.
+    
+    </p><ol>
+      <li>Go to the directory <tt>ode-0.5\VC6</tt></li>
+      <li>Run the batch file <tt>configure-single-trimesh.bat</tt></li>
+      <li>The open and convert the file <tt>odeDLL.dsw</tt></li>
+      <li>Build away</li>
+    </ol>
+
+    <h2>OpenThreads</h2>
+    <p><b>Latest Recommended Version</b>: 1.4.2<br>
+        </p><p>Open <tt>OSG_OP_OT-1.0\OpenThreads\win32_src\OpenThreads.dsw</tt> and build.</p>
+
+    <h2>Producer</h2>
+    <p><b>Latest Recommended Version</b>: 1.0.1<br>
+    <b>Dependencies</b>: OpenThreads.</p>
+     <p>Make sure OpenThreads is built in the same OSG_OP_OT-1.0 directrory, and then open the suitable solution and compile.</p>
+    <ul>
+      <li>MSVC++ 6.0: <tt>OSG_OP_OT-1.0\Producer\VC++6.0\Producer.sln</tt></li>
+      <li>MSVC++ 7.0: <tt>OSG_OP_OT-1.0\Producer\VC++7\Producer.sln</tt></li>
+    </ul>
+     <h2>OpenSceneGraph</h2>
+    <p><b>Latest Recommended Version</b>: 1.0.0<br>
+    <b>Dependencies</b>: GDAL, <a href="https://web.archive.org/web/20160408233427/http://www.freetype.org/">FreeType</a>, <a href="https://web.archive.org/web/20160408233427/http://www.ijg.org/">libjpeg</a>, <a href="https://web.archive.org/web/20160408233427/http://www.libpng.org/pub/png/libpng.html">libpng</a>, <a href="https://web.archive.org/web/20160408233427/http://www.remotesensing.org/libtiff/">libtiff</a>, <a href="https://web.archive.org/web/20160408233427/http://sourceforge.net/projects/libungif">libungif</a>, <a href="https://web.archive.org/web/20160408233427/http://www.zlib.net/">zlib</a>.</p>
+
+    <p>The dependencies for OpenSceneGraph are mostly related to plugin support. You can find much more information about its dependencies from <a href="https://web.archive.org/web/20160408233427/http://www.openscenegraph.net/osgwiki/pmwiki.php/Downloads/Dependencies">their website</a>. There are pre-built binaries for "Win32", but that probably means MSVC++ 7.1. However, I would give them a shot before building any of your own. Big gotcha: GDAL is a requirement for building osgTerrain as well as the GDAL plugin. osgTerrain is <em>not</em> used in Delta3D, but the GDAL plugin is (<tt>osgdb_gdal.dll</tt>). You can use the version distributed with OSG's 3rdParty Win32 binaries, but <b>be careful</b>! You must build Delta3D again the <em>same</em> version of GDAL that you build OSG against. If you do not then you'll get runtime errors looking for the wrong DLLs. If you use your own version of GDAL then you must be careful to remove the GDAL that OSG distributes with their 3rdParty binaries before building. And of course, if you need to point OSG to an external GDAL then you must add the include and library paths (this is not necessary if you use the 3rdParty binaries).</p>
+        <p>Make sure OpenThreads and Producer are built in the same OSG_OP_OT-1.0 directrory, then open <tt>OSG_OP_OT-1.0\OpenSceneGraph\VisualStudio\OpenSceneGraph.dsw</tt> and build.</p>
+
+    <h2>OpenAL</h2>
+    <p><b>Latest Recommended Version</b>: 0.0.8 (Specification 1.1)</p>
+
+    <p>Using the <a href="https://web.archive.org/web/20160408233427/http://www.openal.org/openal_webstf/downloads/OpenAL%201.1%20Core%20PC%20SDK.exe">OpenAL 1.1 SDK</a> from Creative Labs seems to work OK as long as you replace the broken ALUT libraries that it shipes with. Follow the directions for FreeALUT below.</p>
+        <h2>FreeALUT</h2>
+    <p><b>Latest Recommended Version</b>: 1.0.0<br>
+    <b>Dependencies</b>: OpenAL.</p>
+        <ol>
+      <li>Download <a href="https://web.archive.org/web/20160408233427/http://www.openal.org/openal_webstf/downloads/freealut-1.0.0-bin.zip">FreeALUT Win32 binaries</a></li>
+       <li>Find the directory that the SDK was installed to and replace the following files with ones from the freealut binary package: <tt>alut.dll</tt>, <tt>alut.lib</tt>,<tt>alut.h</tt></li>
+    </ol>
+
+    <h2>PLIB</h2>
+    <p><b>Latest Recommended Version</b>: 1.8.4</p>
+        <p>Open and <tt>plib-1.8.4\plib.dsw</tt> and build. Delta3D only uses the <tt>js</tt> and <tt>js</tt> modules. All PLIB headers are referenced in code like so:
+    </p><pre>#include </pre>
+        So after you've built the libraries you'll need to put the headers to a directory called <tt>plib</tt>.<p></p>
+        <h2>ReplicantBody</h2>
+    <p><b>Latest Recommended Version</b>: 2006-01-17<br>
+    <b>Dependencies</b>: CAL3D, OpenSceneGraph.</p>
+        <p>Just open <tt>replicantbody/VisualStudio/ReplicantBody.sln</tt> (they only have MSVC++ 7.x projects) and build. Make sure the headers and library for CAL3D and OpenSceneGraph can be found by ReplicantBody.</p>
+
+    <h2>Xerces-C++</h2>
+    <p><b>Latest Recommended Version</b>: 2.6.0</p>
+        <p>Xerces-C++ 2.7.0 will work fine with Delta3D, but with that release they introduced a new warning by comparing unsigned and signed intergers without an explicit conversion. Since I don't like seeing miles of warnings, I stick with 2.6.0 for now.</p>
+        <p>But anyways, navigate to <tt>xerces-c-src_2_6_0\Projects\Win32</tt> and select project files from your platform's directory:</p>
+    <ul>
+      <li><tt>BCB6</tt>: Borland C++Builder6</li>
+      <li><tt>BCC.551</tt>: Borland C++ Compiler v5.5.1 (5.6.2 should work as well)</li>
+      <li><tt>CodeWarrior</tt>: Metrowerks CodeWarrior</li>
+      <li><tt>VC6</tt>: Microsoft Visual Studio 6.0</li>
+      <li><tt>VC7</tt>: Microsoft Visual Studio 7.x</li>
+    </ul>
+        <h2>Crazy Eddie's GUI System</h2>
+    <p><b>Latest Recommended Version</b>: 0.4.1<br>
+    <b>Dependencies</b>: <a href="https://web.archive.org/web/20160408233427/http://www.freetype.org/">FreeType</a>, Xerces-C++, <a href="https://web.archive.org/web/20160408233427/http://www.xmission.com/~nate/glut.html">GLUT</a> (optional for CEGUI demos), <a href="https://web.archive.org/web/20160408233427/http://openil.sourceforge.net/">DevIL</a> (optional image loader library).</p>
+		<p>The CEGUI project is very good at <a href="https://web.archive.org/web/20160408233427/http://www.cegui.org.uk/wiki/index.php/Downloads">providing binaries</a> for various Windows configurations. Currently they support MSVC++ 6.0 (with or without STLPort), MSVC++ 2002 (with or without STLPort), MSVC++ 2003, and  MSVC++ 2005. If you wish to install the binaries, you'll need three downloads: the CEGUI SDK, the Core Library Win32 Dependency, and the Xercse-C dependency package (unless you build it on your own as outlined below).</p>
+		<p>Of course, you can always build from source instead. You can use the depdency binaries mentioned above, or build them from source as well. Once the dependency are setup, navigate to <tt>cegui_mk2\makefiles\win32</tt>. You will find there three directories of VisualStudio project files:</p>
+	<ul>
+      <li><tt>VC++6</tt>: Microsoft Visual Studio 6.0</li>
+      <li><tt>VC++7.0</tt>: Microsoft Visual Studio 7.0</li>
+	  <li><tt>VC++7.1</tt>: Microsoft Visual Studio 7.1</li>
+    </ul>
+		<p>Contained within you will find <tt>CEGUI.sln</tt> (or <tt>CEGUI.dsw</tt> for VS++6) that will build the entire library. Make sure the CEGUI projects can find the dependencies!</p>
+
+<p><b>UPDATE for CEGUI 0.5</b><br>
+If you want to build from CEGUI's SVN head and use this to build Delta3D's GUI support, then you will need to follow these steps:
+</p><ul>
+ <li>Build the FreeType library that you will be using to build Delta3D with, which CEGUI also requires.</li>
+ <li>Build the PCRE library for CEGUI, since they stopped doing this for us after the 0.4 release.
+  <ul>
+   <li>If you are using windows, this is a little tricky.  Digging throught the documentation finally points you to a <a href="https://web.archive.org/web/20160408233427/ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/Contrib/">website</a> that lists user contributions, including instructions for building with Visual Studio. I've found <a href="https://web.archive.org/web/20160408233427/ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/Contrib/pcre-6.3-win32-src.zip">these</a> to be most helpful, with instructions <a href="https://web.archive.org/web/20160408233427/ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/Contrib/README">here</a>.
+   </li>
+   <li>
+    It appears the project files you see when unpacking the package mentioned above needs a little help.  The preprocessor command 'PCRE_DEFINITION' needs to be defined.  This will allow the DLL export symbols to be inserted into the library, and allows CEGUI to link.
+   </li>
+  </ul>
+ </li>
+ <li>Install the <a href="https://web.archive.org/web/20160408233427/http://delta3d.org/article.php?story=20060220202806917&amp;topic=tutorials">premake</a> program, and put it into your %PATH%</li>
+ Run the Visual Studio premake scripts found under CEGUI's makefiles/premake folder.
+ <li>Modify the project settings in the CEGUIBase project to find the include and lib paths for the PCRE and FreeType dependencies.</li>
+</ul>
+<p></p>
+        <h2>Hawk Networking Library</h2>
+    <p><b>Latest Recommended Version</b>: 1.68</p>
+		<p>We recommend building HawkNL as a static library. The Game Networking Engine (build on top of HawkNL) is much more stable as a static library, so it makes since to make HawkNL and dtNET static as well. This one is pretty easy. Just open the file <tt>HawkNL1.68\HawkNL.dsw</tt> and build the project called <tt>HawkNL_static</tt>.</p>
+
+    <h2>Game Networking Engine</h2>
+    <p><b>Latest Recommended Version</b>: 0.70<br>
+    <b>Dependencies</b>: HawkNL, Boost.</p>
+		<p>Note GNE does not support MSVC++ 6.0 (neither does Delta3D, so that shouldn't be an issue :). Open the solution <tt>gnelib-0.70\gne.sln</tt>. Make sure the HawkNL headers and libraries can be found by the <tt>gne</tt> project. Also ensure the Boost headers are visible to the <tt>gne</tt> project. Then, go ahead and build <tt>gne</tt>.
+
+    </p><h2>Qt</h2>
+    <p><b>Latest Recommended Version</b>: 4.0.1</p>
+	<b>Dependencies</b>: <a href="https://web.archive.org/web/20160408233427/http://sourceforge.net/projects/qtwin/">QtWin/Free</a> Patch.<p></p>
+		<p>Qt is not technically requireed for Delt3D at the moment, but our flagship application (STAGE) uses it as will all forthcoming official Delta3D utilities, so it's a good idea to get it setup now. However with MSVC++, there's a few hoops you must jump through. The problem boils down to this: Trolltech generously decided to release Qt 4 under an open-source license, but unfortunately they only provided makefile support for MinGW. While we love MinGW, there is no support for building the Delta3D libraries with it. So we had to find a way to compile Qt with MSVC++. Luckily the QtWin/Free project did this already! </p>
+
+   <ol>
+	<li>Grab the appropriate patch from the QtWin/Free site for your compiler.</li>
+	<li>Extract the QtWin/Free patch inside your Qt directory. Overwrite any files with the ones from the patch.</li>
+	<li>Follow instructions for the patch with its readme.</li>
+	<li>After many many hours, it should be all compiled and happy.</li>
+   </ol>
+		<p></p>
+		<div style="clear:both;"></div>
+		<div style="float:left;" id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//web.archive.org/web/20160408233427/http://connect.facebook.net/en_EN/all.js#xfbml=1";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+	    <div style="float:left;margin-right:10px;"><fb:like href="http://delta3d.org/article.php?story=20060220202806917" send="false" layout="button_count" width="90" show_faces="false"></fb:like></div>
+		<div style="float:left;margin-right:-20px;"><a href="https://web.archive.org/web/20160408233427/https://twitter.com/share" class="twitter-share-button twitter-share-button-error" data-url="https://web.archive.org/web/20160408233427/http://delta3d.org/article.php?story=20060220202806917" data-text="Building the Dependencies - Windows &amp; Microsoft Visual Studio" data-counturl="http://delta3d.org/article.php?story=20060220202806917" data-lang="en" data-size="small" data-count="hortizontal" data-twitter-extracted-i1460158562347363226="true">Tweet</a>
+        </div><script>!function(d,s,id) { var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)) { js=d.createElement(s);js.id=id;js.src="https://web.archive.org/web/20160408233427/https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs); } }(document,"script","twitter-wjs");</script>
+		<div style="position: absolute; width: 450px; left: -10000px;" id="___plusone_0"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position:absolute;top:-10000px;width:450px;margin:0px;border-style:none" tabindex="0" vspace="0" width="100%" id="I0_1460158535068" name="I0_1460158535068" src="./Building the Dependencies Windows &amp; Microsoft Visual Studio_files/fastbutton.html" allow="autoplay &#39;self&#39;; fullscreen &#39;self&#39;"></iframe></div><div style="float:left;" class="g-plusone" data-size="medium" data-href="http://delta3d.org/article.php?story=20060220202806917" data-gapiscan="true" data-onload="true" data-gapistub="true"></div>
+		<div style="position: absolute; width: 450px; left: -10000px;" id="___plus_0"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position:absolute;top:-10000px;width:450px;margin:0px;border-style:none" tabindex="0" vspace="0" width="100%" id="I1_1460158535075" name="I1_1460158535075" src="./Building the Dependencies Windows &amp; Microsoft Visual Studio_files/sharebutton.html" allow="autoplay &#39;self&#39;; fullscreen &#39;self&#39;"></iframe></div><div class="g-plus" data-action="share" data-annotation="bubble" data-href="http://delta3d.org/article.php?story=20060220202806917" data-gapiscan="true" data-onload="true" data-gapistub="true"></div>
+		<div style="clear:both;"></div>
+		<div style="margin-top:5px;">
+                
+        </div>
+    </div>
+	<div class="clearboth"></div>
+</div>
+
+
+		<div class="clearboth"></div>
+		  <div id="story-whatsrelatedandoptions">
+            <div id="story-whatsrelated"><!-- start blockheader-related.thtml -->
+<div class="block-box-left">
+    <span class="block-helpicon">
+        
+    </span>
+    <h2>What's Related</h2>
+<ul class="list-whats-related">
+  <li><a href="https://web.archive.org/web/20160408233427/http://delta3d.wiki.sourceforge.net/Dependencies">Click here</a></li>
+  <li><a href="https://web.archive.org/web/20160408233427/http://msdn.microsoft.com/vstudio/">Microsoft Visual Studio</a></li>
+  <li><a href="https://web.archive.org/web/20160408233427/http://msdn.microsoft.com/visualc/vctoolkit2003/">Microsoft Visual C++ To...</a></li>
+  <li><a href="https://web.archive.org/web/20160408233427/http://www.mingw.org/">MinGW</a></li>
+  <li><a href="https://web.archive.org/web/20160408233427/http://www.mingw.org/msys.shtml">MSYS</a></li>
+  <li><a href="https://web.archive.org/web/20160408233427/http://www.cygwin.com/">Cygwin</a></li>
+  <li><a href="https://web.archive.org/web/20160408233427/http://www.python.org/download/">their download page</a></li>
+  <li><a href="https://web.archive.org/web/20160408233427/http://sourceforge.net/project/showfiles.php?group_name=7586&amp;package_name=72941">bjam</a></li>
+  <li><a href="https://web.archive.org/web/20160408233427/http://www.python.org/">Python</a></li>
+  <li><a href="https://web.archive.org/web/20160408233427/http://en.wikipedia.org/wiki/Template_metaprogramming">template metaprogramming</a></li>
+  <li><a href="https://web.archive.org/web/20160408233427/http://www.boost.org/libs/smart_ptr/shared_ptr.htm">shared_ptr</a></li>
+  <li><a href="https://web.archive.org/web/20160408233427/http://www.boost.org/libs/smart_ptr/weak_ptr.htm">weak_ptr</a></li>
+  <li><a href="https://web.archive.org/web/20160408233427/http://en.wikipedia.org/wiki/Reference_counting">reference counting</a></li>
+  <li><a href="https://web.archive.org/web/20160408233427/http://www.boost.org/libs/python/doc/">Boost.Python</a></li>
+  <li><a href="https://web.archive.org/web/20160408233427/http://docs.python.org/api/api.html">Python/C API</a></li>
+  <li><a href="https://web.archive.org/web/20160408233427/http://www.boost.org/more/getting_started.html#Results">new naming convention</a></li>
+  <li><a href="https://web.archive.org/web/20160408233427/http://www.boost.org/more/getting_started.html">Getting Started</a></li>
+  <li><a href="https://web.archive.org/web/20160408233427/http://delta3d.org/article.php?story=20060220202806917&amp;topic=tutorials#SettingPaths">add the proper search p...</a></li>
+  <li><a href="https://web.archive.org/web/20160408233427/http://en.wikipedia.org/wiki/RTTI">run-time type information</a></li>
+  <li><a href="https://web.archive.org/web/20160408233427/http://en.wikipedia.org/wiki/Shared_libraries">shared library</a></li>
+  <li><a href="https://web.archive.org/web/20160408233427/http://www.remotesensing.org/gdal/gdal_building.html#gdal_building_win">official tutorial</a></li>
+  <li><a href="https://web.archive.org/web/20160408233427/http://www.delta3d.org/api/classdt_core_1_1_tracker.html">dtCore::Tracker</a></li>
+  <li><a href="https://web.archive.org/web/20160408233427/http://www.intersense.com/">InterSense</a></li>
+  <li><a href="https://web.archive.org/web/20160408233427/http://www.ode.org/cvs.html">ODE's CVS repository</a></li>
+  <li><a href="https://web.archive.org/web/20160408233427/http://www.freetype.org/">FreeType</a></li>
+  <li><a href="https://web.archive.org/web/20160408233427/http://www.ijg.org/">libjpeg</a></li>
+  <li><a href="https://web.archive.org/web/20160408233427/http://www.libpng.org/pub/png/libpng.html">libpng</a></li>
+  <li><a href="https://web.archive.org/web/20160408233427/http://www.remotesensing.org/libtiff/">libtiff</a></li>
+  <li><a href="https://web.archive.org/web/20160408233427/http://sourceforge.net/projects/libungif">libungif</a></li>
+  <li><a href="https://web.archive.org/web/20160408233427/http://www.zlib.net/">zlib</a></li>
+  <li><a href="https://web.archive.org/web/20160408233427/http://www.openscenegraph.net/osgwiki/pmwiki.php/Downloads/Dependencies">their website</a></li>
+  <li><a href="https://web.archive.org/web/20160408233427/http://www.openal.org/openal_webstf/downloads/OpenAL%201.1%20Core%20PC%20SDK.exe">OpenAL 1.1 SDK</a></li>
+  <li><a href="https://web.archive.org/web/20160408233427/http://www.openal.org/openal_webstf/downloads/freealut-1.0.0-bin.zip">FreeALUT Win32 binaries</a></li>
+  <li><a href="https://web.archive.org/web/20160408233427/http://www.freetype.org/">FreeType</a></li>
+  <li><a href="https://web.archive.org/web/20160408233427/http://www.xmission.com/~nate/glut.html">GLUT</a></li>
+  <li><a href="https://web.archive.org/web/20160408233427/http://openil.sourceforge.net/">DevIL</a></li>
+  <li><a href="https://web.archive.org/web/20160408233427/http://www.cegui.org.uk/wiki/index.php/Downloads">providing binaries</a></li>
+  <li><a href="https://web.archive.org/web/20160408233427/ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/Contrib/">website</a></li>
+  <li><a href="https://web.archive.org/web/20160408233427/ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/Contrib/pcre-6.3-win32-src.zip">these</a></li>
+  <li><a href="https://web.archive.org/web/20160408233427/ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/Contrib/README">here</a></li>
+  <li><a href="https://web.archive.org/web/20160408233427/http://delta3d.org/article.php?story=20060220202806917&amp;topic=tutorials">premake</a></li>
+  <li><a href="https://web.archive.org/web/20160408233427/http://sourceforge.net/projects/qtwin/">QtWin/Free</a></li>
+  <li><a href="https://web.archive.org/web/20160408233427/http://delta3d.org/search.php?mode=search&amp;type=stories&amp;author=12">More by osb</a></li>
+  <li><a href="https://web.archive.org/web/20160408233427/http://delta3d.org/search.php?mode=search&amp;type=stories&amp;topic=tutorials">More from Tutorials</a></li>
+
+</ul>
+</div>
+<div style="clear:both;"></div>
+
+</div>
+            <div id="story-storyoptions"><!-- start blockheader-related.thtml -->
+<div class="block-box-left">
+    <span class="block-helpicon">
+        
+    </span>
+    <h2>Story Options</h2>
+<ul class="list-story-options">
+  <li><a href="https://web.archive.org/web/20160408233427/http://delta3d.org/profiles.php?sid=20060220202806917&amp;what=emailstory">Mail Story to a Friend</a></li>
+  <li><a href="https://web.archive.org/web/20160408233427/http://delta3d.org/article.php?story=20060220202806917&amp;mode=print" rel="nofollow">Printable Story Format</a></li>
+
+</ul>
+</div>
+<div style="clear:both;"></div>
+
+</div>
+		  </div>
+		<div class="clearboth"></div>
+		<div id="comments">
+        
+		</div>
+		<div id="story-trackbacks"><h2><a name="trackback">Trackback</a></h2>
+<p>Trackback URL for this entry: http://delta3d.org/trackback.php?id=20060220202806917</p>
+No trackback comments for this entry.
+
+</div>
+
+	<!-- END OF CONTENT AREA -->
+            </div> <!-- end of gl_content -->
+        </div> <!-- end of gl_wrapper -->
+<!-- Start of Left blocks -->
+    <div id="gl_navigation">
+        <div class="block-columnpad"><div class="block-box-left">
+    <span class="block-helpicon-left">
+        
+    </span>
+    <h2 class="block-title-left">News</h2>
+<a href="https://web.archive.org/web/20160408233427/http://caperholdings.com/contracting-services" target="_blank">Need Professional Support?</a>
+
+</div><div class="block-box-left">
+    <span class="block-helpicon-left">
+        
+    </span>
+    <h2 class="block-title-left">About delta3d</h2>
+delta3d is a game and simulation engine appropriate for a wide variety of simulation and entertainment applications.  delta3d uses best-of-breed open source technologies to create a fully integrated game engine and with content creation tools.<a href="https://web.archive.org/web/20160408233427/http://delta3d.org/index.php?topic=about">MORE</a>
+</div><div class="block-box-left">
+    <span class="block-helpicon-left">
+        <a href="https://web.archive.org/web/20160408233427/http://caperholdings.com/sponsor-delta3d" class="blocktitle"><img src="./Building the Dependencies Windows &amp; Microsoft Visual Studio_files/button_help.png" alt="?"></a>
+    </span>
+    <h2 class="block-title-left">Sponsor delta3d</h2>
+For the past few years Caper Holdings LLC has been solely driving development of delta3d. To continue to provide upgrades and releases we are allowing the community to purchase <a href="https://web.archive.org/web/20160408233427/http://caperholdings.com/sponsor-delta3d">sponsorships</a>
+</div><div class="block-box-left">
+    <span class="block-helpicon-left">
+        
+    </span>
+    <h2 class="block-title-left">Twitter</h2>
+<iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-timeline twitter-timeline-rendered" style="position: absolute; visibility: hidden; display: block; width: 0px; height: 0px; padding: 0px; border: none;" allow="autoplay &#39;self&#39;; fullscreen &#39;self&#39;" src="./Building the Dependencies Windows &amp; Microsoft Visual Studio_files/saved_resource.html"></iframe><a class="twitter-timeline twitter-timeline-error" href="https://web.archive.org/web/20160408233427/https://twitter.com/delta3d" data-widget-id="510256513730875393" data-twitter-extracted-i1460158562343851334="true">Tweets by @delta3d</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id))}(document,"script","twitter-wjs");</script>
+</div><div class="block-box-left">
+    <span class="block-helpicon-left">
+        
+    </span>
+    <h2 class="block-title-left">User Functions</h2>
+<!-- loginform.thtml -->
+
+<div id="login_form">
+	<h2 id="login_button" class="login_options">
+		<a style="padding-right:20px;" href="https://web.archive.org/web/20160408233427/http://delta3d.org/article.php?story=20060220202806917&amp;topic=tutorials#" title="" onclick="return false;">Login</a>
+	</h2>
+
+	<div id="loginblock" class="loginblock">
+		<div id="loginblock-content">
+			<div id="loginform">
+				<form action="https://web.archive.org/web/20160408233427/http://delta3d.org/users.php" method="post" style="padding-bottom:5px;">
+				<label for="loginname">Username:</label><br>
+				<input type="text" size="10" name="loginname" value="" id="loginname"><br>
+				
+				<label for="passwd">Password:</label><br>
+				<input type="password" size="10" name="passwd" id="passwd"><br>
+				<input type="submit" name="submit_login" value="Login" style="margin-top:5px;">
+				</form>
+			</div>
+			<p>Don't have an account yet?  Sign up as a <a href="https://web.archive.org/web/20160408233427/http://delta3d.org/users.php?mode=new" rel="nofollow">New User</a></p>
+			<p>Lost your <a href="https://web.archive.org/web/20160408233427/http://delta3d.org/users.php?mode=getpassword" rel="nofollow">password</a>?</p>
+
+		</div>
+	</div>
+    
+	
+</div>
+<!-- /loginform.thtml -->
+</div></div>
+    </div>
+<!-- End of Left blocks -->
+
+        </div> <!-- end of gl_content_container -->
+        <div id="gl_footer">
+			<div id="footer_container">
+			</div> <!-- end of footer_container -->
+        </div> <!-- end of gl_footer-->
+
+</div> <!-- end of container -->
+
+
+
+
+    <!--[if lte IE 6]>
+        <script type="text/javascript" src="http://delta3d.org/layout/purepro/js/gl_moopngfix.js" defer="defer" ></script>
+    <![endif]-->
+
+    <!--[if lt IE 7.]>
+        <script defer type="text/javascript" src="http://delta3d.org/layout/purepro/js/pngfix.js"></script>
+    <![endif]-->
+
+</div></div></div>
+<!-- End of layers -->
+
+<script type="text/javascript">
+var geeklogEditorBaseUrl = "https://web.archive.org/web/20160408233427/http://delta3d.org";
+var geeklogEditorBasePath = "https://web.archive.org/web/20160408233427/http://delta3d.org/fckeditor/";
+</script>
+<script type="text/javascript" src="./Building the Dependencies Windows &amp; Microsoft Visual Studio_files/common.js.download"></script>
+<script type="text/javascript" src="./Building the Dependencies Windows &amp; Microsoft Visual Studio_files/jquery.min.js.download"></script>
+
+
+
+
+<!--
+playback timings (ms):
+  captures_list: 1040.225
+  exclusion.robots: 0.244
+  exclusion.robots.policy: 0.235
+  RedisCDXSource: 4.462
+  esindex: 0.011
+  LoadShardBlock: 1009.579 (3)
+  PetaboxLoader3.datanode: 158.497 (4)
+  CDXLines.iter: 22.933 (3)
+  load_resource: 218.612
+  PetaboxLoader3.resolve: 95.692
+--><script src="./Building the Dependencies Windows &amp; Microsoft Visual Studio_files/510256513730875393" async=""></script><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" allow="autoplay &#39;self&#39;; fullscreen &#39;self&#39;" src="./Building the Dependencies Windows &amp; Microsoft Visual Studio_files/saved_resource(1).html"></iframe></body></html>

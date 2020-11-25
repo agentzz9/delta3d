@@ -1,0 +1,383 @@
+/* Style Sheet originally created for the following:			*/
+/* Theme Name: Geeklog Game-Server (v1.0)						*/
+/* Theme Developer: Simon Lord (slord@mac.com)					*/
+/* Theme Code Copyright (c) 2002 by Simon Lord, 				*/
+/* reproduction is permitted providing author credits remain.	*/
+/* Creation Date: 04/02/2002									*/
+/* Exhaustive revision by BMH December 2004						*/
+
+H1,h1 					{ padding-top:10px; font-weight: bold; font-size: 18px; font-family: Arial, Verdana, Helvetica, sans-serif }
+H2,h2 					{ padding-top:10px; font-size: 12px; font-family: Arial, Verdana, Helvetica, sans-serif }
+
+.cal-day 			{ font-size: 14px; font-weight: bold; }
+.cal-nullday 		{ background: #152442; }
+.cal-oldday 		{ background: #FEFEFF; }
+.cal-today 			{ background: #546a95; }
+.weekview-caltitle 	{ background: #FEFEFF; font-weight: bold; font-size: 14px; }
+.weekview-curday 	{ background: yellow; }
+.weekview-offday 	{ background: #FEFEFF; }
+.weekview-dayformat { font-weight: bold; }
+.weekview-addevent 	{ font-size: 9px; }
+.weekview-daterange { font-size: 16px; font-weight: bold; }
+.dayview-times 		{ font-weight: bold; text-align: center; }
+.dayview-datecol 	{ font-weight: bold; background: #FEFEFF; font-size: 16px; }
+.dayview-quickaddtitle 		{ font-weight: bold; background: #FEFEFF; font-size: 14px; }
+
+.box				{ color: #000000; scrollbar-face-color: #0066FF; scrollbar-highlight-color: #00ccff; scrollbar-shadow-color: #003366; scrollbar-track-color: #003366  }
+
+body				{ background-color: #fffeff; }
+
+A:link				{ color: #bf8113; font-size: 12px; line-height: 14px; font-family: Arial, Helvetica, Verdana, sans-serif; text-decoration: none }
+A:visited			{ color: #bf8113; font-size: 12px; line-height: 14px; font-family: Arial, Helvetica, Verdana, sans-serif; text-decoration: none }
+A:hover				{ color: #ffc15e; font-size: 12px; line-height: 14px; font-family: Arial, Helvetica, Verdana, sans-serif; text-decoration: none }
+
+A.navbar:link 	   	{ color: #ffcc00; font-weight: bold; font-size: 10px; line-height: 12px; font-family: Arial, Verdana, Helvetica, sans-serif; text-decoration: none }
+A.navbar:visited    { color: #ffcc00; font-weight: bold; font-size: 10px; line-height: 12px; font-family: Arial, Verdana, Helvetica, sans-serif; text-decoration: none }
+A.navbar:hover    	{ color: #010417; font-weight: bold; font-size: 10px; line-height: 12px; font-family: Arial, Verdana, Helvetica, sans-serif; text-decoration: none }
+
+A.menuPick:link 	{ color: #00c; font-size: 10px; line-height: 12px; font-family: Arial, Verdana, Helvetica, sans-serif; text-decoration: none }
+A.menuPick:visited  { color: #606; font-size: 10px; line-height: 12px; font-family: Arial, Verdana, Helvetica, sans-serif; text-decoration: none }
+A.menuPick:hover 	{ color: #c03; font-size: 10px; line-height: 12px; font-family: Arial, Verdana, Helvetica, sans-serif; text-decoration: none }
+
+
+TD					{ color: #010417; font-size: 12px; font-family: Arial, Verdana, Helvetica, sans-serif }
+TD.bold				{ color: #010417; font-weight: bold; font-size: 12px; font-family: Arial, Verdana, Helvetica, sans-serif }
+
+
+SPAN.articleTitle	{ color: #c0d5e5; font-size: 14px; font-family: Arial, Verdana, Helvetica, sans-serif }
+SPAN.articleFeature	{ color: #080f1b; font-weight: bold; font-size: 14px; font-family: Arial, Verdana, Helvetica, sans-serif }
+SPAN.title   		{ color: #000000; font-weight: bold; font-size: 12px; font-family: Arial, Verdana, Helvetica, sans-serif }
+SPAN.quote			{ color: #000000; font-style: italic; font-weight: normal; font-size: 12px; font-family: Arial, Verdana, Helvetica, sans-serif }
+
+SPAN.welcomeName 	{ color: #8FA6C3; font-weight: bold; font-size: 10px; line-height: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; text-decoration: none }
+
+A.welcomeName 	{ font-weight: bold; font-size: 10px; line-height: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; text-decoration: none }
+
+a.welcomeName 	{ font-weight: bold; font-size: 10px; line-height: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; text-decoration: none }
+
+SPAN.block			{ color: #000000; font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; }
+
+SPAN.story			{ color: #000000; font-style: italic; font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; }
+SPAN.admin-note		{ color: #000000; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; }
+
+SPAN.sitename		{ color: #000000; font-weight: bold; font-size: 10px; font-family: Arial, Verdana, Helvetica, sans-serif }
+SPAN.postedBy		{ color: #000000; font-size: 8px; font-family: Arial, Verdana, Helvetica, sans-serif }
+SPAN.copyRight		{ color: #000000; font-size: 10px; font-family: Arial, Verdana, Helvetica, sans-serif }
+
+
+
+select				{ color: #000033; font-weight: normal; font-size: 10px; font-family: Arial, Verdana, Helvetica, sans-serif; background-color: #6a7da3; text-indent: 10px; }
+button 				{ font-family: Arial, Verdana, Helvetica, sans-serif;  font-size: 14px; font-weight: normal; border-color: #000033; border-style: solid; text-indent: 12px; }
+
+.searchAuth { 
+    font-weight: normal; 
+    font-size: 80%; 
+    font-family: Arial, Verdana, Helvetica, sans; 
+    text-align: left;  
+    color:#557755;
+}
+.searchDate { 
+    font-weight: normal; 
+    font-size: 80%; 
+    font-family: Arial, Verdana, Helvetica, sans; 
+    text-align: right;  
+    color:#557755;
+}
+.searchHits { 
+    font-weight: normal; 
+    font-size: 80%; 
+    font-family: Arial, Verdana, Helvetica, sans; 
+    text-align: right; 
+    color:#557755;
+}
+.highlight { 
+    background-color: yellow; 
+    text-decoration: none; 
+} 
+
+SPAN.footerblock 	{ color: #8FA6C3; font-size: 10px; line-height: 12px; font-family: Verdana, Arial, Helvetica, sans-serif }
+
+A.footerblock 	{ color: #8FA6C3; font-size: 10px; line-height: 12px; font-family: Verdana, Arial, Helvetica, sans-serif }
+
+a.footerblock 	{ color: #8FA6C3; font-size: 10px; line-height: 12px; font-family: Verdana, Arial, Helvetica, sans-serif }
+
+/******************   NEW CSS ADDED FOR FORUM Ver 2.3 ************************/
+
+#navcontainer a { text-decoration: none; }
+
+#navcontainer ul  {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    position: relative;
+    border: 0px;
+    padding: 15px 0px 0px 0px;
+    height:26px;
+}
+
+#navcontainer li { display: inline; margin:0px; width:180px; }
+
+#navcontainer ul a,
+#navcontainer ul a:link,
+#navcontainer ul a:visited  {
+    background-color: #D0DBEA;
+    color: #bf8113;
+    padding: 2px 5px;
+    margin:2px;
+    border:1px solid #B0BBCA;
+}
+
+#navcontainer ul a:focus  {
+    border:1px solid #486c9b;
+    color: #ffc15e;
+}
+
+/* current Link */
+#navcontainer ul a#current,
+#navcontainer ul a#current:link,
+#navcontainer ul a#current:visited { font-weight: bold; color: #000000; background-color: #D0DBEA; border:1px solid #486c9b; }
+
+
+#forumheading          { text-align:left; background-color: #486c9b; }
+.forumtext             { color: #000000; }
+.forumtxt              { color: #000000; }
+.forumclass1           { text-align:left; background-color: #D0DBEA; }
+.forumclass2           { text-align:left; background-color: #CCCCCC; }
+.forumclass3           { text-align:left; background-color: #FEFEFF; }
+.forumclass4           { text-align:left; background-color: #FEFEFF; }
+.forumoutline          { background-color: #486c9b; }
+
+/* These CSS declarations for links are used in a few places but are here for theme designers to use if needed - can be added to templates  */
+.forumlinks A:link      { color: #000000; font-style: normal; font-size: 11px; font-family: Arial, Verdana, Helvetica, sans-serif; text-decoration: underline }
+.forumlinks A:visited   { color: #000000; font-style: normal; font-size: 11px; font-family: Arial, Verdana, Helvetica, sans-serif; text-decoration: underline }
+.forumlinks A:hover     { color: #000000; font-style: normal; font-size: 11px; font-family: Arial, Verdana, Helvetica, sans-serif; text-decoration: underline }
+
+/* alternate table row colors */
+.forumAlt1   { background-color: #D0DBEA; }
+.forumAlt2   { background-color: #FEFEFF; }
+
+.quotebox   { 
+     border-style: ridge;
+     padding:10px;
+     margin: 0px;
+     }
+
+.quotetext {
+     color:#444444; 
+     font-weight: normal;
+     font-family: Arial, Verdana, Helvetica, sans-serif; 
+     }
+
+pre  { 
+    background-color: #ECE9D8; 
+    color: #000000;
+    width: 95%;
+    overflow: auto;
+    font-size: 11px;
+    min-height: 50px;
+    max-height: 1000px;
+    padding:5px;
+    border: 1px dashed black;
+    font-family: Courier, "Courier New", mono; 
+    }
+
+.forumCode  { 
+    background-color: #ECE9D8; 
+    color: #000000;
+    width: 95%;
+    overflow: auto;
+    font-size: 11px;
+    min-height: 50px;
+    max-height: 1000px;
+    padding:5px;
+    border: 1px dashed black;
+    font-family: Courier, "Courier New", mono; 
+    }
+
+.forumTitle   {
+    color: #c0d5e5;
+    background-color: #486c9b;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 12pt;
+    font-family: Arial, Verdana, Helvetica, sans-serif; }
+
+TD.forumRollOver  { 
+    text-align:left;
+    background-color: #D0DBEA; 
+    font-family: Arial, Verdana, Helvetica, sans-serif; 
+    color: #000033  
+    }
+
+TD.forumRollOut   { 
+    text-align:left;
+    background-color: #FEFEFF; 
+    font-family: Arial, Verdana, Helvetica, sans-serif; 
+    color: #000033  
+    }
+
+.cblockTitle    {
+    color: #FFFFFF;
+    background-color: #506790;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16pt;
+    padding-left:5px;
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    }
+
+
+/******************   For comments ************************/
+
+
+.commenttitle   {
+    color: #080f1b;
+    background-color: #486c9b;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14pt;
+    font-family: Arial, Verdana, Helvetica, sans-serif; }
+
+.comment  { 
+    BORDER: #333344 1px ridge;
+    TEXT-INDENT: 5px;
+    padding:0px;
+    margin: 10px;
+    text-align:left;
+    background-color: #FEFEFF; 
+    font-family: Arial, Verdana, Helvetica, sans-serif; 
+    color: #000033  
+    }
+
+
+
+/******************   For mouseover menu ************************/
+
+
+
+/* level 0 inner */
+.m0l0iout {
+	font-weight: bold;
+	text-decoration: none;
+	color: #bf8113;
+    text-align:center;
+    padding-left:0px;
+    padding-top:4px;
+}
+.m0l0iover {
+	font-weight: bold;
+	color: #ffc15e;
+    text-align:center;
+    padding-left:0px;
+    padding-top:5px;
+}
+
+/* level 0 outer */
+.m0l0oout {
+	font-weight: bold;
+	text-decoration : none;
+    text-align:center;
+    padding-left:0px;
+}
+.m0l0oover {
+	font-weight: bold;
+	text-decoration : none;
+    text-align:center;
+    padding-left:0px;
+}
+
+/* level 1 inner */
+.m0l1iout {
+	font-weight: bold;
+	text-decoration: none;
+	color: #bf8113;
+    text-align:left;
+    padding-left:5px;
+    padding-top:2px;
+}
+.m0l1iover {
+	font-weight: bold;
+	text-decoration : none;
+	color: #ffc15e;
+    text-align:left;
+    padding-left:6px;
+    padding-top:3px;
+}
+
+/* level 1 outer */
+.m0l1oout {
+	font-weight: bold;
+	text-decoration : none;
+	background: #426391;
+    text-align:left;
+    padding-left:5px;
+    BORDER: #224879 1px ridge;
+    padding-top:2px;
+}
+.m0l1oover {
+	font-weight: bold;
+	text-decoration : none;
+	background: #5879A4;
+    text-align:left;
+    padding-left:5px;
+    BORDER: #bf8113 1px ridge;
+    padding-top:2px;
+}
+
+/* level 2 inner */
+.m0l2iover {
+	font-weight: bold;
+	text-decoration : none;
+	color: #ffc15e;
+    text-align:left;
+    padding-left:6px;
+    padding-top:3px;
+}
+
+/* level 2 outer */
+.m0l2oout {
+	font-weight: bold;
+	text-decoration : none;
+	background: #426391;
+    text-align:left;
+    padding-left:5px;
+    BORDER: #224879 1px ridge;
+    padding-top:2px;
+}
+.m0l2oover {
+	font-weight: bold;
+	text-decoration : none;
+	background: #5879A4;
+    text-align:left;
+    padding-left:5px;
+    BORDER: #bf8113 1px ridge;
+    padding-top:2px;
+}
+
+
+img
+{
+        border-style: none;
+}
+
+/*
+     FILE ARCHIVED ON 23:43:53 Apr 16, 2009 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:13:09 Nov 25, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  esindex: 0.011
+  exclusion.robots.policy: 0.171
+  PetaboxLoader3.datanode: 871.102 (4)
+  LoadShardBlock: 770.322 (3)
+  PetaboxLoader3.resolve: 251.274
+  RedisCDXSource: 81.655
+  captures_list: 879.446
+  exclusion.robots: 0.184
+  CDXLines.iter: 21.578 (3)
+  load_resource: 458.829
+*/

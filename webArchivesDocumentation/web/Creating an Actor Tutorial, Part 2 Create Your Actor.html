@@ -1,0 +1,738 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0113)https://web.archive.org/web/20160408231900/http://delta3d.org/article.php?story=20050720135053455&topic=tutorials -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><script id="twitter-wjs" src="./Creating an Actor Tutorial, Part 2 Create Your Actor_files/widgets.js.download"></script><script id="facebook-jssdk" src="./Creating an Actor Tutorial, Part 2 Create Your Actor_files/all.js.download"></script><script src="./Creating an Actor Tutorial, Part 2 Create Your Actor_files/analytics.js.download" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app29.us.archive.org';v.server_ms=968;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="./Creating an Actor Tutorial, Part 2 Create Your Actor_files/playback.bundle.js.download" charset="utf-8"></script>
+<script type="text/javascript" src="./Creating an Actor Tutorial, Part 2 Create Your Actor_files/wombat.js.download" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://delta3d.org/article.php?story=20050720135053455&topic=tutorials","20160408231900","https://web.archive.org/","web","/_static/",
+	      "1460157540");
+</script>
+<link rel="stylesheet" type="text/css" href="./Creating an Actor Tutorial, Part 2 Create Your Actor_files/banner-styles.css">
+<link rel="stylesheet" type="text/css" href="./Creating an Actor Tutorial, Part 2 Create Your Actor_files/iconochive.css">
+<!-- End Wayback Rewrite JS Include -->
+
+    <title>
+	    Creating an Actor Tutorial, Part 2 - Create Your Actor - delta3d
+    </title>
+    
+    <meta name="revisit-after" content="2 days">
+    <meta name="robots" content="index,follow">
+    <meta name="publisher" content="delta3d">
+    <meta name="copyright" content="delta3d">
+    <meta name="author" content="delta3d">
+    <meta name="distribution" content="global">
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<!-- <meta http-equiv="Pragma" content="no-cache"> -->
+
+    <link rel="SHORTCUT ICON" href="https://web.archive.org/web/20160408231900im_/http://delta3d.org/images/favicon.ico">
+
+	
+
+	<link rel="home" href="http://delta3d.org/" title="Home">
+<link rel="search" href="https://web.archive.org/web/20160408231900/http://delta3d.org/search.php" title="Advanced Search">
+<link rel="contents" href="http://delta3d.org/directory.php" title="Directory">
+<link rel="service" type="application/atomsvc+xml" href="http://delta3d.org/webservices/atom/?introspection" title="Webservices">
+
+	<link rel="stylesheet" type="text/css" href="./Creating an Actor Tutorial, Part 2 Create Your Actor_files/css.php" media="all">
+<link rel="stylesheet" type="text/css" href="./Creating an Actor Tutorial, Part 2 Create Your Actor_files/style.css">
+<link rel="canonical" href="https://web.archive.org/web/20160408231900/http://delta3d.org/article.php?story=20050720135053455">
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://delta3d.org/article.php?story=20050720135053455"
+    trackback:ping="http://delta3d.org/trackback.php?id=20050720135053455"
+    dc:title="Creating an Actor Tutorial, Part 2 - Create Your Actor"
+    dc:identifier="http://delta3d.org/article.php?story=20050720135053455" />
+</rdf:RDF>
+-->
+
+<!-- Include CSS for Forum -->
+<link rel="stylesheet" type="text/css" href="./Creating an Actor Tutorial, Part 2 Create Your Actor_files/forum.css">
+<link rel="stylesheet" type="text/css" href="./Creating an Actor Tutorial, Part 2 Create Your Actor_files/smilies.css.php">
+<link rel="stylesheet" type="text/css" href="./Creating an Actor Tutorial, Part 2 Create Your Actor_files/style(1).css">
+<link rel="stylesheet" type="text/css" href="./Creating an Actor Tutorial, Part 2 Create Your Actor_files/QapTcha.jquery.css" media="screen">
+	<script type="text/javascript" src="./Creating an Actor Tutorial, Part 2 Create Your Actor_files/plusone.js.download"></script>
+	
+	<link rel="stylesheet" type="text/css" href="./Creating an Actor Tutorial, Part 2 Create Your Actor_files/css.php">
+
+    <!--[if lte IE 6]>
+        <link rel="stylesheet" type="text/css" href="http://delta3d.org/layout/purepro/css/ie6.css" title="purepro"{xthml}>
+    <![endif]-->
+    <!--[if IE 7]>
+        <link rel="stylesheet" type="text/css" href="http://delta3d.org/layout/purepro/css/ie7.css" title="purepro"{xthml}>
+    <![endif]-->
+
+</head>
+<body dir="ltr" id="purepro"><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  /*min-width:800px !important;*/
+}
+</style>
+<script>__wm.rw(0);</script>
+<div id="wm-ipp-base" lang="en" style="display: block; direction: ltr;">
+</div><div id="donato" style="position:relative;width:100%;">
+  <div id="donato-base">
+    <iframe id="donato-if" src="./Creating an Actor Tutorial, Part 2 Create Your Actor_files/donate.html" scrolling="no" frameborder="0" style="width:100%; height:100%">
+    </iframe>
+  </div>
+</div><script type="text/javascript">
+__wm.bt(625,27,25,2,"web","http://delta3d.org/article.php?story=20050720135053455&topic=tutorials","20160408231900",1996,"/_static/",["/_static/css/banner-styles.css?v=bsmaklHF","/_static/css/iconochive.css?v=qtvMKcIJ"]);
+  __wm.rw(1);
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<div id="body_layer1"><div id="body_layer2"><div id="body_layer3">
+<div>
+    <a name="top"></a>
+    <a href="https://web.archive.org/web/20160408231900/http://delta3d.org/article.php?story=20050720135053455&amp;topic=tutorials#content-start"> <!-- for screenreaders -->
+        <img class="hidden" src="./Creating an Actor Tutorial, Part 2 Create Your Actor_files/speck.gif" alt="{skip_navigation}">
+    </a>
+</div>
+<!-- End of htmlheader.thtml --><!-- Start of header.thtml -->
+    <div id="gl_container">
+
+        <div id="gl_header">
+		<div id="header-site-logo-graphic">
+	
+	<a href="https://web.archive.org/web/20160408231900/http://delta3d.org/" title="delta3d"><img src="./Creating an Actor Tutorial, Part 2 Create Your Actor_files/images.php" alt="delta3d"></a>
+	
+</div>
+		
+        </div> <!-- end of gl_header -->
+		
+        
+		
+        <div id="gl_menu" style="display:block">
+            <ul>
+            <li><a href="https://web.archive.org/web/20160408231900/http://delta3d.org/search.php"><span>Advanced Search</span></a></li>
+<li><a href="https://web.archive.org/web/20160408231900/http://delta3d.org/directory.php?topic=tutorials"><span>Directory</span></a></li>
+<li><a href="https://web.archive.org/web/20160408231900/http://delta3d.org/api/"><span>API docs</span></a></li>
+<li><a href="https://web.archive.org/web/20160408231900/http://delta3d.org/article.php?story=20050720155458456&amp;topic=tutorials"><span>Tutorials</span></a></li>
+<li><a href="https://web.archive.org/web/20160408231900/http://delta3d.org/deltawiki"><span>Wiki</span></a></li>
+<li><a href="https://web.archive.org/web/20160408231900/https://sourceforge.net/projects/delta3d/files/"><span>Download</span></a></li>
+<li><a href="https://web.archive.org/web/20160408231900/http://delta3d.org/forum"><span>Forum</span></a></li>
+<li><a href="https://web.archive.org/web/20160408231900/http://delta3d.org/usersettings.php"><span>My Account</span></a></li>
+
+            </ul>
+        </div>  <!-- end of gl_menu -->
+
+		<div id="glmenu_plugin" style="display:none">
+		 
+	    </div>
+		
+		<div id="navman_plugin" style="display:none">
+		
+		
+	    </div>
+		
+		<div id="gl_content_container">
+
+        <div id="gl_wrapper">
+            <div id="gl_content-wide-left">
+
+<!-- START OF CONTENT AREA -->
+                <a name="content-start" id="content-start"></a><!--for screenreaders -->
+				<!-- Start of Breadcrumbs Navigation -->
+<p>
+</p><div itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+    <a href="https://web.archive.org/web/20160408231900/http://delta3d.org/index.php" itemprop="url">
+    <span itemprop="title">Home</span>
+</a> &gt;
+<span itemprop="child" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+    <a href="https://web.archive.org/web/20160408231900/http://delta3d.org/index.php?topic=tutorials" itemprop="url">
+    <span itemprop="title">Tutorials</span>
+</a> 
+
+
+
+</span>
+
+
+
+
+</div>
+<p></p>
+<!-- End of Breadcrumbs Navigation -->
+
+				
+<!-- End of header.thtml -->
+        <div class="story">
+	<span class="story-icons">  
+        
+        
+        
+        
+    </span>
+    <h1>Creating an Actor Tutorial, Part 2 - Create Your Actor</h1>
+	<div class="story-information">
+    	<a class="storybyline" href="https://web.archive.org/web/20160408231900/http://delta3d.org/users.php?mode=profile&amp;uid=13" rel="author">coonan</a> Wednesday, July 20 2005 @ 08:50 PM UTC Views: 19,925  
+    </div>
+    <div class="story-body">
+        <p><b>Note: This tutorial is dated and may not compile, link, or run exactly as written!</b></p>
+This tutorial will demonstrate how to make a new actor, import it into the Editor, and then see it in a dtCore::Scene. The actor that we will be creating will apply a sine wave to its vertices to simulate cloth physics, like a flag waving in the breeze. The actor will also expose appropriate properties related to the flags physics that can then be modified in the Editor. There are a couple of steps that need to be completed in order to accomplish this. First, you have to code the actor that will be placed in the scene. Secondly, you have to code the actor proxy that will represent the actor in the Editor. Lastly, you have to write a library to which the actor shall be exported.<br><br>Before any of this takes place, we need to set up a project.   
+
+Look at delta3d/RTIPlugins/CMakeLists.txt in the release or on sourceforge for an example cmake project for building a library.
+
+<p>
+
+</p>
+<p>
+These are the Delta3D and Open Scene Graph libraries you will need to link to in order to successfully build this project. 
+
+you will need to do these things included in your cmake.
+</p><pre><code> 
+
+
+FIND_PACKAGE(Delta3D COMPONENTS dtUtil dtCore dtGame dtABC REQUIRED) 
+   INCLUDE_DIRECTORIES(
+      ${DTCORE_INCLUDE_DIRECTORIES}
+      ${DTUTIL_INCLUDE_DIRECTORIES}
+      ${DTGAME_INCLUDE_DIRECTORIES}
+      ${DTABC_INCLUDE_DIRECTORIES}
+   )
+
+SET(LIB_NAME Tesselator)
+
+SET(HEADER_PATH ${CMAKE_SOURCE_DIR}/include/${LIB_NAME})
+SET(SOURCE_PATH ${CMAKE_SOURCE_DIR}/source/${LIB_NAME})
+
+file(GLOB LIB_SOURCES
+   "${SOURCE_PATH}/*.cpp"
+   )
+file(GLOB LIB_HEADERS
+   "${HEADER_PATH}/*.h"
+   )
+
+ADD_LIBRARY(${LIB_NAME} SHARED
+    ${LIB_PUBLIC_HEADERS}
+    ${LIB_SOURCES}
+)
+TARGET_LINK_LIBRARIES(${LIB_NAME}
+    ${DTUTIL_LIBRARIES}
+    ${DTCORE_LIBRARIES}
+    ${DTABC_LIBRARIES}
+    ${DTGAME_LIBRARIES}
+)
+
+
+SET_TARGET_PROPERTIES(${LIB_NAME}
+           PROPERTIES DEFINE_SYMBOL DT_PLUGIN)
+</code></pre>
+
+
+<p></p>
+<p>
+Once the project has been set up correctly, it�s time to start coding our actual actor. Please note that this actor uses complex drawing behavior that requires an understanding of some basics of how Open Scene Graph works. In particular, its use of callback functions and scene graph traversal. The majority of the code present to actually tessellate (waving motion) the actor can be found in the Open Scene Graph example �osgprerender� which is distributed freely with the Open Scene Graph source. 
+</p>
+<p>
+Let�s start by creating two files for the class TessellationActor. In the header file, we need to declare a callback class for Open Scene Graph to use for updating the tessellation plane. Place the following code in TessellationActor.h:
+</p>
+<p>
+
+</p>
+<pre><code>
+#include &lt;dtCore/transformable.h&gt;
+#include &lt;osg/geode&gt;
+#include &lt;osg/Vec3&gt;
+
+class GeometryCallback : public osg::Drawable::UpdateCallback, 
+   public osg::Drawable::AttributeFunctor
+{
+public:
+   GeometryCallback(const osg::Vec3&amp; o, const osg::Vec3&amp; x, 
+      const osg::Vec3&amp; y, const osg::Vec3&amp; z, double period, double xphase, 
+      double amplitude): _firstCall(true),_startTime(0.0),_time(0.0),_period(period),
+      _xphase(xphase), _amplitude(amplitude),_origin(o),_xAxis(x),_yAxis(y), _zAxis(z) 
+   {}
+   virtual void update(osg::NodeVisitor* nv,osg::Drawable* drawable)
+   {
+      const osg::FrameStamp* fs = nv-&gt;getFrameStamp();
+      double referenceTime = fs-&gt;getReferenceTime();
+      if (_firstCall)
+      {
+         _firstCall = false;
+         _startTime = referenceTime;
+      }
+
+      _time = referenceTime-_startTime;
+
+      drawable-&gt;accept(*this);
+      drawable-&gt;dirtyBound();
+   }
+
+   virtual void apply(osg::Drawable::AttributeType type,unsigned int count,osg::Vec3* begin) 
+   {
+      if (type == osg::Drawable::VERTICES)
+      {
+         const float TwoPI=2.0f*osg::PI;
+         const float phase = -_time/_period;
+         
+         osg::Vec3* end = begin+count;
+         for (osg::Vec3* itr=begin;itr&lt;end;++itr)
+         {
+            osg::Vec3 dv(*itr-_origin);
+            osg::Vec3 local(dv*_xAxis,dv*_yAxis,dv*_zAxis);
+
+            local.z() = local.x()*_amplitude*
+               sinf(TwoPI*(phase+local.x()*_xphase)); 
+
+            (*itr) = _origin + 
+               _xAxis*local.x()+
+               _yAxis*local.y()+
+               _zAxis*local.z();
+         }
+      }
+   }
+
+   bool    _firstCall;
+   double  _startTime, _time, _period, _xphase;
+   float   _amplitude;
+
+   osg::Vec3 _origin, _xAxis, _yAxis, _zAxis;
+};
+ </code></pre>
+
+<p>
+This code defines the call back class that the Open Scene Graph will use to tessellate the actor. Now, we need to define our tessellation actor class. Add the following code to your TessellationActor.h file:
+</p>
+<p>
+</p><pre><code>
+class TessellationDrawable : public dtCore::Transformable
+{
+  public:
+    TessellationDrawable();
+    virtual ~TessellationDrawable();
+
+    void GeneratePlane();
+    
+    // Accessors
+    inline float GetPeriod()            { return period;        }
+    inline float GetAmplitude()         { return amplitude;     }
+    inline float GetPhase()             { return phase;         }
+    inline int   GetNumberOfSteps()     { return numberOfSteps; }
+    inline int   GetWidth()             { return width;         }
+    inline int   GetHeight()            { return height;        }
+    inline std::string GetTextureFile() { return textureFile;   }
+    // Mutators
+    inline void SetPeriod(float newPeriod)     { period    = newPeriod;  GeneratePlane(); }
+    inline void SetAmplitude(float newAmp) { amplitude = newAmp; GeneratePlane(); }
+    inline void SetPhase(float newPhase)       { phase     = newPhase;   GeneratePlane(); }
+    inline void SetWidth(int newWidth)         { width     = newWidth;  GeneratePlane(); }
+    inline void SetHeight(int newHeight)       { height    = newHeight;  GeneratePlane(); }
+    inline void SetNumberOfSteps(int numSteps) { numberOfSteps = numSteps; 	GeneratePlane();}
+    inline void SetTextureFile(const std::string &amp;fileName) { textureFile = fileName; GeneratePlane(); }
+
+  private:
+    osg::Geode *geode;
+    std::string    textureFile;
+    int width, height, numberOfSteps;
+    float period, amplitude, phase;
+};
+</code></pre>
+<p></p>
+<p>
+Now that we have our TessellationDrawable defined, you may notice some member variables that would make good properties. The texture file, for example, is a resource property. The width, height, number of steps in between each plane segment, period, amplitude, and phase are all properties of this tessellating plane that can be edited in the Level Editor. Now, let�s head over to the TessellationActor.cpp file and define our class functions. The function GeneratePlane() is responsible for generating a new tessellation plane whenever a property is edited. Place the following code in your TessellationActor.cpp file:
+</p>
+<p>
+</p><pre><code>
+#include "TessellationActor.h"
+
+#include &lt;osg/Texture2D&gt;
+#include &lt;osg/Vec3&gt;
+#include &lt;osg/Vec2&gt;
+#include &lt;osg/Image&gt;
+#include &lt;osg/Geometry&gt;
+#include &lt;osg/StateSet&gt;
+#include &lt;osgDB/ReadFile&gt;
+#include &lt;osg/MatrixTransform&gt;
+
+TessellationDrawable::TessellationDrawable() :
+geode(NULL),width(200), height(100), 
+numberOfSteps(20), period(1.0), amplitude(0.2)
+{
+    phase = 1.0 / width;
+    GeneratePlane();
+}
+
+TessellationDrawable::~TessellationDrawable()
+{
+}
+
+void TessellationDrawable::GeneratePlane()
+{
+    // Since the actor will only ever have one plane, remove the old one
+    // if it contains it
+    if(geode &amp;&amp; geode-&gt;getDrawable(0))
+        geode-&gt;removeDrawables(0, 1);
+
+    // Initialize the data
+    osg::Geometry  *geometry = new osg::Geometry;
+    osg::Vec3Array *verts    = new osg::Vec3Array;
+    geode = new osg::Geode;
+    
+    osg::Vec3 origin(0.0f,0.0f,0.0f);
+    osg::Vec3 xAxis(1.0f,0.0f,0.0f);
+    osg::Vec3 yAxis(0.0f,0.0f,1.0f);
+    osg::Vec3 zAxis(0.0f,-1.0f,0.0f);
+
+    osg::Vec3 bottom = origin;
+    osg::Vec3 top    = origin; 
+    top.z() += height;
+    osg::Vec3 dv = xAxis*(width/((float)(numberOfSteps-1)));
+
+    osg::Vec2Array* texcoords = new osg::Vec2Array;
+    osg::Vec2 bottom_texcoord(0.0f,0.0f);
+    osg::Vec2 top_texcoord(0.0f,1.0f);
+    osg::Vec2 dv_texcoord(1.0f/(float)(numberOfSteps-1),0.0f);
+
+    // Set up the vertices and texture coordinates
+    for(int i = 0; i &lt; numberOfSteps; i++)
+    {
+        verts-&gt;push_back(top);
+        verts-&gt;push_back(bottom);
+        top += dv;
+        bottom += dv;
+
+        texcoords-&gt;push_back(top_texcoord);
+        texcoords-&gt;push_back(bottom_texcoord);
+        top_texcoord += dv_texcoord;
+        bottom_texcoord += dv_texcoord;
+    }
+
+    // Apply the texture
+    osg::Image *texture = osgDB::readImageFile(textureFile);
+    osg::Texture2D *temp = new osg::Texture2D(texture);
+    temp-&gt;setFilter(osg::Texture2D::MIN_FILTER,osg::Texture2D::LINEAR);
+    temp-&gt;setFilter(osg::Texture2D::MAG_FILTER,osg::Texture2D::LINEAR);
+    osg::StateSet *ss = new osg::StateSet;
+    ss-&gt;setTextureAttributeAndModes(0, temp, osg::StateAttribute::ON);  
+    temp-&gt;setUnRefImageDataAfterApply(true);
+
+    // Set up the geometry
+    geode-&gt;setStateSet(ss);
+    geometry-&gt;setVertexArray(verts);
+    geometry-&gt;setTexCoordArray(0, texcoords);
+    geode-&gt;addDrawable(geometry);
+    geometry-&gt;addPrimitiveSet(new osg::DrawArrays(osg::PrimitiveSet::QUAD_STRIP, 0, verts-&gt;size()));
+    geometry-&gt;setUpdateCallback(new                        
+    GeometryCallback(origin,xAxis,yAxis,zAxis,period,phase,amplitude));
+    geometry-&gt;setSupportsDisplayList(false);
+    
+    // Add to the transformable
+    GetMatrixNode()-&gt;addChild(geode);
+}
+</code></pre>
+
+<p></p>
+<p>
+Now we have our constructor defined with reasonable default values, and our GeneratePlane function is defined to create our plane, and is called from each of our mutator functions so our plane will be regenerated with its new values correctly. 
+</p>
+<p>
+Now that we have the TessellationDrawable class set up, it�s time to build its actor class. The main function to know in any actor proxy class is the BuildPropertyMap function. This function is responsible for adding properties associated with an actor. Another function to note is the CreateDrawable function, which actually instantiates the actor that the proxy is abstracting. Add this additional class to TesselationActor.h  You can separate the drawable to a separate file you want.
+</p>
+<p>
+</p><pre><code>
+
+#include "dtCore/transformableactorproxy.h"
+#include "TessellationActor.h"
+
+class TessellationActor : public dtCore::TransformableActorProxy
+{
+public:
+   
+   void CreateDrawable() { 
+      
+      SetDrawable(*new TessellationDrawable);
+   }
+   TessellationActor(void);
+   virtual ~TessellationActor(void);
+
+   void BuildPropertyMap();
+
+   void SetTextureFile(const std::string &amp;fileName)
+   {
+      TessellationDrawable* drawable = NULL;
+      GetDrawable(drawable);
+      if(drawable == NULL)
+      {
+         printf("Actor initialized incorrectly\n");
+         return;
+      }
+      drawable-&gt;SetTextureFile(fileName);
+   }
+};
+#endif
+</code></pre>
+<p></p>
+<p>
+Notice that the TessellationActor class inherits from dtCore::TransformableActorProxy.  This class will later be renamed.  We also have a SetTextureFile function, which is responsible for keeping track of the resource texture file that is applied to the actor. Now, let�s head over to TessellationActor.cpp file and define our functions. Add the following code in TessellationActor.cpp:
+</p>
+<p>
+</p><pre><code>
+#include "TessellationActorProxy.h"
+#include "dtDAL/enginepropertytypes.h"
+#include "dtDAL/datatype.h"
+
+TessellationActor::TessellationActor()
+{
+}
+
+TessellationActor::~TessellationActor()
+{
+}
+
+void TessellationActor::BuildPropertyMap()
+{
+   // The property group
+   const dtUtil::RefString GM_COMP_GROUP("PolyGrid");
+
+   // Make sure to build the base class properties
+   TransformableActorProxy::BuildPropertyMap();
+
+   // Make sure our actor is valid
+   TessellationDrawable* drawable = NULL
+   GetDrawable(drawable);
+   if(drawable == NULL)
+   {
+      printf("Actor was initialized incorrectly\n");
+      return;
+   }
+   
+   typedef dtCore::PropertyRegHelper&lt;TesselationActor&amp;, TesselationDrawable&gt; RegHelperType;
+   RegHelperType propReg(*this, drawable, GM_COMP_GROUP);
+
+   DT_REGISTER_PROPERTY(Width,
+            "Tesselation Plane width",
+            RegHelperType, propReg);
+   DT_REGISTER_PROPERTY(Height,
+            "Tesselation Plane Height",
+            RegHelperType, propReg);
+   DT_REGISTER_PROPERTY(NumberOfSteps,
+            "Tesselation Plane steps between each segment",
+            RegHelperType, propReg);
+
+   DT_REGISTER_PROPERTY(Period,
+            "Tesselation Plane sine wave period",
+            RegHelperType, propReg);
+   DT_REGISTER_PROPERTY(Amplitude,
+            "Tesselation Plane sine wave amplitude",
+            RegHelperType, propReg);
+   DT_REGISTER_PROPERTY(Phase,
+            "Tesselation Plane sine wave starting phase",
+            RegHelperType, propReg);
+   DT_REGISTER_RESOURCE_PROPERTY(dtDAL::DataType::TEXTURE,
+            Texture,
+            "Tesselation Plane sine wave starting phase",
+            RegHelperType, propReg);
+
+   // Property for the texture file of the plane
+   // Note that resource properties are a little different that other properties. The editor 
+   // DAL needs to store a reference to the actual proxy due to its internals, so all we do 
+   // is add a function onto the proxy which simply calls the actual actor function. 
+
+   AddProperty(new  dtDAL::ResourceActorProperty(*this,dtDAL::DataType::TEXTURE,"Texture",
+      "Texture", dtDAL::MakeFunctor(*this, &amp;TessellationActorProxy::SetTextureFile), groupName));
+}
+</code></pre>
+<p></p>
+<p>
+The BuildPropertyMap function is responsible for adding all of properties for the tessellation actor. Notice that we added a property to represent each of the pieces of data that the tessellation actor contains. Now we are ensured that our proxy will abstract our tessellation actor properly and that these properties will be available for alteration in the editor. Please note that when adjusting the period, amplitude, or phase that no visible changes will take place in the editor, as these are runtime properties. Now that we have our actor, and actor proxy set up, it�s time to write a library so we can import our new actor into the editor. 
+</p>
+<p>
+Please see the 3rd tutorial, which is located right <a href="https://web.archive.org/web/20160408231900/http://www.delta3d.org/article.php?story=20050720135643860&amp;topic=tutorials"> here </a>.
+</p>
+		<p></p>
+		<div style="clear:both;"></div>
+		<div style="float:left;" id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//web.archive.org/web/20160408231900/http://connect.facebook.net/en_EN/all.js#xfbml=1";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+	    <div style="float:left;margin-right:10px;"><fb:like href="http://delta3d.org/article.php?story=20050720135053455" send="false" layout="button_count" width="90" show_faces="false"></fb:like></div>
+		<div style="float:left;margin-right:-20px;"><a href="https://web.archive.org/web/20160408231900/https://twitter.com/share" class="twitter-share-button" data-url="https://web.archive.org/web/20160408231900/http://delta3d.org/article.php?story=20050720135053455" data-text="Creating an Actor Tutorial, Part 2 - Create Your Actor" data-counturl="http://delta3d.org/article.php?story=20050720135053455" data-lang="en" data-size="small" data-count="hortizontal">Tweet</a>
+        </div><script>!function(d,s,id) { var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)) { js=d.createElement(s);js.id=id;js.src="https://web.archive.org/web/20160408231900/https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs); } }(document,"script","twitter-wjs");</script>
+		<div style="float:left;" class="g-plusone" data-size="medium" data-href="http://delta3d.org/article.php?story=20050720135053455"></div>
+		<div class="g-plus" data-action="share" data-annotation="bubble" data-href="http://delta3d.org/article.php?story=20050720135053455"></div>
+		<div style="clear:both;"></div>
+		<div style="margin-top:5px;">
+                
+        </div>
+    </div>
+	<div class="clearboth"></div>
+</div>
+
+
+		<div class="clearboth"></div>
+		  <div id="story-whatsrelatedandoptions">
+            <div id="story-whatsrelated"><!-- start blockheader-related.thtml -->
+<div class="block-box-left">
+    <span class="block-helpicon">
+        
+    </span>
+    <h2>What's Related</h2>
+<ul class="list-whats-related">
+  <li><a href="https://web.archive.org/web/20160408231900/http://www.delta3d.org/article.php?story=20050720135643860&amp;topic=tutorials"> here </a></li>
+  <li><a href="https://web.archive.org/web/20160408231900/http://delta3d.org/search.php?mode=search&amp;type=stories&amp;author=13">More by coonan</a></li>
+  <li><a href="https://web.archive.org/web/20160408231900/http://delta3d.org/search.php?mode=search&amp;type=stories&amp;topic=tutorials">More from Tutorials</a></li>
+
+</ul>
+</div>
+<div style="clear:both;"></div>
+
+</div>
+            <div id="story-storyoptions"><!-- start blockheader-related.thtml -->
+<div class="block-box-left">
+    <span class="block-helpicon">
+        
+    </span>
+    <h2>Story Options</h2>
+<ul class="list-story-options">
+  <li><a href="https://web.archive.org/web/20160408231900/http://delta3d.org/profiles.php?sid=20050720135053455&amp;what=emailstory">Mail Story to a Friend</a></li>
+  <li><a href="https://web.archive.org/web/20160408231900/http://delta3d.org/article.php?story=20050720135053455&amp;mode=print" rel="nofollow">Printable Story Format</a></li>
+
+</ul>
+</div>
+<div style="clear:both;"></div>
+
+</div>
+		  </div>
+		<div class="clearboth"></div>
+		<div id="comments">
+        
+		</div>
+		<div id="story-trackbacks"><h2><a name="trackback">Trackback</a></h2>
+<p>Trackback URL for this entry: http://delta3d.org/trackback.php?id=20050720135053455</p>
+Here's what others have to say about 'Creating an Actor Tutorial, Part 2 - Create Your Actor':
+<p>
+  </p><p>
+<a href="https://web.archive.org/web/20160408231900/http://%D7%A2%D7%91%D7%95%D7%93%D7%94-%D7%91%D7%97%D7%95%D7%9C.corepad.net/">עבודה באירופה מוצרי ים המלח</a> from עבודה באירופה מוצרי ים המלח<br>
+... עבודה בק�&nbsp;דה - עבודה בארה"ב היא הזדמ�&nbsp;ות להכיר את אחת המדי�&nbsp;ות שהכי מעודדת הגירה בגלל עגלות ים המלח במיין. אפילו חטיפים לארץ  יכולים להוו�... <a href="https://web.archive.org/web/20160408231900/http://%D7%A2%D7%91%D7%95%D7%93%D7%94-%D7%91%D7%97%D7%95%D7%9C.corepad.net/">[read more]</a><br>
+Tracked on Monday, July 06 2015 @ 11:48 PM UTC 
+</p>
+
+<p></p>
+
+</div>
+
+	<!-- END OF CONTENT AREA -->
+            </div> <!-- end of gl_content -->
+        </div> <!-- end of gl_wrapper -->
+<!-- Start of Left blocks -->
+    <div id="gl_navigation">
+        <div class="block-columnpad"><div class="block-box-left">
+    <span class="block-helpicon-left">
+        
+    </span>
+    <h2 class="block-title-left">News</h2>
+<a href="https://web.archive.org/web/20160408231900/http://caperholdings.com/contracting-services" target="_blank">Need Professional Support?</a>
+
+</div><div class="block-box-left">
+    <span class="block-helpicon-left">
+        
+    </span>
+    <h2 class="block-title-left">About delta3d</h2>
+delta3d is a game and simulation engine appropriate for a wide variety of simulation and entertainment applications.  delta3d uses best-of-breed open source technologies to create a fully integrated game engine and with content creation tools.<a href="https://web.archive.org/web/20160408231900/http://delta3d.org/index.php?topic=about">MORE</a>
+</div><div class="block-box-left">
+    <span class="block-helpicon-left">
+        <a href="https://web.archive.org/web/20160408231900/http://caperholdings.com/sponsor-delta3d" class="blocktitle"><img src="./Creating an Actor Tutorial, Part 2 Create Your Actor_files/button_help.png" alt="?"></a>
+    </span>
+    <h2 class="block-title-left">Sponsor delta3d</h2>
+For the past few years Caper Holdings LLC has been solely driving development of delta3d. To continue to provide upgrades and releases we are allowing the community to purchase <a href="https://web.archive.org/web/20160408231900/http://caperholdings.com/sponsor-delta3d">sponsorships</a>
+</div><div class="block-box-left">
+    <span class="block-helpicon-left">
+        
+    </span>
+    <h2 class="block-title-left">Twitter</h2>
+<a class="twitter-timeline" href="https://web.archive.org/web/20160408231900/https://twitter.com/delta3d" data-widget-id="510256513730875393">Tweets by @delta3d</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id))}(document,"script","twitter-wjs");</script>
+</div><div class="block-box-left">
+    <span class="block-helpicon-left">
+        
+    </span>
+    <h2 class="block-title-left">User Functions</h2>
+<!-- loginform.thtml -->
+
+<div id="login_form">
+	<h2 id="login_button" class="login_options">
+		<a style="padding-right:20px;" href="https://web.archive.org/web/20160408231900/http://delta3d.org/article.php?story=20050720135053455&amp;topic=tutorials#" title="" onclick="return false;">Login</a>
+	</h2>
+
+	<div id="loginblock" class="loginblock">
+		<div id="loginblock-content">
+			<div id="loginform">
+				<form action="https://web.archive.org/web/20160408231900/http://delta3d.org/users.php" method="post" style="padding-bottom:5px;">
+				<label for="loginname">Username:</label><br>
+				<input type="text" size="10" name="loginname" value="" id="loginname"><br>
+				
+				<label for="passwd">Password:</label><br>
+				<input type="password" size="10" name="passwd" id="passwd"><br>
+				<input type="submit" name="submit_login" value="Login" style="margin-top:5px;">
+				</form>
+			</div>
+			<p>Don't have an account yet?  Sign up as a <a href="https://web.archive.org/web/20160408231900/http://delta3d.org/users.php?mode=new" rel="nofollow">New User</a></p>
+			<p>Lost your <a href="https://web.archive.org/web/20160408231900/http://delta3d.org/users.php?mode=getpassword" rel="nofollow">password</a>?</p>
+
+		</div>
+	</div>
+    
+	
+</div>
+<!-- /loginform.thtml -->
+</div></div>
+    </div>
+<!-- End of Left blocks -->
+
+        </div> <!-- end of gl_content_container -->
+        <div id="gl_footer">
+			<div id="footer_container">
+			</div> <!-- end of footer_container -->
+        </div> <!-- end of gl_footer-->
+
+</div> <!-- end of container -->
+
+
+
+
+    <!--[if lte IE 6]>
+        <script type="text/javascript" src="http://delta3d.org/layout/purepro/js/gl_moopngfix.js" defer="defer" ></script>
+    <![endif]-->
+
+    <!--[if lt IE 7.]>
+        <script defer type="text/javascript" src="http://delta3d.org/layout/purepro/js/pngfix.js"></script>
+    <![endif]-->
+
+</div></div></div>
+<!-- End of layers -->
+
+<script type="text/javascript">
+var geeklogEditorBaseUrl = "https://web.archive.org/web/20160408231900/http://delta3d.org";
+var geeklogEditorBasePath = "https://web.archive.org/web/20160408231900/http://delta3d.org/fckeditor/";
+</script>
+<script type="text/javascript" src="./Creating an Actor Tutorial, Part 2 Create Your Actor_files/common.js.download"></script>
+<script type="text/javascript" src="./Creating an Actor Tutorial, Part 2 Create Your Actor_files/jquery.min.js.download"></script>
+
+
+
+
+<!--
+playback timings (ms):
+  esindex: 0.017
+  captures_list: 571.665
+  exclusion.robots: 0.501
+  exclusion.robots.policy: 0.478
+  PetaboxLoader3.resolve: 103.615
+  PetaboxLoader3.datanode: 595.696 (4)
+  LoadShardBlock: 510.017 (3)
+  load_resource: 362.486
+  RedisCDXSource: 23.377
+  CDXLines.iter: 32.424 (3)
+--></body></html>

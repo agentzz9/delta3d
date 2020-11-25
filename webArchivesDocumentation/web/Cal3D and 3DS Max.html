@@ -1,0 +1,739 @@
+
+<!-- saved from url=(0117)https://web.archive.org/web/20061011193911/http://www.delta3d.org/article.php?story=20051012191315564&topic=tutorials -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><script src="./Cal3D and 3DS Max_files/analytics.js.download" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app58.us.archive.org';v.server_ms=304;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="./Cal3D and 3DS Max_files/playback.bundle.js.download" charset="utf-8"></script>
+<script type="text/javascript" src="./Cal3D and 3DS Max_files/wombat.js.download" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://www.delta3d.org/article.php?story=20051012191315564&topic=tutorials","20061011193911","https://web.archive.org/","web","/_static/",
+	      "1160595551");
+</script>
+<link rel="stylesheet" type="text/css" href="./Cal3D and 3DS Max_files/banner-styles.css">
+<link rel="stylesheet" type="text/css" href="./Cal3D and 3DS Max_files/iconochive.css">
+<!-- End Wayback Rewrite JS Include -->
+<script language="JavaScript">
+<!--
+jsVer = "1.0";
+//-->
+</script>
+<script language="JavaScript1.1">
+<!--
+jsVer = "1.1";
+//-->
+</script>
+<script language="JavaScript1.2">
+<!--
+jsVer = "1.2";
+//-->
+</script>
+<script language="JavaScript1.3">
+<!-- Begin
+jsver = "1.3";
+//-->
+</script>
+<script language="javascript">
+<!--
+	//vars
+	var width = 0;
+	var height = 0;
+	var colorDepth = 0;
+	var title = '';
+
+
+	//resolution
+	if(screen.width && screen.height)
+	{
+		width = screen.width;
+		height = screen.height;
+	}
+
+	//color depth
+	if(screen.colorDepth)
+		colorDepth = screen.colorDepth;
+
+	//document title
+	if(document.title)
+		title = document.title;
+
+				document.write("<img src=\"/stats/includes/recordHit.php?URI=/article.php?story=20051012191315564&topic=tutorials&jsVer="+jsVer+"&height="+height+"&width="+width+"&colorDepth="+colorDepth+"&title="+title+"&referer=http%3A%2F%2Fwww.delta3d.org%2Farticle.php%3Fstory%3D20051012190715358%26topic%3Dtutorials\" border=\"0\" width=\"1\" height=\"1\">");
+			//-->
+</script></head><body bgcolor="#040824" text="#000000" link="#000000" vlink="#000000" alink="#000000" id="Bdy" leftmargin="8" topmargin="0" marginwidth="8" marginheight="8"><img src="./Cal3D and 3DS Max_files/recordHit.php" border="0" width="1" height="1">
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  /*min-width:800px !important;*/
+}
+</style>
+<script>__wm.rw(0);</script>
+<div id="wm-ipp-base" lang="en" style="display: block; direction: ltr;">
+</div><div id="donato" style="position:relative;width:100%;">
+  <div id="donato-base">
+    <iframe id="donato-if" src="./Cal3D and 3DS Max_files/donate.html" scrolling="no" frameborder="0" style="width:100%; height:100%">
+    </iframe>
+  </div>
+</div><script type="text/javascript">
+__wm.bt(625,27,25,2,"web","http://www.delta3d.org/article.php?story=20051012191315564&topic=tutorials","20061011193911",1996,"/_static/",["/_static/css/banner-styles.css?v=bsmaklHF","/_static/css/iconochive.css?v=qtvMKcIJ"]);
+  __wm.rw(1);
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+
+<meta name="description" content="A well-supported and fully-funded open source project, Delta3D is a full-function game engine appropriate for a wide variety of modeling and simulation applications (training, education, visualizations, and entertainment). Its modular design integrates other well-known Open Source projects such as Open Scene Graph(OSG), Open Dynamics Engine(ODE), Character Animation Library (CAL3D), and OpenAL.">
+<meta name="keywords" content="delta 3d, nps, moves, modeling and simulation, game engine, gaming, delta3d, p-51, open source, GNU Lesser General Public License, Fedora, Surface Tactics Visualization, Plane Guard, ChrAVE, Chromakeyed Augmented Virtual Environment, CAVE, CAVE Automatic Virtual Environment, National Geospatial-Intelligence Agency Terrian, Forward Observer PC Simulator, FOPCSIM, Shipboard Firefighting Trainer, backed by the U.S. military, sourceforge, eric johnson, I/ITSEC, Interservice/Industry Training, Simulation and Education Conference, MOVES Institute/Naval Postgraduate School, Naval Education and Training Command">
+
+<title>Delta3D - Cal3D and 3DS Max</title>
+<!-- Needed JavaScript Code -->
+<script language="JavaScript">
+    var cleared = 0;
+
+    function clearField(field)
+    {
+        if (cleared != 1) {
+            field.value = ""
+            cleared = 1
+        } else {
+            cleared = 0
+        }
+    }
+</script>
+
+
+<script language="JavaScript" src="./Cal3D and 3DS Max_files/menu.js.download"></script>
+<link rel="stylesheet" type="text/css" href="./Cal3D and 3DS Max_files/style.css" title="deltalight">
+
+
+<center>
+<table width="100%"><tbody><tr valign="top"><td>
+<table width="100%" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td bgcolor="#1a365a"><img src="./Cal3D and 3DS Max_files/pixel.gif" height="11" width="700" border="0" alt="game engine gaming delta3d"><br></td></tr><tr><td bgcolor="#cbcbcc"><img src="./Cal3D and 3DS Max_files/pixel.gif" height="1" width="8" border="0" alt="p-51 open source GNU Lesser General Public License"><br></td></tr><tr><td bgcolor="#1a365a"><img src="./Cal3D and 3DS Max_files/pixel.gif" height="1" width="8" border="0" alt="Fedora Surface Tactics Visualization Plane Guard ChrAVE"><br></td></tr><tr><td bgcolor="#cbcbcc"><img src="./Cal3D and 3DS Max_files/pixel.gif" height="1" width="8" border="0" alt="Chromakeyed Augmented Virtual Environment CAVE Automatic Virtual Environment National Geospatial-Intelligence Agency Terrian Forward Observer PC Simulator FOPCSIM Shipboard Firefighting Trainer"><br></td></tr></tbody></table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td bgcolor="#2d4d7d" background="./Cal3D and 3DS Max_files/page_header_background2.gif" valign="bottom" height="95"><img src="./Cal3D and 3DS Max_files/pixel.gif" alt="backed by the U.S. military sourceforge eric johnson I/ITSEC Interservice Industry Training Simulation and Education Conference" height="2" width="700" border="0"><br><a href="https://web.archive.org/web/20061011193911/http://www.delta3d.org/"><img src="./Cal3D and 3DS Max_files/delta_logo_new_smaller2.gif" alt="Delta3D - Cal3D and 3DS Max" border="0" align="left" width="280" height="93"></a>
+<table border="0" cellspacing="0" cellpadding="0" align="right"><tbody><tr><td valign="bottom" align="right" height="94"><span class="welcomeName">&nbsp; &nbsp; &nbsp; Welcome to  Delta3D | <a href="https://web.archive.org/web/20061011193911/http://www.delta3d.org/users.php?first=true" class="welcomeName"><font size="1"><span class="welcomeName" style="color: #bf8113">Login</span></font></a>&nbsp;</span><br><span class="welcomeName">Wednesday, October 11 2006 @ 03:39 PM EDT&nbsp;</span><br><img src="./Cal3D and 3DS Max_files/pixel.gif" alt="MOVES Institute Naval Postgraduate School Naval Education and Training Command" height="5" width="5" align="absmiddle" border="0"><br></td><td>&nbsp;&nbsp;</td></tr></tbody></table>
+</td></tr></tbody></table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td bgcolor="#fffeff" background="./Cal3D and 3DS Max_files/top_nav_bar_bg.gif"><img src="./Cal3D and 3DS Max_files/top_nav_bar_tutorials.gif" alt="" height="28" width="716" align="absmiddle" border="0"></td></tr></tbody></table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#fffeff" background="./Cal3D and 3DS Max_files/bg_line_noise_light_alt.gif"><tbody><tr><td><img src="./Cal3D and 3DS Max_files/pixel.gif" width="1" height="9" border="0" alt="IITSEC"></td></tr></tbody></table>
+<!-- files with geometry and styles structures -->
+<script language="JavaScript">
+/*
+  --- menu level scope settins structure --- 
+  note that this structure has changed its format since previous version.
+  Now this structure has the same layout as Tigra Menu GOLD.
+  Format description can be found in product documentation.
+*/
+
+ var ie = (window.navigator.userAgent.indexOf("MSIE") != -1);
+ var mac = (window.navigator.userAgent.indexOf("Mac") != -1);
+
+ if(ie && mac)
+
+ {
+
+  var MENU_POS = [
+{ 
+	// item sizes
+	'height': 22,
+	'width': 100,
+	// menu block offset from the origin:
+	//	for root level origin is upper left corner of the page
+	//	for other levels origin is upper left corner of parent item
+	'block_top': 116 ,
+	'block_left': 7,
+	// offsets between items of the same level
+	'top': 0,
+	'left': 100,
+	// time in milliseconds before menu is hidden after cursor has gone out
+	// of any items
+	'hide_delay': 500,
+	'expd_delay': 10,
+	'css' : {
+		'outer': ['m0l0oout', 'm0l0oover'],
+		'inner': ['m0l0iout', 'm0l0iover']
+	}
+},
+{
+	'height': 23,
+	'width': 160,
+	'block_top': 22,
+	'block_left': 0,
+	'top': 23,
+	'left': 0,
+	'css': {
+		'outer' : ['m0l1oout', 'm0l1oover'],
+		'inner' : ['m0l1iout', 'm0l1iover']
+	}
+},
+{
+	'block_top': 5,
+	'block_left': 140,
+	'css': {
+		'outer': ['m0l2oout', 'm0l2oover'],
+		'inner': ['m0l1iout', 'm0l2iover']
+	}
+}
+]
+ }else if(ie){
+ 	var MENU_POS = [
+{
+	// item sizes
+	'height': 22,
+	'width': 100,
+	// menu block offset from the origin:
+	//	for root level origin is upper left corner of the page
+	//	for other levels origin is upper left corner of parent item
+	'block_top': 138 ,
+	'block_left': 7,
+	// offsets between items of the same level
+	'top': 0,
+	'left': 100,
+	// time in milliseconds before menu is hidden after cursor has gone out
+	// of any items
+	'hide_delay': 500,
+	'expd_delay': 10,
+	'css' : {
+		'outer': ['m0l0oout', 'm0l0oover'],
+		'inner': ['m0l0iout', 'm0l0iover']
+	}
+},
+{
+	'height': 23,
+	'width': 160,
+	'block_top': 22,
+	'block_left': 0,
+	'top': 23,
+	'left': 0,
+	'css': {
+		'outer' : ['m0l1oout', 'm0l1oover'],
+		'inner' : ['m0l1iout', 'm0l1iover']
+	}
+},
+{
+	'block_top': 5,
+	'block_left': 140,
+	'css': {
+		'outer': ['m0l2oout', 'm0l2oover'],
+		'inner': ['m0l1iout', 'm0l2iover']
+	}
+}
+]
+ }else{
+ 	var MENU_POS = [
+{
+	// item sizes
+	'height': 22,
+	'width': 100,
+	// menu block offset from the origin:
+	//	for root level origin is upper left corner of the page
+	//	for other levels origin is upper left corner of parent item
+	'block_top': 126 ,
+	'block_left': 7,
+	// offsets between items of the same level
+	'top': 0,
+	'left': 100,
+	// time in milliseconds before menu is hidden after cursor has gone out
+	// of any items
+	'hide_delay': 500,
+	'expd_delay': 10,
+	'css' : {
+		'outer': ['m0l0oout', 'm0l0oover'],
+		'inner': ['m0l0iout', 'm0l0iover']
+	}
+},
+{
+	'height': 23,
+	'width': 160,
+	'block_top': 22,
+	'block_left': 0,
+	'top': 23,
+	'left': 0,
+	'css': {
+		'outer' : ['m0l1oout', 'm0l1oover'],
+		'inner' : ['m0l1iout', 'm0l1iover']
+	}
+},
+{
+	'block_top': 5,
+	'block_left': 140,
+	'css': {
+		'outer': ['m0l2oout', 'm0l2oover'],
+		'inner': ['m0l1iout', 'm0l2iover']
+	}
+}
+]
+ }
+</script>
+
+<!-- items structure. menu hierarchy and links are stored there -->
+<script language="JavaScript">
+/*
+  --- menu items --- 
+  note that this structure has changed its format since previous version.
+  additional third parameter is added for item scope settings.
+  Now this structure is compatible with Tigra Menu GOLD.
+  Format description can be found in product documentation.
+*/
+var MENU_ITEMS = [
+	[' Home ', 'https://web.archive.org/web/20061011193911/http://www.delta3d.org/index.php', null],
+	[' News ', 'https://web.archive.org/web/20061011193911/http://www.delta3d.org/index.php?topic=news', null],
+	[' Forum ', 'https://web.archive.org/web/20061011193911/http://www.delta3d.org/forum/index.php', null],
+	[' Projects ', 'https://web.archive.org/web/20061011193911/http://www.delta3d.org/index.php?topic=projects', null],
+	[' Downloads ', 'https://web.archive.org/web/20061011193911/http://www.delta3d.org/index.php?topic=downloads', null],
+	[' Docs ', 'https://web.archive.org/web/20061011193911/http://www.delta3d.org/index.php?topic=docs', null,
+		['FAQs', 'https://web.archive.org/web/20061011193911/http://www.delta3d.org/article.php?story=20041105130325684&topic=docs'],
+		['Hardware Requirements', 'https://web.archive.org/web/20061011193911/http://www.delta3d.org/article.php?story=20041108101416365&topic=docs'],
+		['Tutorials', 'https://web.archive.org/web/20061011193911/http://www.delta3d.org/article.php?story=20050720155458456&topic=tutorials'],
+		['Features', 'https://web.archive.org/web/20061011193911/http://www.delta3d.org/article.php?story=20051209133127695&topic=docs'],
+		['APIs', 'https://web.archive.org/web/20061011193911/http://www.delta3d.org/index.php?topic=apis'],
+		['RoadMap', 'https://web.archive.org/web/20061011193911/http://www.delta3d.org/article.php?story=20050315185802547&topic=docs'],
+		['Dependencies', 'https://web.archive.org/web/20061011193911/http://www.delta3d.org/article.php?story=20050707151113592&topic=docs'],
+                ['Knowledge Base','https://web.archive.org/web/20061011193911/http://www.delta3d.org/article.php?story=20051207101455773&topic=docs'],
+	],
+	[' About Delta3D ', 'https://web.archive.org/web/20061011193911/http://www.delta3d.org/index.php?topic=about', null,
+		['Overview', 'https://web.archive.org/web/20061011193911/http://www.delta3d.org/article.php?story=20041105154425816&topic=about'],
+		['Licensing', 'https://web.archive.org/web/20061011193911/http://www.delta3d.org/article.php?story=20041116114619446&topic=about'],
+		['Partners', 'https://web.archive.org/web/20061011193911/http://www.delta3d.org/article.php?story=20041110112606610&topic=about'],
+		['Links', 'https://web.archive.org/web/20061011193911/http://www.delta3d.org/article.php?story=20041110112354240&topic=about'],
+		['Contact Us', 'https://web.archive.org/web/20061011193911/http://www.delta3d.org/article.php?story=20041110112703949&topic=about'],
+		['Jobs', 'https://web.archive.org/web/20061011193911/http://www.delta3d.org/article.php?story=20050217160232944&topic=about'],
+	],
+];
+
+</script>
+<script language="JavaScript">
+	<!--//
+	// Note where menu initialization block is located in HTML document.
+	// Don't try to position menu locating menu initialization block in
+	// some table cell or other HTML element. Always put it before < /body >
+
+	// each menu gets two parameters (see demo files)
+	// 1. items structure
+	// 2. geometry structure
+
+	new menu (MENU_ITEMS, MENU_POS);
+	// make sure files containing definitions for these variables are linked to the document
+	// if you got some javascript error like "MENU_POS is not defined", then you've made syntax
+	// error in menu_tpl.js file or that file isn't linked properly.
+	
+	// also take a look at stylesheets loaded in header in order to set styles
+	//-->
+</script><a id="e0_0o" class="m0l0oout" href="https://web.archive.org/web/20061011193911/http://www.delta3d.org/index.php" style="position: absolute; top: 126px; left: 7px; width: 100px; height: 22px; visibility: visible; z-index: 0;" onclick="return TMA[0].onclick(0);" onmouseout="TMA[0].onmouseout(0);" onmouseover="TMA[0].onmouseover(0);" onmousedown="TMA[0].onmousedown(0);"><div id="e0_0i" class="m0l0iout"> Home </div></a>
+<a id="e0_1o" class="m0l0oout" href="https://web.archive.org/web/20061011193911/http://www.delta3d.org/index.php?topic=news" style="position: absolute; top: 126px; left: 107px; width: 100px; height: 22px; visibility: visible; z-index: 0;" onclick="return TMA[0].onclick(1);" onmouseout="TMA[0].onmouseout(1);" onmouseover="TMA[0].onmouseover(1);" onmousedown="TMA[0].onmousedown(1);"><div id="e0_1i" class="m0l0iout"> News </div></a>
+<a id="e0_2o" class="m0l0oout" href="https://web.archive.org/web/20061011193911/http://www.delta3d.org/forum/index.php" style="position: absolute; top: 126px; left: 207px; width: 100px; height: 22px; visibility: visible; z-index: 0;" onclick="return TMA[0].onclick(2);" onmouseout="TMA[0].onmouseout(2);" onmouseover="TMA[0].onmouseover(2);" onmousedown="TMA[0].onmousedown(2);"><div id="e0_2i" class="m0l0iout"> Forum </div></a>
+<a id="e0_3o" class="m0l0oout" href="https://web.archive.org/web/20061011193911/http://www.delta3d.org/index.php?topic=projects" style="position: absolute; top: 126px; left: 307px; width: 100px; height: 22px; visibility: visible; z-index: 0;" onclick="return TMA[0].onclick(3);" onmouseout="TMA[0].onmouseout(3);" onmouseover="TMA[0].onmouseover(3);" onmousedown="TMA[0].onmousedown(3);"><div id="e0_3i" class="m0l0iout"> Projects </div></a>
+<a id="e0_4o" class="m0l0oout" href="https://web.archive.org/web/20061011193911/http://www.delta3d.org/index.php?topic=downloads" style="position: absolute; top: 126px; left: 407px; width: 100px; height: 22px; visibility: visible; z-index: 0;" onclick="return TMA[0].onclick(4);" onmouseout="TMA[0].onmouseout(4);" onmouseover="TMA[0].onmouseover(4);" onmousedown="TMA[0].onmousedown(4);"><div id="e0_4i" class="m0l0iout"> Downloads </div></a>
+<a id="e0_5o" class="m0l0oout" href="https://web.archive.org/web/20061011193911/http://www.delta3d.org/index.php?topic=docs" style="position: absolute; top: 126px; left: 507px; width: 100px; height: 22px; visibility: visible; z-index: 0;" onclick="return TMA[0].onclick(5);" onmouseout="TMA[0].onmouseout(5);" onmouseover="TMA[0].onmouseover(5);" onmousedown="TMA[0].onmousedown(5);"><div id="e0_5i" class="m0l0iout"> Docs </div></a>
+<a id="e0_6o" class="m0l1oout" href="https://web.archive.org/web/20061011193911/http://www.delta3d.org/article.php?story=20041105130325684&amp;topic=docs" style="position: absolute; top: 148px; left: 507px; width: 160px; height: 23px; visibility: hidden; z-index: 1;" onclick="return TMA[0].onclick(6);" onmouseout="TMA[0].onmouseout(6);" onmouseover="TMA[0].onmouseover(6);" onmousedown="TMA[0].onmousedown(6);"><div id="e0_6i" class="m0l1iout">FAQs</div></a>
+<a id="e0_7o" class="m0l1oout" href="https://web.archive.org/web/20061011193911/http://www.delta3d.org/article.php?story=20041108101416365&amp;topic=docs" style="position: absolute; top: 171px; left: 507px; width: 160px; height: 23px; visibility: hidden; z-index: 1;" onclick="return TMA[0].onclick(7);" onmouseout="TMA[0].onmouseout(7);" onmouseover="TMA[0].onmouseover(7);" onmousedown="TMA[0].onmousedown(7);"><div id="e0_7i" class="m0l1iout">Hardware Requirements</div></a>
+<a id="e0_8o" class="m0l1oout" href="https://web.archive.org/web/20061011193911/http://www.delta3d.org/article.php?story=20050720155458456&amp;topic=tutorials" style="position: absolute; top: 194px; left: 507px; width: 160px; height: 23px; visibility: hidden; z-index: 1;" onclick="return TMA[0].onclick(8);" onmouseout="TMA[0].onmouseout(8);" onmouseover="TMA[0].onmouseover(8);" onmousedown="TMA[0].onmousedown(8);"><div id="e0_8i" class="m0l1iout">Tutorials</div></a>
+<a id="e0_9o" class="m0l1oout" href="https://web.archive.org/web/20061011193911/http://www.delta3d.org/article.php?story=20051209133127695&amp;topic=docs" style="position: absolute; top: 217px; left: 507px; width: 160px; height: 23px; visibility: hidden; z-index: 1;" onclick="return TMA[0].onclick(9);" onmouseout="TMA[0].onmouseout(9);" onmouseover="TMA[0].onmouseover(9);" onmousedown="TMA[0].onmousedown(9);"><div id="e0_9i" class="m0l1iout">Features</div></a>
+<a id="e0_10o" class="m0l1oout" href="https://web.archive.org/web/20061011193911/http://www.delta3d.org/index.php?topic=apis" style="position: absolute; top: 240px; left: 507px; width: 160px; height: 23px; visibility: hidden; z-index: 1;" onclick="return TMA[0].onclick(10);" onmouseout="TMA[0].onmouseout(10);" onmouseover="TMA[0].onmouseover(10);" onmousedown="TMA[0].onmousedown(10);"><div id="e0_10i" class="m0l1iout">APIs</div></a>
+<a id="e0_11o" class="m0l1oout" href="https://web.archive.org/web/20061011193911/http://www.delta3d.org/article.php?story=20050315185802547&amp;topic=docs" style="position: absolute; top: 263px; left: 507px; width: 160px; height: 23px; visibility: hidden; z-index: 1;" onclick="return TMA[0].onclick(11);" onmouseout="TMA[0].onmouseout(11);" onmouseover="TMA[0].onmouseover(11);" onmousedown="TMA[0].onmousedown(11);"><div id="e0_11i" class="m0l1iout">RoadMap</div></a>
+<a id="e0_12o" class="m0l1oout" href="https://web.archive.org/web/20061011193911/http://www.delta3d.org/article.php?story=20050707151113592&amp;topic=docs" style="position: absolute; top: 286px; left: 507px; width: 160px; height: 23px; visibility: hidden; z-index: 1;" onclick="return TMA[0].onclick(12);" onmouseout="TMA[0].onmouseout(12);" onmouseover="TMA[0].onmouseover(12);" onmousedown="TMA[0].onmousedown(12);"><div id="e0_12i" class="m0l1iout">Dependencies</div></a>
+<a id="e0_13o" class="m0l1oout" href="https://web.archive.org/web/20061011193911/http://www.delta3d.org/article.php?story=20051207101455773&amp;topic=docs" style="position: absolute; top: 309px; left: 507px; width: 160px; height: 23px; visibility: hidden; z-index: 1;" onclick="return TMA[0].onclick(13);" onmouseout="TMA[0].onmouseout(13);" onmouseover="TMA[0].onmouseover(13);" onmousedown="TMA[0].onmousedown(13);"><div id="e0_13i" class="m0l1iout">Knowledge Base</div></a>
+<a id="e0_14o" class="m0l0oout" href="https://web.archive.org/web/20061011193911/http://www.delta3d.org/index.php?topic=about" style="position: absolute; top: 126px; left: 607px; width: 100px; height: 22px; visibility: visible; z-index: 0;" onclick="return TMA[0].onclick(14);" onmouseout="TMA[0].onmouseout(14);" onmouseover="TMA[0].onmouseover(14);" onmousedown="TMA[0].onmousedown(14);"><div id="e0_14i" class="m0l0iout"> About Delta3D </div></a>
+<a id="e0_15o" class="m0l1oout" href="https://web.archive.org/web/20061011193911/http://www.delta3d.org/article.php?story=20041105154425816&amp;topic=about" style="position: absolute; top: 148px; left: 607px; width: 160px; height: 23px; visibility: hidden; z-index: 1;" onclick="return TMA[0].onclick(15);" onmouseout="TMA[0].onmouseout(15);" onmouseover="TMA[0].onmouseover(15);" onmousedown="TMA[0].onmousedown(15);"><div id="e0_15i" class="m0l1iout">Overview</div></a>
+<a id="e0_16o" class="m0l1oout" href="https://web.archive.org/web/20061011193911/http://www.delta3d.org/article.php?story=20041116114619446&amp;topic=about" style="position: absolute; top: 171px; left: 607px; width: 160px; height: 23px; visibility: hidden; z-index: 1;" onclick="return TMA[0].onclick(16);" onmouseout="TMA[0].onmouseout(16);" onmouseover="TMA[0].onmouseover(16);" onmousedown="TMA[0].onmousedown(16);"><div id="e0_16i" class="m0l1iout">Licensing</div></a>
+<a id="e0_17o" class="m0l1oout" href="https://web.archive.org/web/20061011193911/http://www.delta3d.org/article.php?story=20041110112606610&amp;topic=about" style="position: absolute; top: 194px; left: 607px; width: 160px; height: 23px; visibility: hidden; z-index: 1;" onclick="return TMA[0].onclick(17);" onmouseout="TMA[0].onmouseout(17);" onmouseover="TMA[0].onmouseover(17);" onmousedown="TMA[0].onmousedown(17);"><div id="e0_17i" class="m0l1iout">Partners</div></a>
+<a id="e0_18o" class="m0l1oout" href="https://web.archive.org/web/20061011193911/http://www.delta3d.org/article.php?story=20041110112354240&amp;topic=about" style="position: absolute; top: 217px; left: 607px; width: 160px; height: 23px; visibility: hidden; z-index: 1;" onclick="return TMA[0].onclick(18);" onmouseout="TMA[0].onmouseout(18);" onmouseover="TMA[0].onmouseover(18);" onmousedown="TMA[0].onmousedown(18);"><div id="e0_18i" class="m0l1iout">Links</div></a>
+<a id="e0_19o" class="m0l1oout" href="https://web.archive.org/web/20061011193911/http://www.delta3d.org/article.php?story=20041110112703949&amp;topic=about" style="position: absolute; top: 240px; left: 607px; width: 160px; height: 23px; visibility: hidden; z-index: 1;" onclick="return TMA[0].onclick(19);" onmouseout="TMA[0].onmouseout(19);" onmouseover="TMA[0].onmouseover(19);" onmousedown="TMA[0].onmousedown(19);"><div id="e0_19i" class="m0l1iout">Contact Us</div></a>
+<a id="e0_20o" class="m0l1oout" href="https://web.archive.org/web/20061011193911/http://www.delta3d.org/article.php?story=20050217160232944&amp;topic=about" style="position: absolute; top: 263px; left: 607px; width: 160px; height: 23px; visibility: hidden; z-index: 1;" onclick="return TMA[0].onclick(20);" onmouseout="TMA[0].onmouseout(20);" onmouseover="TMA[0].onmouseover(20);" onmousedown="TMA[0].onmousedown(20);"><div id="e0_20i" class="m0l1iout">Jobs</div></a>
+
+<table bgcolor="#1D2B48" background="./Cal3D and 3DS Max_files/bg_line_noise_light.gif" border="0" cellspacing="0" cellpadding="5" width="100%">
+    <tbody><tr>
+                <td class="featureblock" valign="top">
+            
+            <br><img src="./Cal3D and 3DS Max_files/speck.gif" width="0" height="1">
+        </td>
+
+        <td width="100%" valign="top">
+
+            <!-- START OF CONTENT AREA -->
+                            <!-- START STORYTEXT.HTML -->         
+           <table width="100%" border="0" cellspacing="0" cellpadding="0">
+				<tbody><tr>
+					<td width="9" background="./Cal3D and 3DS Max_files/gameserver-block-tl.gif"><img src="./Cal3D and 3DS Max_files/pixel.gif" height="9" width="9"></td>
+					<td height="9" background="./Cal3D and 3DS Max_files/gameserver-block-t.gif"><img src="./Cal3D and 3DS Max_files/pixel.gif" height="9"></td>
+					<td width="9" background="./Cal3D and 3DS Max_files/gameserver-block-tr.gif"><img src="./Cal3D and 3DS Max_files/pixel.gif" height="9" width="9"></td>
+				</tr>
+				<tr>
+					<td width="9" background="./Cal3D and 3DS Max_files/gameserver-block-l.gif"><img src="./Cal3D and 3DS Max_files/pixel.gif" height="9" width="9"></td>
+					<td width="100%">
+						<table width="100%" border="0" cellspacing="0" cellpadding="3">
+						<tbody><tr>
+								<td align="left" bgcolor="#fefeff" valign="bottom"><span class="articleFeature"><img src="./Cal3D and 3DS Max_files/pixel.gif" height="4" width="2">Cal3D and 3DS Max</span></td>
+								<td align="right" bgcolor="#fefeff">&nbsp;&nbsp;</td>
+							</tr>
+						<tr>
+								<td colspan="2" bgcolor="#fefeff" valign="top"><img src="./Cal3D and 3DS Max_files/pixel.gif" height="4" width="2"><font color="#909090"><!--Wednesday, October 12 2005 @ 07:13 PM EDT <br>  --></font>
+									<table width="100%" border="0" cellspacing="0" cellpadding="3" bgcolor="#fefeff">
+										<tbody><tr>
+											<td>
+												<p>ARTIST PIPELINE DOCS:  Character Creation (and use of Cal3d/ReplicantBody)
+<br>TUT01_MAX 7
+
+
+<br><br>The latest version of the Cal3d exporter for Max is bundled with Delta3d 1.0 in the “..\Delta3D\ext\bin\” directory.  If you need to download them seperately, you can get them here: <a href="https://web.archive.org/web/20061011193911/http://cal3d.sourceforge.net/">Cal3d Exporters</a>
+<br><br>
+<b><i>**3DS MAX</i></b>
+<br>
+</p><p></p><center><b><i>***example of the Delta3d character pipeline</i></b></center><p></p>
+<p></p><center><img width="600" height="600" src="./Cal3D and 3DS Max_files/20051012191315564_1.jpg" alt=""></center><p></p>
+<ul>1) Install the Cal3d exporter
+<ul><b>a)</b> Put the 'cal3d.dll' file (found in “..\Delta3D\ext\bin\”) into the 3d studio max directory.<br>
+<b>b)</b> Put the 'cal3d_max_exporter.dle' file (found in “..\Delta3D\ext\bin\max7_plugins”)into the plugins directory of 3d studio max.</ul></ul>
+
+<ul>2) Build/Rig/Animate
+(Don’t worry, I won’t waste anyone’s time here with basic character modeling how-to’s.  That’s for another Tutorial)
+<ul><b>a)</b> There are some Cal3d exporter nuances to keep in mind when setting up your character.  Each material on the character you create must have its own slot in the material editor and be tagged with numbers in sequential order. Ie:
+<ul><ul><ul>		legs [0]  //  arms [1]  //  head [2]  //  body [3]  //  etc……
+
+</ul></ul></ul></ul></ul>
+<ul>3) Export
+<br><b>IMPORTANT NOTE:</b> cal3d exports 4 files 2 different ways...(csf,cmf,crf,caf) <b>OR</b> (xsf,xmf,xrf,xaf)...Max's default is the "csf" version, but you can choose either by typing in the extention yourself, or changing the extension after export.  The sample Configure file and Rbody file below assume the use of the binary "csf" version.  That being said..... 
+<ul><b>a)</b> For the cal3d export to work correctly you MUST export the Skeleton first (followed by the mesh(s), material(s), and animation(s) in any order you choose)
+<br><b>b)</b> Select your Biped’s Center of Mass and click Export from the File Menu. Select the Cal3D skeleton exporter, enter a name for the skeleton, and you’ll see a checklist of all the bones in your Biped.  Each bone in the hierarchy should be checked once.  Click finish and the skeleton file is exported.
+<br><b>c)</b> Next, you’ll export the Mesh(s) that make up you character…one at a time.  Select an individual mesh object, click Export from the File Menu and select the Cal3d mesh exporter.  A dialog box will ask you to select the skeleton file you already exported.  Click Next and choose your LOD options.  Click Next and choose your Spring setting options (still experimental).  Click Finished and you are done with that mesh.  Repeat this step for each mesh that makes up your character.
+<br><b>d)</b> To export the materials, click on Export from the File Menu and select the Cal3d material exporter.  A dialog box will list the materials matching Cal3d’s requirements.  Select one of the listed materials and click next.  If there was a texture map attached to that material you will now be asked to select it.  Then click next.
+<br><b>e)</b> Next step is to export the animation(s) you have created.  Click on Export from the File Menu and select the Cal3d animation exporter.  A dialog box will ask you to select the skeleton file you already exported.  Click next and you will get a checklist of all the bones in your Biped (just like during the skeleton export).  Make your selections and click next to get to the last of the export options.  In this dialog box you can set the animation frames, displacement, and speed.
+
+
+<br><br></ul>
+4) Create the Cal3d “.cfg” file for the exported data
+<ul><b>a)</b> Using any text editor you wish, will now need to create a .cfg file containing all the information about the files that make up your character.  The most important thing to remember when creating this file is to list the materials in the same order you tagged them in max [0] is first, [1] is second…and so on. 
+
+<br>Below is a sample “.cfg” script to use as a reference:  
+
+<pre>################################################
+##		Skeleton - Cal3d cfg File
+################################################
+scale=0.5
+################# Skeleton #################
+skeleton=humanTEST.csf
+################# Meshes #################
+mesh=humanTEST.cmf
+################# Animations #################
+animation=human_RunAnim.caf
+animation=human_WalkAnim.caf
+################# Materials #################
+material=LegMaterial00.crf
+material=ArmMaterial01.crf
+material=HeadMaterial02.crf
+material=BodyMaterial03.crf
+</pre>
+
+<br></ul>
+5) View your animated character
+<ul><b>a)</b> Download the free Cal3d mini-viewer from the same site as the exporters: <a href="https://web.archive.org/web/20061011193911/http://sourceforge.net/project/showfiles.php?group_id=26281">Cal3d Miniviewers</a>
+<br><b>b)</b> Unzip the package to a local directory like "c:\cal3d_viewer" and you’ll see a few miniviewer executables to use.
+<br><b>c)</b> Open a command prompt and change directories until you are in the cal3d_viewer directory you just created.  Run the viewer by typing the line: “cal3d_miniviewer_gl.exe c:\DtArtWorkspace\cal3dTest\test.cfg”  (replace c:\DtArtWorkspace\cal3dTest\test.cfg with the path to your recently created “.cfg” file)
+	…Alternately, you can create a shortcut to the viewer executable and dran-n-drop the “.cfg” file onto it.
+<br><b>d)</b> With a little luck you should be seeing your animated character looping in a viewer.
+
+<br><br></ul>
+6) Create a ReplicantBody (.rbody) and Character (.char) file
+<br><ul><b>a)</b> After a successful Cal3d export with a working “.cfg” file, you will have to make a new Replicant Body file for the character to be used inside of Delta3D.  The Replicant Body file is very similar to the “.cfg” file, but with far more detail added for animation timing, blending, etc.
+<br><b>b)</b> Using any text editor you wish, will now need to create a “.rbody” file containing all the information about the files that make up your character.  Below is a sample “.rbody” to use as a reference:
+
+<pre>###################################
+## Replicant Body Template
+## 
+## All Cal3D data files should be stored in the same directory
+###################################
+
+path “./” 					# (“path to Cal3D data files”)
+skeleton “humanTEST.cfg”			# (“name of Cal3D skeleton data file”)
+default_act "ACT_WALK"		 	        # ("action to use at startup")
+scale 0.025 					# (Scaling to use)
+foot_offset offset_float 			# (Distance between foot bone and ground)
+
+###################################
+## Bones used when calculating character speed
+###################################
+
+ContactBones {
+	bone_name "Skeleton R Foot"		# ("name of bone in skeleton")
+	bone_name "Skeleton L Foot"		# ("name of bone in skeleton")
+}
+
+###################################
+## Bones from which you can get the direction
+###################################
+
+DirectionBones {
+	head_bone "Skeleton Head"		# ("name of bone in skeleton")
+}	###################################
+## A core character can consist of several animations
+##
+## Each animation is connected to an action name
+##
+## It is the action name that is used when refering to
+## an animation/animation type
+###################################
+	
+Animation {
+	name “run”				# (“name of animation”)
+	filename “human_RunAnim.caf”		# ("name of cal3d file with animation”)
+	act_name “ACT_RUN”			# ("name of action connected to")
+	act_weight 1				# (Default is 1)
+	speed 2					# (Default is 0)
+	is_looped 1				# (0 if non-looping)
+	is_default 0		 		# (0 if not default)
+}
+
+Animation {
+	name “walk”				# (“name of animation”)
+	filename “human_WalkAnim.caf”		# ("name of cal3d file with animation”)
+	act_name “ACT_WALK”			# ("name of action connected to")
+	act_weight 1				# (Default is 1)
+	speed 2					# (Default is 0)
+	is_looped 1				# (0 if non-looping)
+	is_default 0		 		# (0 if not default)
+}
+
+##################################
+## AnimationDegree is used to combine two actions
+##  that are executed in different directions
+##
+## For example, a simple "look at" can be done by specifying
+##  an animation of head bone turned right as animation 1 with
+##  "degree" set to 90 (the animation must have at least 2 frames)
+## Animation 2 should then contain an animation with head bone 
+##  turned left and "degree" should be set to -90
+##################################	
+
+AnimationDegree {
+	name “head_turn”			# (“name of animation”)
+	act_name “ACT_LOOK”			# (“name of action connected to”)
+	act_weight 1		 		# (Default is 1)
+	Animation {
+		name “head_left”		# (“name of animation 1”)
+		degree 90			# (angle_representat_of_anim_1)
+	}
+	Animation {
+		name “head_right”		# (“name of animation 2”)
+		degree -90			# (angle_representat_of_anim_2)
+	}
+}
+##################################
+## AnimationSpeed is used the same way as AnimationDegree
+##  but in this case the speed can be varied
+##################################
+	
+AnimationSpeed {
+	name “head_turn_speed”			# (“name of animation”)
+	act_name “ACT_LOOK_SPEED”		# (“name of action connected to”)
+	act_weight 1				# (Default is 1)
+	default_speed 0.5			# (Default is 0)
+	Animation {
+		name “head_left”		# (“name of animation 1”)
+		degree 90			# (angle_representat_of_anim_1)
+	}
+	Animation {
+		name “head_right”		# (“name of animation 2”)
+		degree -90			# (angle_representat_of_anim_2)
+	}
+}
+
+##################################
+## AnimationBlend can contain two or more animations
+## The sum of all animations’ weights should add up to 1
+##################################
+	
+AnimationBlend {
+	name “walk_salute”			# (“name of animation”)
+	act_name “ACT_WALK_SALUTE”	        # (“name of action connected to”)
+	act_weight 1				# (Default is 1)
+	Animation {
+		name “human_WalkAnim”	        # (“name of animation 1”)
+		weight 0.5			# (blend_weight_of_anim_1)
+	}
+	Animation {
+		name “salute”			# (“name of animation 2”)
+		weight 0.5			# (blend_weight_of_anim_2)
+	}
+}
+
+##################################
+## AnimationScript can have one or more animations
+## start_time is only used when the animations are
+##  treated as prioritized. Other animations are queued
+##################################
+	
+AnimationScript {
+	name “headturn_salute”			# (“name of animation”)
+	act_name “ACT_HEADTURN_SALUTE”	        # (“name of action connected to”)
+	act_weight 1		 		# (Default is 1)
+	Animation {
+		name “head_left”	        # (“name of animation 1”)
+		start_time 0			# (start_time_of_anim_1)
+	}
+	Animation {
+		name “salute”			# (“name of animation 2”)
+		start_time 0.5			# (start_time_of_anim_2)
+	}
+}
+
+##################################
+## A core character can consist of several meshes
+##################################
+	
+Mesh {
+	name “body”				# (“name of mesh”)
+	filename “humanTEST.cmf”		# (“name of Cal3D data file with mesh”)
+	is_default 1		 		# (0 if not default)
+}
+
+##################################
+## The materials get their material ids in the order
+## they are loaded. Thus, the first loaded material
+## gets id 0, the second gets id 1, and so on
+##################################
+	
+Material {
+	filename “humanTEST.crf”		# (“name of Cal3D file with material”)
+}
+
+##################################
+## A material set is used to connect thread ids
+## (which get their id parsing by their name for
+## a figure in 3DS) to material ids
+##################################
+	
+MaterialSet {
+	name “original”				# (“name of material set”)
+	is_default 1		 		# (0 if not default)
+	Connection {
+		thread_id 0			# (thread_id_int)
+		material_id 0 			# (material_id_int)
+	}
+}
+
+##################################	
+## Conflicting Actions are 2 or more animations which
+##  cannot be executed at the same time.
+##################################
+		
+ConflictingActions {
+	action_1 “ACT_RUN”			# (“name of action 1”)
+	action_2 “ACT_RUN_BACKWARD”	        # (“name of action 2”)
+}
+
+##################################
+## The InBetweenActivity is used to transition
+## smoothly between different activities, that is,
+## use another activity in-between if their end
+## and start poses differs dramatically
+##################################
+	
+InBetweenActivity {
+	start_activity "ACT_WALK"		# (“name of start activity”)
+	end_activity "ACT_SPRINT"		# (“name of end activity”)
+	inbetween_activity "ACT_RUN"		# (“name of inbetween activity”)
+}
+</pre>
+
+<br></ul>
+7) View/Cycle your animated character in Delta3d
+<ul>a) If all has gone well you should be able to load and view your .rbody character inside of the Delta3d viewer or in Delta3D STAGE.</ul>
+<hr>
+
+
+<br>3DStudio Max:	<a href="https://web.archive.org/web/20061011193911/http://www.autodesk.com/3dsmax">http://www.autodesk.com/3dsmax</a>
+<br>Cal3d:		<a href="https://web.archive.org/web/20061011193911/http://cal3d.sourceforge.net/">http://cal3d.sourceforge.net/</a>
+<br>ReplicantBody: 	<a href="https://web.archive.org/web/20061011193911/http://www.vrlab.umu.se/research/replicantbody/">http://www.vrlab.umu.se/research/replicantbody/
+</a><p></p>
+											</ul></td>
+										</tr>
+									</tbody></table>
+								</td>
+							</tr>
+			<tr>
+				<td align="right" valign="bottom" bgcolor="#fefeff" colspan="2"><!--<b>&nbsp;&nbsp;[&nbsp;Views: 1161&nbsp;]</b>--> <a href="https://web.archive.org/web/20061011193911/http://www.delta3d.org/article.php?story=20051012191315564&amp;topic=tutorials"></a> <img src="./Cal3D and 3DS Max_files/pixel.gif" height="1" width="9">
+				</td>
+			</tr>
+		</tbody></table>
+		
+		
+					</td>
+					<td width="9" background="./Cal3D and 3DS Max_files/gameserver-block-r.gif"><img src="./Cal3D and 3DS Max_files/pixel.gif" height="9" width="9"></td>
+				</tr>
+				<tr>
+					<td width="9" background="./Cal3D and 3DS Max_files/gameserver-block-bl.gif"><img src="./Cal3D and 3DS Max_files/pixel.gif" height="3" width="9"></td>
+					<td height="3" background="./Cal3D and 3DS Max_files/gameserver-block-b.gif"><img src="./Cal3D and 3DS Max_files/pixel.gif" height="3"></td>
+					<td width="9" background="./Cal3D and 3DS Max_files/gameserver-block-br.gif"><img src="./Cal3D and 3DS Max_files/pixel.gif" height="3" width="9"></td>
+				</tr>
+			</tbody></table><br><!-- END STORYTEXT.HTML --><!-- START STORYBODYTEXT.HTML -->
+<br>
+                            
+			            </td>
+                        <td>
+                            <img src="./Cal3D and 3DS Max_files/speck.gif" height="1" width="10" alt="">
+                        </td>
+        		        <td valign="top" width="180">
+                            
+<!-- START BLOCK -->
+<table width="100%" border="0" cellspacing="0" cellpadding="0"><tbody><tr background="./Cal3D and 3DS Max_files/title_bar_top.gif">
+<td align="left" valign="middle" nowrap="" width="12"><img src="./Cal3D and 3DS Max_files/title_bar_left.gif" alt="" width="12" height="27" hspace="0" vspace="0" border="0" align="left"></td>
+<td align="left" valign="middle" nowrap="" background="./Cal3D and 3DS Max_files/title_bar_top.gif"><span class="articleTitle">Options</span></td>
+<td align="right" nowrap="" width="40" background="./Cal3D and 3DS Max_files/title_bar_top.gif"></td><td align="right" valign="middle" nowrap="" width="15"><img src="./Cal3D and 3DS Max_files/title_bar_right.gif" alt="" width="15" height="27" hspace="0" vspace="0" border="0"></td>
+</tr></tbody></table>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0"><tbody><tr>
+<td width="9" background="./Cal3D and 3DS Max_files/gameserver-block-l.gif"><img src="./Cal3D and 3DS Max_files/pixel.gif" height="9" width="9"></td>
+<td bgcolor="#ffffff" width="100%">
+
+<table bgcolor="#fefeff" width="100%" border="0" cellspacing="0" cellpadding="3"><tbody><tr><td>
+<!-- <ul> -->
+<li><a href="https://web.archive.org/web/20061011193911/http://www.delta3d.org/profiles.php?sid=20051012191315564&amp;what=emailstory">Mail to a Friend</a></li>
+<li><a href="https://web.archive.org/web/20061011193911/http://www.delta3d.org/article.php?story=20051012191315564&amp;mode=print">Printable Format</a></li>
+
+<!-- </ul> -->
+						</td></tr>
+						</tbody></table>
+					</td>
+					<td width="9" background="./Cal3D and 3DS Max_files/gameserver-block-r.gif"><img src="./Cal3D and 3DS Max_files/pixel.gif" height="9" width="9"></td>
+				</tr>
+				<tr>
+					<td width="9" background="./Cal3D and 3DS Max_files/gameserver-block-bl.gif"><img src="./Cal3D and 3DS Max_files/pixel.gif" height="3" width="9"></td>
+					<td height="3" background="./Cal3D and 3DS Max_files/gameserver-block-b.gif"><img src="./Cal3D and 3DS Max_files/pixel.gif" height="3"></td>
+					<td width="9" background="./Cal3D and 3DS Max_files/gameserver-block-br.gif"><img src="./Cal3D and 3DS Max_files/pixel.gif" height="3" width="9"></td>
+				</tr>
+			</tbody></table><br>
+<!-- END BLOCK -->
+<br>
+                            <img src="./Cal3D and 3DS Max_files/speck.gif" width="180" height="1" alt="">
+                            
+
+            <!-- End Content Area -->
+
+        </td>
+    
+    </tr>
+</tbody></table>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td colspan="2" align="center" height="20" background="./Cal3D and 3DS Max_files/gameserver_menu_tile.gif"><img src="./Cal3D and 3DS Max_files/pixel.gif" alt="" height="23" width="1" align="absmiddle" border="0"><span class="footerblock">Delta3D is released under the <a href="https://web.archive.org/web/20061011193911/http://www.gnu.org/copyleft/lesser.html" target="_blank" class="footerblock"><span class="footerblock" style="color: #8FA6C3; font-size: 10px">GNU Lesser General Public License (LGPL)</span></a> | Powered by <a href="https://web.archive.org/web/20061011193911/http://www.geeklog.net/" target="_blank" class="footerblock"><span class="footerblock" style="color: #8FA6C3; font-size: 10px">GeekLog</span></a></span></td></tr></tbody></table>
+</td></tr></tbody></table>
+</center>
+		
+
+
+<!--
+     FILE ARCHIVED ON 19:39:11 Oct 11, 2006 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:21:09 Nov 25, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  exclusion.robots.policy: 0.334
+  PetaboxLoader3.datanode: 117.13 (4)
+  PetaboxLoader3.resolve: 49.055
+  exclusion.robots: 0.352
+  RedisCDXSource: 2.731
+  LoadShardBlock: 116.466 (3)
+  captures_list: 149.537
+  esindex: 0.016
+  CDXLines.iter: 25.344 (3)
+  load_resource: 132.744
+--></body></html>

@@ -1,0 +1,495 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0113)https://web.archive.org/web/20160409113512/http://delta3d.org/article.php?story=20051115140557167&topic=tutorials -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><script src="./Static Mesh Terrain Creation in 3D Studio Max_ Part 2_files/cb=gapi.loaded_2" async=""></script><script src="./Static Mesh Terrain Creation in 3D Studio Max_ Part 2_files/cb=gapi.loaded_1" async=""></script><script id="twitter-wjs" src="./Static Mesh Terrain Creation in 3D Studio Max_ Part 2_files/widgets.js.download"></script><script id="facebook-jssdk" src="./Static Mesh Terrain Creation in 3D Studio Max_ Part 2_files/all.js.download"></script><script src="./Static Mesh Terrain Creation in 3D Studio Max_ Part 2_files/cb=gapi.loaded_0" async=""></script><script src="./Static Mesh Terrain Creation in 3D Studio Max_ Part 2_files/analytics.js.download" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app56.us.archive.org';v.server_ms=452;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="./Static Mesh Terrain Creation in 3D Studio Max_ Part 2_files/playback.bundle.js.download" charset="utf-8"></script>
+<script type="text/javascript" src="./Static Mesh Terrain Creation in 3D Studio Max_ Part 2_files/wombat.js.download" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://delta3d.org/article.php?story=20051115140557167&topic=tutorials","20160409113512","https://web.archive.org/","web","/_static/",
+	      "1460201712");
+</script>
+<link rel="stylesheet" type="text/css" href="./Static Mesh Terrain Creation in 3D Studio Max_ Part 2_files/banner-styles.css">
+<link rel="stylesheet" type="text/css" href="./Static Mesh Terrain Creation in 3D Studio Max_ Part 2_files/iconochive.css">
+<!-- End Wayback Rewrite JS Include -->
+
+    <title>
+	    Static Mesh Terrain Creation in 3D Studio Max: Part 2 - delta3d
+    </title>
+    
+    <meta name="revisit-after" content="2 days">
+    <meta name="robots" content="index,follow">
+    <meta name="publisher" content="delta3d">
+    <meta name="copyright" content="delta3d">
+    <meta name="author" content="delta3d">
+    <meta name="distribution" content="global">
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<!-- <meta http-equiv="Pragma" content="no-cache"> -->
+
+    <link rel="SHORTCUT ICON" href="https://web.archive.org/web/20160409113512im_/http://delta3d.org/images/favicon.ico">
+
+	
+
+	<link rel="home" href="http://delta3d.org/" title="Home">
+<link rel="search" href="https://web.archive.org/web/20160409113512/http://delta3d.org/search.php" title="Advanced Search">
+<link rel="contents" href="http://delta3d.org/directory.php" title="Directory">
+<link rel="service" type="application/atomsvc+xml" href="http://delta3d.org/webservices/atom/?introspection" title="Webservices">
+
+	<link rel="stylesheet" type="text/css" href="./Static Mesh Terrain Creation in 3D Studio Max_ Part 2_files/css.php" media="all">
+<link rel="stylesheet" type="text/css" href="./Static Mesh Terrain Creation in 3D Studio Max_ Part 2_files/style.css">
+<link rel="canonical" href="https://web.archive.org/web/20160409113512/http://delta3d.org/article.php?story=20051115140557167">
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://delta3d.org/article.php?story=20051115140557167"
+    trackback:ping="http://delta3d.org/trackback.php?id=20051115140557167"
+    dc:title="Static Mesh Terrain Creation in 3D Studio Max: Part 2"
+    dc:identifier="http://delta3d.org/article.php?story=20051115140557167" />
+</rdf:RDF>
+-->
+
+<!-- Include CSS for Forum -->
+<link rel="stylesheet" type="text/css" href="./Static Mesh Terrain Creation in 3D Studio Max_ Part 2_files/forum.css">
+<link rel="stylesheet" type="text/css" href="./Static Mesh Terrain Creation in 3D Studio Max_ Part 2_files/smilies.css.php">
+<link rel="stylesheet" type="text/css" href="./Static Mesh Terrain Creation in 3D Studio Max_ Part 2_files/style(1).css">
+<link rel="stylesheet" type="text/css" href="./Static Mesh Terrain Creation in 3D Studio Max_ Part 2_files/QapTcha.jquery.css" media="screen">
+	<script type="text/javascript" src="./Static Mesh Terrain Creation in 3D Studio Max_ Part 2_files/plusone.js.download" gapi_processed="true"></script>
+	
+	<link rel="stylesheet" type="text/css" href="./Static Mesh Terrain Creation in 3D Studio Max_ Part 2_files/css.php">
+
+    <!--[if lte IE 6]>
+        <link rel="stylesheet" type="text/css" href="http://delta3d.org/layout/purepro/css/ie6.css" title="purepro"{xthml}>
+    <![endif]-->
+    <!--[if IE 7]>
+        <link rel="stylesheet" type="text/css" href="http://delta3d.org/layout/purepro/css/ie7.css" title="purepro"{xthml}>
+    <![endif]-->
+
+<script type="text/javascript" charset="utf-8" async="" src="./Static Mesh Terrain Creation in 3D Studio Max_ Part 2_files/timeline.0eae788bc4fdbe9cd3e72dca3bc26358.js.download"></script><script type="text/javascript" charset="utf-8" async="" src="./Static Mesh Terrain Creation in 3D Studio Max_ Part 2_files/button.71000885400e222c3c0eec823f8f93f0.js.download"></script><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://web.archive.org/web/20160409113512if_/https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(https://web.archive.org/web/20160409113512if_/https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://web.archive.org/web/20160409113512if_/https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(https://web.archive.org/web/20160409113512if_/https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(https://web.archive.org/web/20160409113512if_/https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(https://web.archive.org/web/20160409113512if_/https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f6f7f8;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://web.archive.org/web/20160409113512if_/https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://web.archive.org/web/20160409113512if_/https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://web.archive.org/web/20160409113512if_/https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://web.archive.org/web/20160409113512if_/https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #3a5795;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://web.archive.org/web/20160409113512if_/https://fbstatic-a.akamaihd.net/rsrc.php/v2/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://web.archive.org/web/20160409113512if_/https://fbstatic-a.akamaihd.net/rsrc.php/v2/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #2f477a;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://web.archive.org/web/20160409113512if_/https://fbstatic-a.akamaihd.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f8;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://web.archive.org/web/20160409113512if_/https://fbstatic-a.akamaihd.net/rsrc.php/v2/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://web.archive.org/web/20160409113512if_/https://fbstatic-a.akamaihd.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}</style></head>
+<body dir="ltr" id="purepro"><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  /*min-width:800px !important;*/
+}
+</style>
+<script>__wm.rw(0);</script>
+<div id="wm-ipp-base" lang="en" style="display: block; direction: ltr;">
+</div><div id="donato" style="position:relative;width:100%;">
+  <div id="donato-base">
+    <iframe id="donato-if" src="./Static Mesh Terrain Creation in 3D Studio Max_ Part 2_files/donate.html" scrolling="no" frameborder="0" style="width:100%; height:100%">
+    </iframe>
+  </div>
+</div><script type="text/javascript">
+__wm.bt(625,27,25,2,"web","http://delta3d.org/article.php?story=20051115140557167&topic=tutorials","20160409113512",1996,"/_static/",["/_static/css/banner-styles.css?v=bsmaklHF","/_static/css/iconochive.css?v=qtvMKcIJ"]);
+  __wm.rw(1);
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<div id="body_layer1"><div id="body_layer2"><div id="body_layer3">
+<div>
+    <a name="top"></a>
+    <a href="https://web.archive.org/web/20160409113512/http://delta3d.org/article.php?story=20051115140557167&amp;topic=tutorials#content-start"> <!-- for screenreaders -->
+        <img class="hidden" src="./Static Mesh Terrain Creation in 3D Studio Max_ Part 2_files/speck.gif" alt="{skip_navigation}">
+    </a>
+</div>
+<!-- End of htmlheader.thtml --><!-- Start of header.thtml -->
+    <div id="gl_container">
+
+        <div id="gl_header">
+		<div id="header-site-logo-graphic">
+	
+	<a href="https://web.archive.org/web/20160409113512/http://delta3d.org/" title="delta3d"><img src="./Static Mesh Terrain Creation in 3D Studio Max_ Part 2_files/images.php" alt="delta3d"></a>
+	
+</div>
+		
+        </div> <!-- end of gl_header -->
+		
+        
+		
+        <div id="gl_menu" style="display:block">
+            <ul>
+            <li><a href="https://web.archive.org/web/20160409113512/http://delta3d.org/search.php"><span>Advanced Search</span></a></li>
+<li><a href="https://web.archive.org/web/20160409113512/http://delta3d.org/directory.php?topic=tutorials"><span>Directory</span></a></li>
+<li><a href="https://web.archive.org/web/20160409113512/http://delta3d.org/api/"><span>API docs</span></a></li>
+<li><a href="https://web.archive.org/web/20160409113512/http://delta3d.org/article.php?story=20050720155458456&amp;topic=tutorials"><span>Tutorials</span></a></li>
+<li><a href="https://web.archive.org/web/20160409113512/http://delta3d.org/deltawiki"><span>Wiki</span></a></li>
+<li><a href="https://web.archive.org/web/20160409113512/https://sourceforge.net/projects/delta3d/files/"><span>Download</span></a></li>
+<li><a href="https://web.archive.org/web/20160409113512/http://delta3d.org/forum"><span>Forum</span></a></li>
+<li><a href="https://web.archive.org/web/20160409113512/http://delta3d.org/usersettings.php"><span>My Account</span></a></li>
+
+            </ul>
+        </div>  <!-- end of gl_menu -->
+
+		<div id="glmenu_plugin" style="display:none">
+		 
+	    </div>
+		
+		<div id="navman_plugin" style="display:none">
+		
+		
+	    </div>
+		
+		<div id="gl_content_container">
+
+        <div id="gl_wrapper">
+            <div id="gl_content-wide-left">
+
+<!-- START OF CONTENT AREA -->
+                <a name="content-start" id="content-start"></a><!--for screenreaders -->
+				<!-- Start of Breadcrumbs Navigation -->
+<p>
+</p><div itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+    <a href="https://web.archive.org/web/20160409113512/http://delta3d.org/index.php" itemprop="url">
+    <span itemprop="title">Home</span>
+</a> &gt;
+<span itemprop="child" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+    <a href="https://web.archive.org/web/20160409113512/http://delta3d.org/index.php?topic=tutorials" itemprop="url">
+    <span itemprop="title">Tutorials</span>
+</a> 
+
+
+
+</span>
+
+
+
+
+</div>
+<p></p>
+<!-- End of Breadcrumbs Navigation -->
+
+				
+<!-- End of header.thtml -->
+        <div class="story">
+	<span class="story-icons">  
+        
+        
+        
+        
+    </span>
+    <h1>Static Mesh Terrain Creation in 3D Studio Max: Part 2</h1>
+	<div class="story-information">
+    	<a class="storybyline" href="https://web.archive.org/web/20160409113512/http://delta3d.org/users.php?mode=profile&amp;uid=13" rel="author">coonan</a> Saturday, October 02 2004 @ 08:05 PM UTC Views: 21,050  
+    </div>
+    <div class="story-body">
+        The following sections will introduce baking textures, using the UVW Unwrap modifier and then saving our terrain in a format that’s ready to export into the Delta3D World Builder. <br><br><b>Baking Textures</b>
+<p>
+In order to get our terrain ready for our map in the Delta3D Editor we need to bake the terrain textures. This will result in 1 image that will cover the entire terrain. Please note that we will not be going into any advanced UV mapping since it is beyond the scope of this tutorial.
+</p>
+<p>
+The first step is to apply an Unwrap UVW modifier to our terrain. With the terrain selected add an Unwrap UVW modifier from the modifier drop down list. Once the modifier has been added, open up its sub-menu and select ‘Select Face’.
+</p>
+<p>
+</p><center><img width="168" height="178" src="./Static Mesh Terrain Creation in 3D Studio Max_ Part 2_files/20051115140557167_1.jpg" alt=""></center>
+<p></p>
+<p>
+We now need to select all the faces of our terrain. To make your life easier, just hit ctrl-a to ‘Select All’. You can also ‘Select All’ from the main menu under Edit. The faces of your terrain should now be selected, indicated by red.
+</p>
+<p>
+</p><center><img width="586" height="464" src="./Static Mesh Terrain Creation in 3D Studio Max_ Part 2_files/20051115140557167_2.jpg" alt=""></center>
+<p></p>
+<p>
+From here we need to click the Planar Map button located under the Sub Object Params: for the Unwrap UVW modifier.
+</p>
+<p>
+</p><center><img width="163" height="131" src="./Static Mesh Terrain Creation in 3D Studio Max_ Part 2_files/20051115140557167_3.jpg" alt=""></center>
+<p></p>
+<p>
+Under the Parameters section, press the ‘Edit…’ button to open up the “Edit UVWs” window. This is the area that allows you to modify the UVW coordinates applied to your model. We are only interested in orienting the texture so that it fits within the blue bounding box. You can see this in the following image.
+</p>
+<p>
+</p><center><img width="607" height="493" src="./Static Mesh Terrain Creation in 3D Studio Max_ Part 2_files/20051115140557167_4.jpg" alt=""></center>
+<p></p>
+<p>
+Rotate the selected UV’s so that they fit within the blue border.
+</p>
+<p>
+I just want to point out one thing before we finish the UVW process. When you applied your Unwrap UVW modifier to the terrain you had it set to Map Channel: 1. This is important to remember because we will be using this channel to bake our models texture.
+</p>
+<p>
+</p><center><img width="160" height="171" src="./Static Mesh Terrain Creation in 3D Studio Max_ Part 2_files/20051115140557167_5.jpg" alt=""></center>
+<p></p>
+<p>
+The final step to finish the mapping of our terrain is to collapse the model. Click on the Utilities tab and hit the Collapse button. In this section hit the ‘Collapse Selected’ button.
+</p>
+<p>
+Your terrain is now ready to be baked! We are almost done.
+</p>
+<p>
+With your terrain selected, click on the ‘Render&gt;Render to Texture’ from the main menu. The Render to Texture dialog window will open.
+</p>
+<p>
+</p><center><img width="210" height="600" src="./Static Mesh Terrain Creation in 3D Studio Max_ Part 2_files/20051115140557167_6.jpg" alt=""></center>
+<p></p>
+<p>
+Wow! Look at all those settings! Luckily we are only interested in a few options. Under general settings go ahead and select a path for the baked material output. You will need the output file in later steps. If your terrain is NOT in the ‘Objects to Bake’ menu then you need to select it in the viewport now. 
+</p>
+<p>
+Under the Mapping Coordinates group change the Object: property from ‘Use Automatic Unwrap’ to ‘Use Existing Channel’. The Channel needs to be 1.
+</p>
+<p>
+Click the ‘Add…’ button located in the Output section and select DiffuseMap from the list. We are going to be creating a diffuse map for our output and then assign it to our terrain in later steps.
+</p>
+<p>
+</p><center><img width="272" height="528" src="./Static Mesh Terrain Creation in 3D Studio Max_ Part 2_files/20051115140557167_7.jpg" alt=""></center>
+<p></p>
+<p>
+Select Diffuse Color in the Target Map Slot: drop down menu. 
+</p>
+<p>
+Go ahead and select a decent image size, I chose 2048. A larger image will result in a clearer textured terrain. 
+</p>
+<p>
+For the File Name and Type: give the output file a name that is simple. I named mine ‘terrain.tga’. This will be the baked texture filename you will be using in a few more steps.
+</p>
+<p>
+You can now go ahead and hit the Render button located at the bottom of the dialog, which will generate the output of a baked material to the directory you specified.
+</p>
+<p>
+Your new preview should look something like the following:
+</p>
+<p>
+</p><center><img width="378" height="378" src="./Static Mesh Terrain Creation in 3D Studio Max_ Part 2_files/20051115140557167_8.jpg" alt=""></center>
+<p></p>
+<p>
+Outstanding! We have a few more steps before we are ready to export our final static mesh terrain. 
+</p>
+<p>
+Press ‘M’ and open up the Material Editor window. Select an empty material slot and name it baked_material. Under the map menu check the Diffuse Color checkbox and then press the None button to assign our diffuse map. After the Material/Map browser window opens, select ‘Bitmap’ from the list. Select our ‘terrain.tga’ file we generated earlier when we baked the textures of our terrain. Click the parent button to return to the top of our material stack.
+</p>
+<p>
+Drag the baked_material directly on our static mesh. Click the icon in the material editor that looks like a blue and white checkered cube. This will turn on the preview of our texture so we can see what our terrain will look like.
+</p>
+<p>
+</p><center><img width="676" height="286" src="./Static Mesh Terrain Creation in 3D Studio Max_ Part 2_files/20051115140557167_9.jpg" alt=""></center>
+<p></p>
+<p>
+Now all we have left to do is export our terrain as a .3ds file. Click the File&gt;Export from the main menu. The Select File to Export dialog window will open allowing us to choose a name for our file. Make sure that the file type you are saving is *.3ds. You should now have a .3ds file that is ready to be used in the Delta3D World Builder.
+</p>
+<p>
+<b>Importing a Static Mesh Terrain into the Delta3D World Builder</b>
+</p>
+<p>
+This section describes the method of importing our new static mesh terrain into the Delta3D World Builder. If you are unfamiliar with the level editor now would be a good time to go back through the tutorials and get reacquainted.
+</p>
+<p>
+In the Delta3D World Builder set the project context if you have not done so already. This can be accomplished by clicking the menu item File&gt;Change Project.
+</p>
+<p>
+</p><center><img width="264" height="242" src="./Static Mesh Terrain Creation in 3D Studio Max_ Part 2_files/20051115140557167_10.jpg" alt=""></center>
+<p></p>
+Select a directory where you want the project to reside on your computer. Once you have done this click the ‘Apply’ button. You will be returned to the world builder when this process is complete. 
+<p></p>
+<p>
+Setup a new map by clicking the menu item File&gt;New Map. This will open up a New Map dialog where you can set the name and description for your map.
+</p>
+<p>
+</p><center><img width="261" height="256" src="./Static Mesh Terrain Creation in 3D Studio Max_ Part 2_files/20051115140557167_11.jpg" alt=""></center>
+<p></p>
+Click the OK button to create your new map. You’re just about ready to add your static mesh terrain. 
+<p></p>
+<p>
+In the resource window area select the Static Mesh tab. With the Static Mesh root folder selected, press the button at the bottom of the window that has a folder with an arrow icon.
+</p>
+<p>
+</p><center><img width="239" height="263" src="./Static Mesh Terrain Creation in 3D Studio Max_ Part 2_files/20051115140557167_12.jpg" alt=""></center>
+<p></p>
+<p>
+An import window will open up. Select the button labeled ‘…’ and choose the .3ds file for your terrain AND the baked material we applied previously (terrain.tga). 
+</p>
+<p>
+</p><center><img width="264" height="140" src="./Static Mesh Terrain Creation in 3D Studio Max_ Part 2_files/20051115140557167_13.jpg" alt=""></center>
+<p></p>
+<p>
+Click the ‘Import’ button once after you have selected your files to import. The static mesh terrain is now added to the project. Right click the static mesh *.3ds terrain file you just imported and click the ‘Create’ menu item. Your static mesh will now be visible in the map viewport.
+</p>
+<p>
+This short tutorial on the generation of a static mesh terrain should help build a foundation for more advanced terrain building. If you would like a challenge try adding a few more blend materials to the terrain and add a few more textures. The use of layers in photoshop to create heightmaps and 3D Studio Max to generate terrain are both very flexible and powerful tools for creating interesting terrain.
+</p>
+<p>
+This concludes our tutorial on one method of creating a static mesh terrain.
+</p>
+		<p></p>
+		<div style="clear:both;"></div>
+		<div style="float:left;" id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./Static Mesh Terrain Creation in 3D Studio Max_ Part 2_files/xd_arbiter.html" style="border: none;" allow="autoplay &#39;self&#39;; fullscreen &#39;self&#39;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./Static Mesh Terrain Creation in 3D Studio Max_ Part 2_files/xd_arbiter(1).html" style="border: none;" allow="autoplay &#39;self&#39;; fullscreen &#39;self&#39;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//web.archive.org/web/20160409113512/http://connect.facebook.net/en_EN/all.js#xfbml=1";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+	    <div style="float:left;margin-right:10px;"><fb:like href="http://delta3d.org/article.php?story=20051115140557167" send="false" layout="button_count" width="90" show_faces="false" class=" fb_iframe_widget" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;container_width=0&amp;href=http%3A%2F%2Fdelta3d.org%2Farticle.php%3Fstory%3D20051115140557167&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;send=false&amp;show_faces=false&amp;width=90"><span style="vertical-align: top; width: 0px; height: 0px; overflow: hidden;"><iframe name="fe76b1b0a2f0e68" width="90px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="./Static Mesh Terrain Creation in 3D Studio Max_ Part 2_files/like.html" style="border: none; visibility: visible; width: 0px; height: 0px;" allow="autoplay &#39;self&#39;; fullscreen &#39;self&#39;"></iframe></span></fb:like></div>
+		<div style="float:left;margin-right:-20px;"><iframe id="twitter-widget-1" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" style="position: absolute; visibility: hidden; width: 0px; height: 0px;" allow="autoplay &#39;self&#39;; fullscreen &#39;self&#39;" title="Twitter Tweet Button" src="./Static Mesh Terrain Creation in 3D Studio Max_ Part 2_files/tweet_button.fd774b599f565016d763dd860cb31c79.en.html" data-url="http://delta3d.org/article.php?story=20051115140557167"></iframe>
+        </div><script>!function(d,s,id) { var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)) { js=d.createElement(s);js.id=id;js.src="https://web.archive.org/web/20160409113512/https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs); } }(document,"script","twitter-wjs");</script>
+		<div style="position: absolute; width: 450px; left: -10000px;" id="___plusone_0"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position:absolute;top:-10000px;width:450px;margin:0px;border-style:none" tabindex="0" vspace="0" width="100%" id="I0_1460201760233" name="I0_1460201760233" src="./Static Mesh Terrain Creation in 3D Studio Max_ Part 2_files/fastbutton.html" allow="autoplay &#39;self&#39;; fullscreen &#39;self&#39;"></iframe></div><div style="float:left;" class="g-plusone" data-size="medium" data-href="http://delta3d.org/article.php?story=20051115140557167" data-gapiscan="true" data-onload="true" data-gapistub="true"></div>
+		<div style="position: absolute; width: 450px; left: -10000px;" id="___plus_0"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position:absolute;top:-10000px;width:450px;margin:0px;border-style:none" tabindex="0" vspace="0" width="100%" id="I1_1460201760249" name="I1_1460201760249" src="./Static Mesh Terrain Creation in 3D Studio Max_ Part 2_files/sharebutton.html" allow="autoplay &#39;self&#39;; fullscreen &#39;self&#39;"></iframe></div><div class="g-plus" data-action="share" data-annotation="bubble" data-href="http://delta3d.org/article.php?story=20051115140557167" data-gapiscan="true" data-onload="true" data-gapistub="true"></div>
+		<div style="clear:both;"></div>
+		<div style="margin-top:5px;">
+                
+        </div>
+    </div>
+	<div class="clearboth"></div>
+</div>
+
+
+		<div class="clearboth"></div>
+		  <div id="story-whatsrelatedandoptions">
+            <div id="story-whatsrelated"><!-- start blockheader-related.thtml -->
+<div class="block-box-left">
+    <span class="block-helpicon">
+        
+    </span>
+    <h2>What's Related</h2>
+<ul class="list-whats-related">
+  <li><a href="https://web.archive.org/web/20160409113512/http://delta3d.org/search.php?mode=search&amp;type=stories&amp;author=13">More by coonan</a></li>
+  <li><a href="https://web.archive.org/web/20160409113512/http://delta3d.org/search.php?mode=search&amp;type=stories&amp;topic=tutorials">More from Tutorials</a></li>
+
+</ul>
+</div>
+<div style="clear:both;"></div>
+
+</div>
+            <div id="story-storyoptions"><!-- start blockheader-related.thtml -->
+<div class="block-box-left">
+    <span class="block-helpicon">
+        
+    </span>
+    <h2>Story Options</h2>
+<ul class="list-story-options">
+  <li><a href="https://web.archive.org/web/20160409113512/http://delta3d.org/profiles.php?sid=20051115140557167&amp;what=emailstory">Mail Story to a Friend</a></li>
+  <li><a href="https://web.archive.org/web/20160409113512/http://delta3d.org/article.php?story=20051115140557167&amp;mode=print" rel="nofollow">Printable Story Format</a></li>
+
+</ul>
+</div>
+<div style="clear:both;"></div>
+
+</div>
+		  </div>
+		<div class="clearboth"></div>
+		<div id="comments">
+        
+		</div>
+		<div id="story-trackbacks"><h2><a name="trackback">Trackback</a></h2>
+<p>Trackback URL for this entry: http://delta3d.org/trackback.php?id=20051115140557167</p>
+No trackback comments for this entry.
+
+</div>
+
+	<!-- END OF CONTENT AREA -->
+            </div> <!-- end of gl_content -->
+        </div> <!-- end of gl_wrapper -->
+<!-- Start of Left blocks -->
+    <div id="gl_navigation">
+        <div class="block-columnpad"><div class="block-box-left">
+    <span class="block-helpicon-left">
+        
+    </span>
+    <h2 class="block-title-left">News</h2>
+<a href="https://web.archive.org/web/20160409113512/http://caperholdings.com/contracting-services" target="_blank">Need Professional Support?</a>
+
+</div><div class="block-box-left">
+    <span class="block-helpicon-left">
+        
+    </span>
+    <h2 class="block-title-left">About delta3d</h2>
+delta3d is a game and simulation engine appropriate for a wide variety of simulation and entertainment applications.  delta3d uses best-of-breed open source technologies to create a fully integrated game engine and with content creation tools.<a href="https://web.archive.org/web/20160409113512/http://delta3d.org/index.php?topic=about">MORE</a>
+</div><div class="block-box-left">
+    <span class="block-helpicon-left">
+        <a href="https://web.archive.org/web/20160409113512/http://caperholdings.com/sponsor-delta3d" class="blocktitle"><img src="./Static Mesh Terrain Creation in 3D Studio Max_ Part 2_files/button_help.png" alt="?"></a>
+    </span>
+    <h2 class="block-title-left">Sponsor delta3d</h2>
+For the past few years Caper Holdings LLC has been solely driving development of delta3d. To continue to provide upgrades and releases we are allowing the community to purchase <a href="https://web.archive.org/web/20160409113512/http://caperholdings.com/sponsor-delta3d">sponsorships</a>
+</div><div class="block-box-left">
+    <span class="block-helpicon-left">
+        
+    </span>
+    <h2 class="block-title-left">Twitter</h2>
+<iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-timeline twitter-timeline-rendered" style="position: absolute; visibility: hidden; display: block; width: 0px; height: 0px; padding: 0px; border: none;" allow="autoplay &#39;self&#39;; fullscreen &#39;self&#39;" src="./Static Mesh Terrain Creation in 3D Studio Max_ Part 2_files/saved_resource.html"></iframe><a class="twitter-timeline twitter-timeline-error" href="https://web.archive.org/web/20160409113512/https://twitter.com/delta3d" data-widget-id="510256513730875393" data-twitter-extracted-i146020184916084394="true">Tweets by @delta3d</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id))}(document,"script","twitter-wjs");</script>
+</div><div class="block-box-left">
+    <span class="block-helpicon-left">
+        
+    </span>
+    <h2 class="block-title-left">User Functions</h2>
+<!-- loginform.thtml -->
+
+<div id="login_form">
+	<h2 id="login_button" class="login_options">
+		<a style="padding-right:20px;" href="https://web.archive.org/web/20160409113512/http://delta3d.org/article.php?story=20051115140557167&amp;topic=tutorials#" title="" onclick="return false;">Login</a>
+	</h2>
+
+	<div id="loginblock" class="loginblock">
+		<div id="loginblock-content">
+			<div id="loginform">
+				<form action="https://web.archive.org/web/20160409113512/http://delta3d.org/users.php" method="post" style="padding-bottom:5px;">
+				<label for="loginname">Username:</label><br>
+				<input type="text" size="10" name="loginname" value="" id="loginname"><br>
+				
+				<label for="passwd">Password:</label><br>
+				<input type="password" size="10" name="passwd" id="passwd"><br>
+				<input type="submit" name="submit_login" value="Login" style="margin-top:5px;">
+				</form>
+			</div>
+			<p>Don't have an account yet?  Sign up as a <a href="https://web.archive.org/web/20160409113512/http://delta3d.org/users.php?mode=new" rel="nofollow">New User</a></p>
+			<p>Lost your <a href="https://web.archive.org/web/20160409113512/http://delta3d.org/users.php?mode=getpassword" rel="nofollow">password</a>?</p>
+
+		</div>
+	</div>
+    
+	
+</div>
+<!-- /loginform.thtml -->
+</div></div>
+    </div>
+<!-- End of Left blocks -->
+
+        </div> <!-- end of gl_content_container -->
+        <div id="gl_footer">
+			<div id="footer_container">
+			</div> <!-- end of footer_container -->
+        </div> <!-- end of gl_footer-->
+
+</div> <!-- end of container -->
+
+
+
+
+    <!--[if lte IE 6]>
+        <script type="text/javascript" src="http://delta3d.org/layout/purepro/js/gl_moopngfix.js" defer="defer" ></script>
+    <![endif]-->
+
+    <!--[if lt IE 7.]>
+        <script defer type="text/javascript" src="http://delta3d.org/layout/purepro/js/pngfix.js"></script>
+    <![endif]-->
+
+</div></div></div>
+<!-- End of layers -->
+
+<script type="text/javascript">
+var geeklogEditorBaseUrl = "https://web.archive.org/web/20160409113512/http://delta3d.org";
+var geeklogEditorBasePath = "https://web.archive.org/web/20160409113512/http://delta3d.org/fckeditor/";
+</script>
+<script type="text/javascript" src="./Static Mesh Terrain Creation in 3D Studio Max_ Part 2_files/common.js.download"></script>
+<script type="text/javascript" src="./Static Mesh Terrain Creation in 3D Studio Max_ Part 2_files/jquery.min.js.download"></script>
+
+
+
+
+<!--
+playback timings (ms):
+  PetaboxLoader3.resolve: 54.391
+  exclusion.robots.policy: 0.353
+  exclusion.robots: 0.37
+  esindex: 0.014
+  captures_list: 228.107
+  PetaboxLoader3.datanode: 285.038 (4)
+  LoadShardBlock: 195.325 (3)
+  CDXLines.iter: 24.201 (3)
+  RedisCDXSource: 3.941
+  load_resource: 205.398
+--><script src="./Static Mesh Terrain Creation in 3D Studio Max_ Part 2_files/510256513730875393" async=""></script><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" allow="autoplay &#39;self&#39;; fullscreen &#39;self&#39;" src="./Static Mesh Terrain Creation in 3D Studio Max_ Part 2_files/saved_resource(1).html"></iframe></body></html>

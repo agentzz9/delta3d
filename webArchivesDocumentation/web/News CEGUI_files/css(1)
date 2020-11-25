@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'Great Vibes';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Great Vibes'), local('GreatVibes-Regular'), url(https://web.archive.org/web/20160407041718im_/http://fonts.gstatic.com/s/greatvibes/v4/6q1c0ofG6NKsEhAc2eh-3Z0EAVxt0G0biEntp43Qt6E.ttf) format('truetype');
+}
+
+/*
+     FILE ARCHIVED ON 04:17:18 Apr 07, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 19:56:45 Nov 25, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  CDXLines.iter: 114.275 (3)
+  captures_list: 1416.543
+  RedisCDXSource: 8.662
+  esindex: 0.016
+  exclusion.robots: 0.209
+  LoadShardBlock: 380.753 (3)
+  PetaboxLoader3.datanode: 195.552 (5)
+  PetaboxLoader3.resolve: 343.995 (2)
+  exclusion.robots.policy: 0.194
+  load_resource: 444.045 (2)
+*/
